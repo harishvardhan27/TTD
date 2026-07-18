@@ -1,0 +1,89 @@
+Loaded 200 real ImageNet images spanning 200 classes
+
+Loading REAL pretrained MobileNetV2 (ImageNet weights, via timm/GitHub release)...
+Baseline: 3,504,872 params, 13.60 MB
+
+Evaluating baseline top-1 accuracy on real images...
+Baseline top-1 accuracy: 0.8500 (170/200)  [7.0s]
+
+============================================================
+TT-compressing conv layers at rank=32
+============================================================
+[TT] blocks.0.0.conv_pw: Conv2d(32,16,k=(1, 1)) (512 params) -> TTConv2d ranks=[32, 32] (769 params, 0.67x)
+[TT] blocks.1.0.conv_pw: Conv2d(16,96,k=(1, 1)) (1,536 params) -> TTConv2d ranks=[32, 32] (2,561 params, 0.60x)
+[TT] blocks.1.0.conv_pwl: Conv2d(96,24,k=(1, 1)) (2,304 params) -> TTConv2d ranks=[32, 32] (3,329 params, 0.69x)
+[TT] blocks.1.1.conv_pw: Conv2d(24,144,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[32, 32] (3,841 params, 0.90x)
+[TT] blocks.1.1.conv_pwl: Conv2d(144,24,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[32, 32] (3,841 params, 0.90x)
+[TT] blocks.2.0.conv_pw: Conv2d(24,144,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[32, 32] (3,841 params, 0.90x)
+[TT] blocks.2.0.conv_pwl: Conv2d(144,32,k=(1, 1)) (4,608 params) -> TTConv2d ranks=[32, 32] (4,609 params, 1.00x)
+[TT] blocks.2.1.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[32, 32] (5,633 params, 1.09x)
+[TT] blocks.2.1.conv_pwl: Conv2d(192,32,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[32, 32] (5,633 params, 1.09x)
+[TT] blocks.2.2.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[32, 32] (5,633 params, 1.09x)
+[TT] blocks.2.2.conv_pwl: Conv2d(192,32,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[32, 32] (5,633 params, 1.09x)
+[TT] blocks.3.0.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[32, 32] (5,633 params, 1.09x)
+[TT] blocks.3.0.conv_pwl: Conv2d(192,64,k=(1, 1)) (12,288 params) -> TTConv2d ranks=[32, 32] (7,169 params, 1.71x)
+[TT] blocks.3.1.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.3.1.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.3.2.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.3.2.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.3.3.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.3.3.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.4.0.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[32, 32] (10,241 params, 2.40x)
+[TT] blocks.4.0.conv_pwl: Conv2d(384,96,k=(1, 1)) (36,864 params) -> TTConv2d ranks=[32, 32] (13,313 params, 2.77x)
+[TT] blocks.4.1.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[32, 32] (15,361 params, 3.60x)
+[TT] blocks.4.1.conv_pwl: Conv2d(576,96,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[32, 32] (15,361 params, 3.60x)
+[TT] blocks.4.2.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[32, 32] (15,361 params, 3.60x)
+[TT] blocks.4.2.conv_pwl: Conv2d(576,96,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[32, 32] (15,361 params, 3.60x)
+[TT] blocks.5.0.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[32, 32] (15,361 params, 3.60x)
+[TT] blocks.5.0.conv_pwl: Conv2d(576,160,k=(1, 1)) (92,160 params) -> TTConv2d ranks=[32, 32] (19,969 params, 4.62x)
+[TT] blocks.5.1.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[32, 32] (28,161 params, 5.45x)
+[TT] blocks.5.1.conv_pwl: Conv2d(960,160,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[32, 32] (28,161 params, 5.45x)
+[TT] blocks.5.2.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[32, 32] (28,161 params, 5.45x)
+[TT] blocks.5.2.conv_pwl: Conv2d(960,160,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[32, 32] (28,161 params, 5.45x)
+[TT] blocks.6.0.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[32, 32] (28,161 params, 5.45x)
+[TT] blocks.6.0.conv_pwl: Conv2d(960,320,k=(1, 1)) (307,200 params) -> TTConv2d ranks=[32, 32] (37,889 params, 8.11x)
+[TT] conv_head: Conv2d(320,1280,k=(1, 1)) (409,600 params) -> TTConv2d ranks=[32, 32] (41,985 params, 9.76x)
+Compressed: 1,840,778 params, 7.28 MB, ratio=1.90x
+Evaluating TT-compressed (pre-fine-tune) top-1 accuracy on real images...
+TT rank=32 top-1 accuracy: 0.0000 (0/200)  [85.7s]  agreement-with-baseline-predictions=0.0000
+
+============================================================
+TT-compressing conv layers at rank=16
+============================================================
+[TT] blocks.0.0.conv_pw: Conv2d(32,16,k=(1, 1)) (512 params) -> TTConv2d ranks=[16, 16] (769 params, 0.67x)
+[TT] blocks.1.0.conv_pw: Conv2d(16,96,k=(1, 1)) (1,536 params) -> TTConv2d ranks=[16, 16] (1,281 params, 1.20x)
+[TT] blocks.1.0.conv_pwl: Conv2d(96,24,k=(1, 1)) (2,304 params) -> TTConv2d ranks=[16, 16] (1,665 params, 1.38x)
+[TT] blocks.1.1.conv_pw: Conv2d(24,144,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[16, 16] (1,921 params, 1.80x)
+[TT] blocks.1.1.conv_pwl: Conv2d(144,24,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[16, 16] (1,921 params, 1.80x)
+[TT] blocks.2.0.conv_pw: Conv2d(24,144,k=(1, 1)) (3,456 params) -> TTConv2d ranks=[16, 16] (1,921 params, 1.80x)
+[TT] blocks.2.0.conv_pwl: Conv2d(144,32,k=(1, 1)) (4,608 params) -> TTConv2d ranks=[16, 16] (2,305 params, 2.00x)
+[TT] blocks.2.1.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[16, 16] (2,817 params, 2.18x)
+[TT] blocks.2.1.conv_pwl: Conv2d(192,32,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[16, 16] (2,817 params, 2.18x)
+[TT] blocks.2.2.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[16, 16] (2,817 params, 2.18x)
+[TT] blocks.2.2.conv_pwl: Conv2d(192,32,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[16, 16] (2,817 params, 2.18x)
+[TT] blocks.3.0.conv_pw: Conv2d(32,192,k=(1, 1)) (6,144 params) -> TTConv2d ranks=[16, 16] (2,817 params, 2.18x)
+[TT] blocks.3.0.conv_pwl: Conv2d(192,64,k=(1, 1)) (12,288 params) -> TTConv2d ranks=[16, 16] (3,585 params, 3.43x)
+[TT] blocks.3.1.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.3.1.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.3.2.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.3.2.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.3.3.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.3.3.conv_pwl: Conv2d(384,64,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.4.0.conv_pw: Conv2d(64,384,k=(1, 1)) (24,576 params) -> TTConv2d ranks=[16, 16] (5,121 params, 4.80x)
+[TT] blocks.4.0.conv_pwl: Conv2d(384,96,k=(1, 1)) (36,864 params) -> TTConv2d ranks=[16, 16] (6,657 params, 5.54x)
+[TT] blocks.4.1.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[16, 16] (7,681 params, 7.20x)
+[TT] blocks.4.1.conv_pwl: Conv2d(576,96,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[16, 16] (7,681 params, 7.20x)
+[TT] blocks.4.2.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[16, 16] (7,681 params, 7.20x)
+[TT] blocks.4.2.conv_pwl: Conv2d(576,96,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[16, 16] (7,681 params, 7.20x)
+[TT] blocks.5.0.conv_pw: Conv2d(96,576,k=(1, 1)) (55,296 params) -> TTConv2d ranks=[16, 16] (7,681 params, 7.20x)
+[TT] blocks.5.0.conv_pwl: Conv2d(576,160,k=(1, 1)) (92,160 params) -> TTConv2d ranks=[16, 16] (9,985 params, 9.23x)
+[TT] blocks.5.1.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[16, 16] (14,081 params, 10.91x)
+[TT] blocks.5.1.conv_pwl: Conv2d(960,160,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[16, 16] (14,081 params, 10.91x)
+[TT] blocks.5.2.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[16, 16] (14,081 params, 10.91x)
+[TT] blocks.5.2.conv_pwl: Conv2d(960,160,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[16, 16] (14,081 params, 10.91x)
+[TT] blocks.6.0.conv_pw: Conv2d(160,960,k=(1, 1)) (153,600 params) -> TTConv2d ranks=[16, 16] (14,081 params, 10.91x)
+[TT] blocks.6.0.conv_pwl: Conv2d(960,320,k=(1, 1)) (307,200 params) -> TTConv2d ranks=[16, 16] (18,945 params, 16.22x)
+[TT] conv_head: Conv2d(320,1280,k=(1, 1)) (409,600 params) -> TTConv2d ranks=[16, 16] (20,993 params, 19.51x)
+Compressed: 1,610,890 params, 6.40 MB, ratio=2.18x
+Evaluating TT-compressed (pre-fine-tune) top-1 accuracy on real images...
+TT rank=16 top-1 accuracy: 0.0000 (0/200)  [41.8s]  agreement-with-baseline-predictions=0.0000

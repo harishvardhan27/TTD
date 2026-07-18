@@ -1,0 +1,81 @@
+{
+  "hosvd_energy_report": {
+    "mode_0": {
+      "mode_size": 16,
+      "rank_for_95pct_energy": 16,
+      "rank_for_99pct_energy": 16
+    },
+    "mode_1": {
+      "mode_size": 16,
+      "rank_for_95pct_energy": 16,
+      "rank_for_99pct_energy": 16
+    },
+    "mode_2": {
+      "mode_size": 12,
+      "rank_for_95pct_energy": 12,
+      "rank_for_99pct_energy": 12
+    },
+    "mode_3": {
+      "mode_size": 12,
+      "rank_for_95pct_energy": 12,
+      "rank_for_99pct_energy": 12
+    },
+    "mode_4": {
+      "mode_size": 8,
+      "rank_for_95pct_energy": 8,
+      "rank_for_99pct_energy": 8
+    },
+    "mode_5": {
+      "mode_size": 8,
+      "rank_for_95pct_energy": 8,
+      "rank_for_99pct_energy": 8
+    }
+  },
+  "results": [
+    {
+      "name": "baseline (dense)",
+      "num_params": 19486464,
+      "size_mb": 74.343,
+      "compression_ratio": 1.0,
+      "mean_latency_ms": 30.358,
+      "throughput_samples_per_s": 1054.1,
+      "relative_output_error": 0.0
+    },
+    {
+      "name": "TT rank=48 (pre-fine-tune)",
+      "num_params": 3081984,
+      "size_mb": 11.77,
+      "compression_ratio": 6.32,
+      "mean_latency_ms": 226.979,
+      "throughput_samples_per_s": 141.0,
+      "relative_output_error": 0.9951
+    },
+    {
+      "name": "TT rank=48 (fine-tuned)",
+      "num_params": 3081984,
+      "size_mb": 11.77,
+      "compression_ratio": 6.32,
+      "mean_latency_ms": 234.909,
+      "throughput_samples_per_s": 136.2,
+      "relative_output_error": 0.6749
+    },
+    {
+      "name": "TT rank=16 (pre-fine-tune)",
+      "num_params": 911104,
+      "size_mb": 3.488,
+      "compression_ratio": 21.39,
+      "mean_latency_ms": 43.446,
+      "throughput_samples_per_s": 736.5,
+      "relative_output_error": 1.0188
+    },
+    {
+      "name": "TT rank=16 (fine-tuned)",
+      "num_params": 911104,
+      "size_mb": 3.488,
+      "compression_ratio": 21.39,
+      "mean_latency_ms": 41.386,
+      "throughput_samples_per_s": 773.2,
+      "relative_output_error": 0.6927
+    }
+  ]
+}

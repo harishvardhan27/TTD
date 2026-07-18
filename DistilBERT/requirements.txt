@@ -1,0 +1,11 @@
+torch>=2.0
+numpy
+tensorly
+matplotlib
+pandas
+
+# Only needed for hf_real_model_example.py (real HuggingFace model + fine-tuning):
+transformers
+datasets
+evaluate
+accelerate

@@ -1,0 +1,76 @@
+{
+  "hosvd_energy_report": {
+    "mode_0": {
+      "mode_size": 16,
+      "rank_for_95pct_energy": 15,
+      "rank_for_99pct_energy": 16
+    },
+    "mode_1": {
+      "mode_size": 8,
+      "rank_for_95pct_energy": 8,
+      "rank_for_99pct_energy": 8
+    },
+    "mode_2": {
+      "mode_size": 8,
+      "rank_for_95pct_energy": 8,
+      "rank_for_99pct_energy": 8
+    },
+    "mode_3": {
+      "mode_size": 8,
+      "rank_for_95pct_energy": 8,
+      "rank_for_99pct_energy": 8
+    },
+    "mode_4": {
+      "mode_size": 9,
+      "rank_for_95pct_energy": 9,
+      "rank_for_99pct_energy": 9
+    }
+  },
+  "results": [
+    {
+      "name": "baseline (dense)",
+      "num_params": 391946,
+      "size_mb": 1.508,
+      "compression_ratio": 1.0,
+      "mean_latency_ms": 3.128,
+      "throughput_samples_per_s": 5114.6,
+      "relative_output_error": 0.0
+    },
+    {
+      "name": "TT rank=32 (pre-fine-tune)",
+      "num_params": 83965,
+      "size_mb": 0.335,
+      "compression_ratio": 4.67,
+      "mean_latency_ms": 247.156,
+      "throughput_samples_per_s": 64.7,
+      "relative_output_error": 0.9645
+    },
+    {
+      "name": "TT rank=32 (fine-tuned)",
+      "num_params": 83965,
+      "size_mb": 0.335,
+      "compression_ratio": 4.67,
+      "mean_latency_ms": 160.658,
+      "throughput_samples_per_s": 99.6,
+      "relative_output_error": 0.6959
+    },
+    {
+      "name": "TT rank=8 (pre-fine-tune)",
+      "num_params": 23010,
+      "size_mb": 0.102,
+      "compression_ratio": 17.03,
+      "mean_latency_ms": 44.037,
+      "throughput_samples_per_s": 363.3,
+      "relative_output_error": 1.0961
+    },
+    {
+      "name": "TT rank=8 (fine-tuned)",
+      "num_params": 23010,
+      "size_mb": 0.102,
+      "compression_ratio": 17.03,
+      "mean_latency_ms": 48.157,
+      "throughput_samples_per_s": 332.2,
+      "relative_output_error": 0.7521
+    }
+  ]
+}

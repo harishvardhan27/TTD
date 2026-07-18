@@ -1,0 +1,24 @@
+Loading real pretrained MobileNetV2...
+Teacher (original) top-1 on 50 real images: 0.8200
+
+TT-compressing (fixed rank=32 globally -- genuinely SMALLER, ~2x, per
+earlier direct measurement; the adaptive per-layer target-error version
+preserved accuracy better but grew the model, so this tests the actual
+compression regime instead)...
+Compressed: 1,840,778 params vs 3,504,872 (1.90x smaller)
+Compressed, PRE-fine-tune, top-1 on real images: 0.0000
+
+Fine-tuning via distillation (synthetic ImageNet-statistics inputs)...
+  step   0: KL loss = 0.7877  [9s elapsed]
+  step   5: KL loss = 0.6638  [50s elapsed]
+  step  10: KL loss = 0.5318  [92s elapsed]
+Fine-tuning done in 100s. Loss: 0.7877 -> 0.5670
+
+Compressed, POST-fine-tune, top-1 on real (held-out) images: 0.0000
+
+============================================================
+SUMMARY
+============================================================
+Teacher (original):          0.8200 top-1, 3,504,872 params
+Compressed, pre-fine-tune:   0.0000 top-1, 1,840,778 params (1.90x smaller)
+Compressed, post-fine-tune:  0.0000 top-1, 1,840,778 params (1.90x smaller)
