@@ -112,6 +112,23 @@ top-1 every `eval_every` steps with early stopping; the selected checkpoint is
 evaluated **once** on `v2_test`. α ∈ {0, 0.5}, T ∈ {1, 2, 4} explored on dev
 with a fixed step budget; seeds reported.
 
+**Concrete plan (fixed 2026-11-20 16:35, before any distillation run).**
+Students: the frozen-pipeline variants `data_attn+mlp_b0.6` (primary) and
+`data_attn+mlp_b0.8`. Effective batch 32 (16 × 2 accumulation), AdamW,
+weight decay 0, cosine schedule with 5% warm-up, horizontal-flip augmentation
+via cached teacher logits, seed 0.
+1. *Selection runs* (b = 0.6 student only, 200 steps each, dev evaluation every
+   50 steps): (a) T ∈ {1, 2, 4} at α = 0, lr = 1e-4; (b) lr ∈ {3e-4} at the best
+   T; (c) α = 0.5 at the best (T, lr). Each stage keeps the configuration with
+   the highest best-checkpoint dev top-1; ties within 0.25 pp go to the earlier
+   (simpler) configuration.
+2. *Final runs*: the selected configuration for 1,500 steps (≈ 3.3 epochs of
+   the 14,394-image transfer set), dev evaluation every 100 steps, patience 5
+   evaluations; for both students. The dev-selected checkpoint and its dynamic
+   INT8 version (B8) are evaluated once on v2_test.
+3. *Seed variability*: the final b = 0.6 run is repeated with seed 1 if time
+   permits; otherwise single-seed results are labelled as such.
+
 ## 8. Latency and memory protocol
 
 * Separate process per backend family; model loading excluded from timing.
