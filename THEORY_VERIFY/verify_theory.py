@@ -16,7 +16,7 @@ asking you to trust the derivation on faith:
      eps_k exceeds the best achievable single-cut residual).
 """
 import numpy as np
-from tt_core import tt_svd, tt_reconstruct
+from ttcompress.tt import tt_svd, tt_reconstruct
 
 
 def tt_svd_with_diagnostics(tensor, max_ranks):

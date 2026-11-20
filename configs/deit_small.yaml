@@ -1,0 +1,55 @@
+# DeiT-Small: primary model for the full grid and ablations (audit plan, Phase 3/6).
+# "budget" = fraction of the TARGETED layers' weight parameters that is kept
+# (0.6 keeps 60%); whole-model ratios are reported separately in every result.
+model: deit_small_patch16_224.fb_in1k
+short: deit_small
+threads: 8
+batch: 64
+seed: 0
+damp: 0.01          # provisional; final value chosen on v2_dev (suite: dev)
+granularity: 8
+min_saving: 0.1
+calibration: {source: transfer, n: 256, heldout_n: 128, seed: 1}
+
+suites:
+  # ---------------- Phase 2 / 6: questions + hyperparameters on V2-dev only
+  dev:
+    - {kind: baseline}
+    # Q2 / A1 / A10: plain vs data-aware at matched budgets
+    - grid: {method: [plain, data], scope: attn+mlp, budget: [0.8, 0.6]}
+    # Q3 / A3 / A4: layer coverage at a fixed budget
+    - grid: {method: [plain, data], scope: [attn, mlp, attn+mlp], budget: 0.7}
+    # A9: whitening regularisation
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, damp: [0.0, 0.0001, 0.001, 0.1]}
+    # A8: calibration size and source
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, calib: [{source: transfer, n: 32, seed: 1}, {source: transfer, n: 64, seed: 1}, {source: transfer, n: 128, seed: 1}, {source: transfer, n: 512, seed: 1}]}
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, calib: [{source: imagenette_train, n: 256, seed: 1}, {source: imagenet_sample, n: 256, seed: 1}]}
+    # A12: calibration-subset seed
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, calib: [{source: transfer, n: 256, seed: 2}, {source: transfer, n: 256, seed: 3}]}
+    # hardware-motivated rank floor (M8)
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, min_saving: [0.0, 0.25]}
+
+  # ---------------- Phase 3: final grid on V2-test (hyperparameters frozen)
+  core:
+    - {kind: baseline}                                                       # B0
+    - {kind: int8}                                                           # B1
+    - grid: {method: [plain, data], scope: attn+mlp, budget: [0.9, 0.8, 0.7, 0.6, 0.5]}   # B2/B3, A1, A10
+    - grid: {method: data, scope: attn+mlp, policy: uniform_budget, budget: [0.8, 0.6]}  # B4 vs B5, A2
+    - grid: {method: plain, scope: attn+mlp, policy: uniform_budget, budget: [0.8, 0.6]}
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator: dp}           # greedy vs exact DP
+    - grid: {method: data, scope: [qkv, attn_out, attn, mlp, all], budget: 0.7}          # layer coverage
+    - grid: {method: plain, scope: [attn, mlp], budget: 0.7}
+    - grid: {method: data, scope: attn+mlp, policy: target, target: [0.2, 0.3]}           # per-layer target error
+    - grid: {kind: tt, scope: attn+mlp, budget: [0.8, 0.6]}                               # B6
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8}              # B7, A5, A6
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8, order: qf}   # operation order
+    - grid: {method: plain, scope: attn+mlp, budget: 0.6, quant: int8}
+    - {kind: ort, ort: {precision: fp32}}
+    - {kind: ort, ort: {precision: int8}}
+    - {kind: ort, ort: {precision: fp32, base: {method: data, scope: attn+mlp, budget: 0.6}}}
+    - {kind: ort, ort: {precision: int8, base: {method: data, scope: attn+mlp, budget: 0.6}}}
+
+  # ---------------- post-hoc follow-up to H-iso (exploratory, dev only; see protocol §9)
+  dev2:
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator_weights: sensitivity}
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator: dp}

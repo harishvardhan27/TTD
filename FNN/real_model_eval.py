@@ -29,7 +29,7 @@ import torchvision.transforms as T
 from PIL import Image
 import timm
 
-from compress_model import replace_conv_with_tt, count_parameters, model_size_mb, benchmark_latency
+from ttcompress.surgery import replace_conv_with_tt, count_parameters, model_size_mb, benchmark_latency
 
 torch.manual_seed(0)
 

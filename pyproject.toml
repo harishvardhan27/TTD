@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ttcompress"
+version = "0.2.0"
+description = "Tensor-Train and (data-aware) low-rank compression of neural-network layers, with honest CPU edge benchmarking"
+requires-python = ">=3.9"
+dependencies = ["torch>=2.0", "numpy", "pillow"]
+
+[project.optional-dependencies]
+vision = ["timm>=0.9", "torchvision"]
+deploy = ["onnx", "onnxruntime"]
+kernels = ["ninja"]
+dev = ["pytest", "matplotlib", "scipy"]
+
+[tool.setuptools.packages.find]
+include = ["ttcompress*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: exports/runs ONNX models (seconds)"]

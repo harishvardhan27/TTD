@@ -3,11 +3,14 @@ build_cuda_kernel.py
 ======================
 Build script for tt_linear_cuda.cu. Requires an NVIDIA GPU + the CUDA
 toolkit (nvcc) installed -- neither is available in the sandbox that
-built the rest of this project, so this has not been run here. On a
+built the rest of this project, and none on the AMD Ryzen 7730U laptop
+used for the measured results (no NVIDIA GPU) -- it has NEVER been compiled
+or run. Known limitation (RESEARCH_AUDIT.md H9): MAX_SHARED_FLOATS=4096 is too
+small for the 768->3072 FFN shape even at rank 8. On a
 CUDA-capable machine:
 
     pip install torch  # with CUDA support matching your driver
-    python kernels/build_cuda_kernel.py build_ext --inplace
+    cd THEORY_VERIFY && python build_cuda_kernel.py build_ext --inplace
 
 Then in Python:
 
@@ -20,7 +23,7 @@ setuptools build, exactly like benchmark_kernel.py does for the CPU
 kernel:
 
     from torch.utils.cpp_extension import load
-    tt_cuda = load(name="tt_linear_cuda", sources=["kernels/tt_linear_cuda.cu"])
+    tt_cuda = load(name="tt_linear_cuda", sources=["THEORY_VERIFY/tt_linear_cuda.cu"])
 """
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension

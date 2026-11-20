@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+# datasets and caches (re-created by scripts; see docs/EXPERIMENTAL_PROTOCOL.md)
+data/*
+!data/manifests/
+# large binary artifacts; JSON/CSV results are tracked
+results/**/*.pt
+results/**/*.onnx
+checkpoints/
+*.tmp

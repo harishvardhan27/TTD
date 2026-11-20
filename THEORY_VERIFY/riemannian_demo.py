@@ -24,7 +24,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from tt_core import TTLinear, tt_svd, tt_reconstruct, factorize_balanced
+from ttcompress.tt import TTLinear, tt_svd, tt_reconstruct, factorize_balanced
 from riemannian_tt import riemannian_tt_fit
 
 torch.manual_seed(0)

@@ -1,19 +1,28 @@
 """
-validate_finalized_project.py
+validate_finalized_project.py  -- HISTORICAL (superseded)
 ================================
+Kept to reproduce audit finding C2. Its rank selection silently fell back to
+rank 256 (see RESEARCH_AUDIT.md); its 100-image evaluation overlapped the
+model's training data (C1); and the untagged timm name now loads a 21k-class
+head (H1). Current pipeline: experiments/run.py with configs/vit_base.yaml.
+
 Validates the finalized project's actual method (plain low-rank
 factorization of attention layers) against real ViT-Base weights and
 real ImageNet images -- the same rigor applied to the superseded
 Tensor-Train approach, now applied to what replaced it.
 """
 import copy
+import sys
+from pathlib import Path
+
 import torch
 import timm
 from timm.data import resolve_data_config, create_transform
 
 from low_rank_compress import replace_linear_with_lowrank, LowRankLinear
-from compress_model import count_parameters, model_size_mb, benchmark_latency
-from real_model_eval import load_samples
+from ttcompress.surgery import count_parameters, model_size_mb, benchmark_latency
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "FNN"))
+from real_model_eval import load_samples  # noqa: E402
 
 
 @torch.no_grad()
@@ -53,7 +62,7 @@ def main():
     eval_samples = samples[:100]
 
     print("Loading real pretrained ViT-Base...")
-    model = timm.create_model("vit_base_patch16_224_miil", pretrained=True)
+    model = timm.create_model("vit_base_patch16_224_miil.in21k_ft_in1k", pretrained=True)
     model.eval()
     base_params = count_parameters(model)
     base_size = model_size_mb(model)

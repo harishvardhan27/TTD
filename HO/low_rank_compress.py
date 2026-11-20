@@ -1,6 +1,11 @@
 """
-low_rank_compress.py
+low_rank_compress.py  -- HISTORICAL, DO NOT USE (superseded by ttcompress.lowrank)
 ======================
+Known defect (RESEARCH_AUDIT.md C2): suggest_rank_by_target_error silently
+returns rank 256 when no candidate meets the target, so "target_err<=0.15"
+and "<=0.30" both produced (nearly) the uniform-rank-256 model. Kept unchanged
+below this note so the historical result can be reproduced.
+
 The finalized project's compression method: plain low-rank (SVD)
 factorization, targeted at attention/embedding layers where real
 pretrained models were shown to have exploitable redundancy (see

@@ -17,7 +17,7 @@ import torch
 import torch.nn as nn
 import timm
 
-from tt_core import TTLinear
+from ttcompress.tt import TTLinear
 
 
 def spectrum_summary(W: np.ndarray, name: str):
@@ -48,7 +48,7 @@ def tt_vs_plain_lowrank(linear: nn.Linear, name: str, ranks=(64, 32, 16)):
 
 def main():
     print("Loading real pretrained ViT-Base (ImageNet, via GitHub release)...")
-    model = timm.create_model("vit_base_patch16_224_miil", pretrained=True)
+    model = timm.create_model("vit_base_patch16_224_miil.in21k_ft_in1k", pretrained=True)  # pinned (audit H1)
     print(f"Loaded. {sum(p.numel() for p in model.parameters()):,} params, "
           f"{len(model.blocks)} transformer blocks.\n")
 

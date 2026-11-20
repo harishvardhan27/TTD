@@ -32,7 +32,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from tt_core import TTLinear, factorize_balanced
+from .tt import TTLinear, factorize_balanced
 
 
 def _pair(x: Union[int, Tuple[int, int]]) -> Tuple[int, int]:

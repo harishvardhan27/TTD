@@ -1,9 +1,10 @@
 """
-compress_model.py
+surgery.py (formerly compress_model.py, previously copied into CNN/,
+DistilBERT/ and FNN/)
 ==================
-Model-agnostic utilities for walking a PyTorch `nn.Module` (e.g. a
-HuggingFace transformer) and replacing selected `nn.Linear` layers with
-`TTLinear` layers, plus size/param reporting helpers.
+Model-agnostic utilities for walking a PyTorch `nn.Module` and replacing
+selected `nn.Linear` / `nn.Conv2d` layers with Tensor-Train layers
+(`TTLinear`, `TTConv2d`). The low-rank equivalents live in lowrank.py.
 """
 
 from __future__ import annotations
@@ -15,8 +16,8 @@ from typing import Callable, Dict, List, Optional, Sequence
 import torch
 import torch.nn as nn
 
-from tt_core import TTLinear, factorize_balanced
-from ttconv import TTConv2d
+from .tt import TTLinear, factorize_balanced
+from .ttconv import TTConv2d
 
 
 def suggest_conv_rank_by_target_error(
@@ -38,7 +39,7 @@ def suggest_conv_rank_by_target_error(
     kind of cross-cut blind spot we just found and fixed -- so this
     function really re-runs TT-SVD at each of the few candidates instead.
     """
-    from ttconv import TTConv2d
+    from .ttconv import TTConv2d
 
     for rank in candidate_ranks:
         d = num_modes + 1
@@ -80,7 +81,7 @@ def suggest_conv_rank_by_energy(conv: nn.Conv2d, num_modes: int = 2, energy_keep
     reconstruction error directly instead of relying on this proxy.
     Kept here for the diagnostic value of comparing the two."""
     import numpy as np
-    from tt_core import hosvd_mode_singular_values, suggest_rank_for_energy
+    from .tt import hosvd_mode_singular_values, suggest_rank_for_energy
 
     W = conv.weight.detach().numpy()
     C_out, C_in, kH, kW = W.shape
@@ -119,7 +120,7 @@ def replace_conv_with_tt_adaptive(
             targets.append(name)
 
     for name in targets:
-        parent, attr = _resolve_parent(model, name)
+        parent, attr = resolve_parent(model, name)
         conv: nn.Conv2d = getattr(parent, attr)
         rank = suggest_conv_rank_by_target_error(conv, num_modes=num_modes, target_rel_error=target_rel_error)
         d = num_modes + 1
@@ -162,7 +163,7 @@ def replace_conv_with_tt(
             targets.append(name)
 
     for name in targets:
-        parent, attr = _resolve_parent(model, name)
+        parent, attr = resolve_parent(model, name)
         conv: nn.Conv2d = getattr(parent, attr)
         d = num_modes + 1  # +1 for the spatial (kH*kW) core
         ranks = [rank] * (d - 1) if isinstance(rank, int) else list(rank)
@@ -217,7 +218,7 @@ def replace_linear_with_tt(
             targets.append(name)
 
     for name in targets:
-        parent, attr = _resolve_parent(model, name)
+        parent, attr = resolve_parent(model, name)
         linear: nn.Linear = getattr(parent, attr)
         in_modes = factorize_balanced(linear.in_features, num_modes)
         out_modes = factorize_balanced(linear.out_features, num_modes)
@@ -241,7 +242,7 @@ def replace_linear_with_tt(
     return model
 
 
-def _resolve_parent(model: nn.Module, dotted_name: str):
+def resolve_parent(model: nn.Module, dotted_name: str):
     parts = dotted_name.split(".")
     parent = model
     for p in parts[:-1]:
@@ -250,37 +251,10 @@ def _resolve_parent(model: nn.Module, dotted_name: str):
 
 
 # --------------------------------------------------------------------------
-# Reporting helpers
+# Reporting helpers (single implementation lives in bench.py)
 # --------------------------------------------------------------------------
 
-def count_parameters(model: nn.Module) -> int:
-    return sum(p.numel() for p in model.parameters())
+from .bench import benchmark_latency, count_parameters, model_size_mb  # noqa: E402,F401
 
 
-def model_size_mb(model: nn.Module) -> float:
-    """Serialize the state_dict to an in-memory buffer and measure bytes.
-    This mirrors what `torch.save` would actually write to disk."""
-    buf = io.BytesIO()
-    torch.save(model.state_dict(), buf)
-    return buf.getbuffer().nbytes / (1024 ** 2)
-
-
-@torch.no_grad()
-def benchmark_latency(model: nn.Module, example_input, n_warmup: int = 3, n_iters: int = 15) -> Dict[str, float]:
-    import time
-
-    model.eval()
-    for _ in range(n_warmup):
-        model(example_input)
-    times = []
-    for _ in range(n_iters):
-        t0 = time.perf_counter()
-        model(example_input)
-        times.append(time.perf_counter() - t0)
-    times = torch.tensor(times)
-    return {
-        "mean_ms": float(times.mean() * 1000),
-        "p50_ms": float(times.median() * 1000),
-        "p95_ms": float(times.quantile(0.95) * 1000),
-        "throughput_samples_per_s": float(example_input.shape[0] / times.mean()),
-    }
+_resolve_parent = resolve_parent  # backwards-compatible alias

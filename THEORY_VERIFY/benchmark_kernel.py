@@ -21,14 +21,14 @@ import torch
 import torch.nn as nn
 from torch.utils.cpp_extension import load
 
-from tt_core import TTLinear
+from ttcompress.tt import TTLinear
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 print("Compiling custom fused CPU kernel (this can take ~30-60s the first time)...")
 tt_cpu = load(
     name="tt_linear_cpu",
-    sources=[os.path.join(THIS_DIR, "kernels", "tt_linear_cpu.cpp")],
+    sources=[os.path.join(THIS_DIR, "tt_linear_cpu.cpp")],
     verbose=False,
 )
 print("Compiled.")

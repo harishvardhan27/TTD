@@ -1,0 +1,25 @@
+# ViT-B/16 (MIIL, IN-21k pretrain, IN-1k fine-tune): confirmatory model (A11).
+# Pinned tag: the untagged name resolves to the 21k-class head (audit H1).
+model: vit_base_patch16_224_miil.in21k_ft_in1k
+short: vit_base
+threads: 8
+batch: 32
+seed: 0
+damp: 0.01          # set to the value selected on DeiT-S v2_dev (see EXPERIMENT_TRACKER)
+granularity: 8
+min_saving: 0.1
+calibration: {source: transfer, n: 256, heldout_n: 128, seed: 1}
+
+suites:
+  core:
+    - {kind: baseline}
+    - {kind: int8}
+    # Q1: the old HO configuration (= plain SVD, attention, uniform rank 256)
+    - {method: plain, scope: attn, policy: uniform_rank, rank: 256}
+    - grid: {method: [plain, data], scope: attn+mlp, budget: [0.8, 0.6]}
+    - grid: {method: [plain, data], scope: attn, budget: 0.5}
+    - {method: data, scope: mlp, budget: 0.7}
+    - {method: data, scope: attn+mlp, policy: uniform_budget, budget: 0.6}
+    - {method: data, scope: attn+mlp, budget: 0.8, quant: int8}
+    - {kind: ort, ort: {precision: int8}}
+    - {kind: ort, ort: {precision: int8, base: {method: data, scope: attn+mlp, budget: 0.8}}}

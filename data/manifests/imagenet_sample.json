@@ -1,0 +1,5008 @@
+{
+ "split": "imagenet_sample",
+ "n": 1000,
+ "n_classes": 1000,
+ "sha256": "968f078cec8207285ac358d9da02c265e4e8c67f3b97621ed48069e201ea60c1",
+ "items": [
+  {
+   "path": "imagenet-sample-images/n01440764_tench.JPEG",
+   "label": 0,
+   "sha1": "065f1917eb36b19d91c0a6b37cba1f25867cdeac"
+  },
+  {
+   "path": "imagenet-sample-images/n01443537_goldfish.JPEG",
+   "label": 1,
+   "sha1": "6f7294e85ab98713daf2e2f51e3fafd8bbeb5219"
+  },
+  {
+   "path": "imagenet-sample-images/n01484850_great_white_shark.JPEG",
+   "label": 2,
+   "sha1": "c0f5a7debc030b6c612e2eb59aa9ffdedc6435d4"
+  },
+  {
+   "path": "imagenet-sample-images/n01491361_tiger_shark.JPEG",
+   "label": 3,
+   "sha1": "0b31ca45ba8520d5dcb8860458e0253b62a18af8"
+  },
+  {
+   "path": "imagenet-sample-images/n01494475_hammerhead.JPEG",
+   "label": 4,
+   "sha1": "3adf72a95941ca9c09db88dc5ce3590b48fb4e2a"
+  },
+  {
+   "path": "imagenet-sample-images/n01496331_electric_ray.JPEG",
+   "label": 5,
+   "sha1": "bd357031b14c22d909bc0ebecdc7ec6768293a23"
+  },
+  {
+   "path": "imagenet-sample-images/n01498041_stingray.JPEG",
+   "label": 6,
+   "sha1": "4535f536063b876d3eae01f8a1867dfd78613502"
+  },
+  {
+   "path": "imagenet-sample-images/n01514668_cock.JPEG",
+   "label": 7,
+   "sha1": "0e1c6fb5f3dfe441db54dbe394a988e8bbcf94f7"
+  },
+  {
+   "path": "imagenet-sample-images/n01514859_hen.JPEG",
+   "label": 8,
+   "sha1": "39a5c85e7ec7f95829ca014c253985a51c983ea2"
+  },
+  {
+   "path": "imagenet-sample-images/n01518878_ostrich.JPEG",
+   "label": 9,
+   "sha1": "cc4e47858d85f74aea32c6eef15120be3d66dacf"
+  },
+  {
+   "path": "imagenet-sample-images/n01530575_brambling.JPEG",
+   "label": 10,
+   "sha1": "42d718893f6370aa77bbc2d579485cdd360e2d21"
+  },
+  {
+   "path": "imagenet-sample-images/n01531178_goldfinch.JPEG",
+   "label": 11,
+   "sha1": "c3b51b006bb4eda63be135669e7001c4bf153dca"
+  },
+  {
+   "path": "imagenet-sample-images/n01532829_house_finch.JPEG",
+   "label": 12,
+   "sha1": "ad710bfcf7c4528eca927906dfa11c0f42eb9476"
+  },
+  {
+   "path": "imagenet-sample-images/n01534433_junco.JPEG",
+   "label": 13,
+   "sha1": "e35c6cb16f4acce4cb138ddda70f96ff7feb20ce"
+  },
+  {
+   "path": "imagenet-sample-images/n01537544_indigo_bunting.JPEG",
+   "label": 14,
+   "sha1": "c302fa8c2071b94d3460bd7aa392b1396533638d"
+  },
+  {
+   "path": "imagenet-sample-images/n01558993_robin.JPEG",
+   "label": 15,
+   "sha1": "3f68bb17c25f479341da561088d1d4dd687c3bcf"
+  },
+  {
+   "path": "imagenet-sample-images/n01560419_bulbul.JPEG",
+   "label": 16,
+   "sha1": "0f962f7e642648de521c6d2c589d7c28c80d4ee8"
+  },
+  {
+   "path": "imagenet-sample-images/n01580077_jay.JPEG",
+   "label": 17,
+   "sha1": "a293ddfaf45d8cb294bcf3732c80ff37c7a92a93"
+  },
+  {
+   "path": "imagenet-sample-images/n01582220_magpie.JPEG",
+   "label": 18,
+   "sha1": "41cceb436ca1f8781c6f13d7e6b578bbd4b989e9"
+  },
+  {
+   "path": "imagenet-sample-images/n01592084_chickadee.JPEG",
+   "label": 19,
+   "sha1": "83f7e323b43987e98ce74b8bed0fadd99298df53"
+  },
+  {
+   "path": "imagenet-sample-images/n01601694_water_ouzel.JPEG",
+   "label": 20,
+   "sha1": "283593a2e05e9626cda248ced7d9554525610fa9"
+  },
+  {
+   "path": "imagenet-sample-images/n01608432_kite.JPEG",
+   "label": 21,
+   "sha1": "6e3fbff700ca831789eeb1bb27c7ce2b98eb664d"
+  },
+  {
+   "path": "imagenet-sample-images/n01614925_bald_eagle.JPEG",
+   "label": 22,
+   "sha1": "e4016391705c54d4e2b53c30c1745a84f2ca64e1"
+  },
+  {
+   "path": "imagenet-sample-images/n01616318_vulture.JPEG",
+   "label": 23,
+   "sha1": "27ff980aa4d85fd0ee35981bace370862d513de5"
+  },
+  {
+   "path": "imagenet-sample-images/n01622779_great_grey_owl.JPEG",
+   "label": 24,
+   "sha1": "44399d6ba04594164c8680addfc786ca67161e94"
+  },
+  {
+   "path": "imagenet-sample-images/n01629819_European_fire_salamander.JPEG",
+   "label": 25,
+   "sha1": "fb10138ed7198d17b093fa213388eebb7cb5164c"
+  },
+  {
+   "path": "imagenet-sample-images/n01630670_common_newt.JPEG",
+   "label": 26,
+   "sha1": "36db50a2512496a338511820c0f3a76ed6f0607a"
+  },
+  {
+   "path": "imagenet-sample-images/n01631663_eft.JPEG",
+   "label": 27,
+   "sha1": "18ace98ce3f9ae51c8e418ced2b7ec0945cd3f59"
+  },
+  {
+   "path": "imagenet-sample-images/n01632458_spotted_salamander.JPEG",
+   "label": 28,
+   "sha1": "3a6bd27898e4a89cdb07fcd0d67728f35b94bc7b"
+  },
+  {
+   "path": "imagenet-sample-images/n01632777_axolotl.JPEG",
+   "label": 29,
+   "sha1": "d2bf3b0c56b9d7a611cdf26c6514c0cdaf98841e"
+  },
+  {
+   "path": "imagenet-sample-images/n01641577_bullfrog.JPEG",
+   "label": 30,
+   "sha1": "d3c22bd67f2c797e038128d6fd0f661906fc9609"
+  },
+  {
+   "path": "imagenet-sample-images/n01644373_tree_frog.JPEG",
+   "label": 31,
+   "sha1": "19cf8573e6cb1b3a4078e28151c1abfd87aea508"
+  },
+  {
+   "path": "imagenet-sample-images/n01644900_tailed_frog.JPEG",
+   "label": 32,
+   "sha1": "08b5e8d33f493377277292da7f2a85d9cb75f3da"
+  },
+  {
+   "path": "imagenet-sample-images/n01664065_loggerhead.JPEG",
+   "label": 33,
+   "sha1": "2ac91159f5a36502dfa65f43435d3943ab92c095"
+  },
+  {
+   "path": "imagenet-sample-images/n01665541_leatherback_turtle.JPEG",
+   "label": 34,
+   "sha1": "913356036391326a63060c21c3422265104d9b5f"
+  },
+  {
+   "path": "imagenet-sample-images/n01667114_mud_turtle.JPEG",
+   "label": 35,
+   "sha1": "d9b2add53929bfe7d026162942b881c2b836b594"
+  },
+  {
+   "path": "imagenet-sample-images/n01667778_terrapin.JPEG",
+   "label": 36,
+   "sha1": "11295565f044983424b58801543f5efd524679d8"
+  },
+  {
+   "path": "imagenet-sample-images/n01669191_box_turtle.JPEG",
+   "label": 37,
+   "sha1": "3ec150abc8a67c8fb0fe9913ad69a47fd130acea"
+  },
+  {
+   "path": "imagenet-sample-images/n01675722_banded_gecko.JPEG",
+   "label": 38,
+   "sha1": "f23003bbf327469893a5077166db85efdd614bb4"
+  },
+  {
+   "path": "imagenet-sample-images/n01677366_common_iguana.JPEG",
+   "label": 39,
+   "sha1": "a37674c88a81f0c701f0668e0699cb72e6d8fbf2"
+  },
+  {
+   "path": "imagenet-sample-images/n01682714_American_chameleon.JPEG",
+   "label": 40,
+   "sha1": "62f54fa9a572b502c4f5198593fb3d071c892868"
+  },
+  {
+   "path": "imagenet-sample-images/n01685808_whiptail.JPEG",
+   "label": 41,
+   "sha1": "7512a8c452bcaf12f42faa5881bcab486ff2aec4"
+  },
+  {
+   "path": "imagenet-sample-images/n01687978_agama.JPEG",
+   "label": 42,
+   "sha1": "2a5e36c8c2d991c85f580f14d2b2d30fdef2f1ee"
+  },
+  {
+   "path": "imagenet-sample-images/n01688243_frilled_lizard.JPEG",
+   "label": 43,
+   "sha1": "582776a48fbd45f8247cd8c23552ce8777993388"
+  },
+  {
+   "path": "imagenet-sample-images/n01689811_alligator_lizard.JPEG",
+   "label": 44,
+   "sha1": "a6c18a2ffea95ec6942240fde9383577975dab12"
+  },
+  {
+   "path": "imagenet-sample-images/n01692333_Gila_monster.JPEG",
+   "label": 45,
+   "sha1": "abcda45e5ec00d719add3c43c25df57e50007141"
+  },
+  {
+   "path": "imagenet-sample-images/n01693334_green_lizard.JPEG",
+   "label": 46,
+   "sha1": "c3ff602a1fd0f38ddad31639c8d4dd9b801f3ddc"
+  },
+  {
+   "path": "imagenet-sample-images/n01694178_African_chameleon.JPEG",
+   "label": 47,
+   "sha1": "8660a0b03133eae6595f9624478b038eed6d32ba"
+  },
+  {
+   "path": "imagenet-sample-images/n01695060_Komodo_dragon.JPEG",
+   "label": 48,
+   "sha1": "8f0002d4f231728dd3ad8fd59e544947dde52008"
+  },
+  {
+   "path": "imagenet-sample-images/n01697457_African_crocodile.JPEG",
+   "label": 49,
+   "sha1": "559a799a6220c57737b3b97db0fa490435d5bfab"
+  },
+  {
+   "path": "imagenet-sample-images/n01698640_American_alligator.JPEG",
+   "label": 50,
+   "sha1": "81449a447a37837ec4c231aff5215d9bafb1d083"
+  },
+  {
+   "path": "imagenet-sample-images/n01704323_triceratops.JPEG",
+   "label": 51,
+   "sha1": "6a056dd195e1136c7262dafaf43def4b246c5588"
+  },
+  {
+   "path": "imagenet-sample-images/n01728572_thunder_snake.JPEG",
+   "label": 52,
+   "sha1": "bf3ec07f6edd4deb2b2725821f44e0f8ffdc2b92"
+  },
+  {
+   "path": "imagenet-sample-images/n01728920_ringneck_snake.JPEG",
+   "label": 53,
+   "sha1": "ecf9d46a2083e7644f251beac6b09b5a0d4c4879"
+  },
+  {
+   "path": "imagenet-sample-images/n01729322_hognose_snake.JPEG",
+   "label": 54,
+   "sha1": "6f53d27143478990d7d2f987e8af61053c291d17"
+  },
+  {
+   "path": "imagenet-sample-images/n01729977_green_snake.JPEG",
+   "label": 55,
+   "sha1": "d101df8fe220d05dc0e7c1ba730a10e7e7dcb0a5"
+  },
+  {
+   "path": "imagenet-sample-images/n01734418_king_snake.JPEG",
+   "label": 56,
+   "sha1": "1f9c50f5bfc4ffe65ece80b504fe14bd51cc6dea"
+  },
+  {
+   "path": "imagenet-sample-images/n01735189_garter_snake.JPEG",
+   "label": 57,
+   "sha1": "be2ad8b285064726b2ad262349b13f1ba859e937"
+  },
+  {
+   "path": "imagenet-sample-images/n01737021_water_snake.JPEG",
+   "label": 58,
+   "sha1": "02a09efa97ab247e0ff3cd57b173c31650a42bac"
+  },
+  {
+   "path": "imagenet-sample-images/n01739381_vine_snake.JPEG",
+   "label": 59,
+   "sha1": "1f2c44d0bdbb2bb9500b2e9bc09e27064d67d100"
+  },
+  {
+   "path": "imagenet-sample-images/n01740131_night_snake.JPEG",
+   "label": 60,
+   "sha1": "95b8fefbb2cbf0fed81cef0c33d6a657e463750d"
+  },
+  {
+   "path": "imagenet-sample-images/n01742172_boa_constrictor.JPEG",
+   "label": 61,
+   "sha1": "72f9c11ef4bfe76d41c046379db232da7caa7a2d"
+  },
+  {
+   "path": "imagenet-sample-images/n01744401_rock_python.JPEG",
+   "label": 62,
+   "sha1": "fe9b1d2d94272e52170d8369451e61173132200c"
+  },
+  {
+   "path": "imagenet-sample-images/n01748264_Indian_cobra.JPEG",
+   "label": 63,
+   "sha1": "c045d17a8dc43e43d5e2f5a96ad45c61370bde5d"
+  },
+  {
+   "path": "imagenet-sample-images/n01749939_green_mamba.JPEG",
+   "label": 64,
+   "sha1": "5e541323eefe50214699d92acf4b26bdbd6c9e13"
+  },
+  {
+   "path": "imagenet-sample-images/n01751748_sea_snake.JPEG",
+   "label": 65,
+   "sha1": "c564a3267c763d937fbdb46024d6261d7c54cf20"
+  },
+  {
+   "path": "imagenet-sample-images/n01753488_horned_viper.JPEG",
+   "label": 66,
+   "sha1": "1c1b4c0f08dd240bf6cc6009c534a3a6d99e5ab2"
+  },
+  {
+   "path": "imagenet-sample-images/n01755581_diamondback.JPEG",
+   "label": 67,
+   "sha1": "a773d468c656d5c2e9600e3f310a42f07c92b3f6"
+  },
+  {
+   "path": "imagenet-sample-images/n01756291_sidewinder.JPEG",
+   "label": 68,
+   "sha1": "bc11fd2a43bdd6762efcada59cc70cb248164078"
+  },
+  {
+   "path": "imagenet-sample-images/n01768244_trilobite.JPEG",
+   "label": 69,
+   "sha1": "7fae4f1edd64f564d91428c7de18abc31844c626"
+  },
+  {
+   "path": "imagenet-sample-images/n01770081_harvestman.JPEG",
+   "label": 70,
+   "sha1": "af22ca47359c1fdb0a42cc7227b408012b78f9a9"
+  },
+  {
+   "path": "imagenet-sample-images/n01770393_scorpion.JPEG",
+   "label": 71,
+   "sha1": "15b99c526371cf5a6ab511724b8d0f4d0b9eb833"
+  },
+  {
+   "path": "imagenet-sample-images/n01773157_black_and_gold_garden_spider.JPEG",
+   "label": 72,
+   "sha1": "c6983797cf514734a9c726cfea08d361b6d10dac"
+  },
+  {
+   "path": "imagenet-sample-images/n01773549_barn_spider.JPEG",
+   "label": 73,
+   "sha1": "005ef882acc882627f7d0c7aae2c5f3a15588a6c"
+  },
+  {
+   "path": "imagenet-sample-images/n01773797_garden_spider.JPEG",
+   "label": 74,
+   "sha1": "fa1c24a40863b1e5dc873b3e38246782482ef17c"
+  },
+  {
+   "path": "imagenet-sample-images/n01774384_black_widow.JPEG",
+   "label": 75,
+   "sha1": "67f4ace57ab9eda06de41bdbd2014f4d89833770"
+  },
+  {
+   "path": "imagenet-sample-images/n01774750_tarantula.JPEG",
+   "label": 76,
+   "sha1": "de0e164eb08d6e151b64150d772be08f13efe791"
+  },
+  {
+   "path": "imagenet-sample-images/n01775062_wolf_spider.JPEG",
+   "label": 77,
+   "sha1": "764ea6597a685ef9234164ae7a3da0ce98e091f1"
+  },
+  {
+   "path": "imagenet-sample-images/n01776313_tick.JPEG",
+   "label": 78,
+   "sha1": "9be8e1faf6872fdfce2b7a8826bb9e0d1c8c0459"
+  },
+  {
+   "path": "imagenet-sample-images/n01784675_centipede.JPEG",
+   "label": 79,
+   "sha1": "0add92a7fabeec9158e5f70250d2d83295252927"
+  },
+  {
+   "path": "imagenet-sample-images/n01795545_black_grouse.JPEG",
+   "label": 80,
+   "sha1": "51d0161f31d03aebc4df057d82b1dc2607639c6f"
+  },
+  {
+   "path": "imagenet-sample-images/n01796340_ptarmigan.JPEG",
+   "label": 81,
+   "sha1": "fe8713c57f4ec1b7bc1b6d17009f26e5513284a9"
+  },
+  {
+   "path": "imagenet-sample-images/n01797886_ruffed_grouse.JPEG",
+   "label": 82,
+   "sha1": "a9e7ce225e7ecffef49ebff3eced9d0cc42f2970"
+  },
+  {
+   "path": "imagenet-sample-images/n01798484_prairie_chicken.JPEG",
+   "label": 83,
+   "sha1": "9be16ac752ac9bc4e3c49bf044b7def2e64eb121"
+  },
+  {
+   "path": "imagenet-sample-images/n01806143_peacock.JPEG",
+   "label": 84,
+   "sha1": "585c64756210b04c9f5242841911d18445a8994c"
+  },
+  {
+   "path": "imagenet-sample-images/n01806567_quail.JPEG",
+   "label": 85,
+   "sha1": "d9c7331105e3e8ded2800454df8a76aabaec3cea"
+  },
+  {
+   "path": "imagenet-sample-images/n01807496_partridge.JPEG",
+   "label": 86,
+   "sha1": "8fc42ae4b1360ab442b1c5bf1d1eee565d4a4487"
+  },
+  {
+   "path": "imagenet-sample-images/n01817953_African_grey.JPEG",
+   "label": 87,
+   "sha1": "73583c8f2dffe02bafacdfa2dd37499252b4d160"
+  },
+  {
+   "path": "imagenet-sample-images/n01818515_macaw.JPEG",
+   "label": 88,
+   "sha1": "94b52316dd1602f20bd0f5ca43c9f8f2d779a8cb"
+  },
+  {
+   "path": "imagenet-sample-images/n01819313_sulphur-crested_cockatoo.JPEG",
+   "label": 89,
+   "sha1": "6cfe00961faf5079730c03f86700b268e234a372"
+  },
+  {
+   "path": "imagenet-sample-images/n01820546_lorikeet.JPEG",
+   "label": 90,
+   "sha1": "714494b26d18a3af61a9fb173d21a06c44352d7e"
+  },
+  {
+   "path": "imagenet-sample-images/n01824575_coucal.JPEG",
+   "label": 91,
+   "sha1": "ef417f015b2d20c5dc136498ceee14844ef676e4"
+  },
+  {
+   "path": "imagenet-sample-images/n01828970_bee_eater.JPEG",
+   "label": 92,
+   "sha1": "5bc9a30127e8f0b67437e3afb4456679ac15fa2f"
+  },
+  {
+   "path": "imagenet-sample-images/n01829413_hornbill.JPEG",
+   "label": 93,
+   "sha1": "59a2eaf589505d3c882912947af686b19d83939c"
+  },
+  {
+   "path": "imagenet-sample-images/n01833805_hummingbird.JPEG",
+   "label": 94,
+   "sha1": "d882d588a8062932fa2087b1a88828be8e87da7d"
+  },
+  {
+   "path": "imagenet-sample-images/n01843065_jacamar.JPEG",
+   "label": 95,
+   "sha1": "63b56b0186bf7bd8274695f7688aed6a2c9f9425"
+  },
+  {
+   "path": "imagenet-sample-images/n01843383_toucan.JPEG",
+   "label": 96,
+   "sha1": "a81fc18e1441c251836a8e088f87eb57a6d24612"
+  },
+  {
+   "path": "imagenet-sample-images/n01847000_drake.JPEG",
+   "label": 97,
+   "sha1": "e98da6896922eb9c775e2c550efce42f9859c4c8"
+  },
+  {
+   "path": "imagenet-sample-images/n01855032_red-breasted_merganser.JPEG",
+   "label": 98,
+   "sha1": "ffea2149950319f7b1428cd33119e76443bd7ead"
+  },
+  {
+   "path": "imagenet-sample-images/n01855672_goose.JPEG",
+   "label": 99,
+   "sha1": "41079642b436591b7722a02a41d50bec69fdf91e"
+  },
+  {
+   "path": "imagenet-sample-images/n01860187_black_swan.JPEG",
+   "label": 100,
+   "sha1": "b04fee0fdd159e030d9cf9838fef71645a3c91f8"
+  },
+  {
+   "path": "imagenet-sample-images/n01871265_tusker.JPEG",
+   "label": 101,
+   "sha1": "5082d8d3a090ba7bc3a017ff571253868685143c"
+  },
+  {
+   "path": "imagenet-sample-images/n01872401_echidna.JPEG",
+   "label": 102,
+   "sha1": "5db5d508e4840613893431e886a3fdfd1dfa691c"
+  },
+  {
+   "path": "imagenet-sample-images/n01873310_platypus.JPEG",
+   "label": 103,
+   "sha1": "c6d815c8fb732ee50349de24d1f1747bd0fd4207"
+  },
+  {
+   "path": "imagenet-sample-images/n01877812_wallaby.JPEG",
+   "label": 104,
+   "sha1": "0c6ade20fc0031f043030b26e79ddd1466036491"
+  },
+  {
+   "path": "imagenet-sample-images/n01882714_koala.JPEG",
+   "label": 105,
+   "sha1": "01e461cb9731a018b8a6635ed2e5fb8e8812d38d"
+  },
+  {
+   "path": "imagenet-sample-images/n01883070_wombat.JPEG",
+   "label": 106,
+   "sha1": "f7a8e851a291f3d4617b95817042678623716cb6"
+  },
+  {
+   "path": "imagenet-sample-images/n01910747_jellyfish.JPEG",
+   "label": 107,
+   "sha1": "7a42aba26338d4543706f1bf443c96850b829a47"
+  },
+  {
+   "path": "imagenet-sample-images/n01914609_sea_anemone.JPEG",
+   "label": 108,
+   "sha1": "b8020bec5a31c025de48996c3ac55e47657425f9"
+  },
+  {
+   "path": "imagenet-sample-images/n01917289_brain_coral.JPEG",
+   "label": 109,
+   "sha1": "31ed07fa40ff7e278b7992c32914b0a3d31a47e2"
+  },
+  {
+   "path": "imagenet-sample-images/n01924916_flatworm.JPEG",
+   "label": 110,
+   "sha1": "1852e3df1ba47335530837a44b729337be6b213a"
+  },
+  {
+   "path": "imagenet-sample-images/n01930112_nematode.JPEG",
+   "label": 111,
+   "sha1": "2eb3ebd8711b8edc65ceb3ec0a5c2c12cb32e124"
+  },
+  {
+   "path": "imagenet-sample-images/n01943899_conch.JPEG",
+   "label": 112,
+   "sha1": "42a47579f00d8feddeaaad3fdfc0d47b57e5e76e"
+  },
+  {
+   "path": "imagenet-sample-images/n01944390_snail.JPEG",
+   "label": 113,
+   "sha1": "c6a384ddf4315b69c9218f2fd51ca3a0d50f217c"
+  },
+  {
+   "path": "imagenet-sample-images/n01945685_slug.JPEG",
+   "label": 114,
+   "sha1": "ce1d598bbca1b0ff82f198fe803d1722520de91f"
+  },
+  {
+   "path": "imagenet-sample-images/n01950731_sea_slug.JPEG",
+   "label": 115,
+   "sha1": "cf1693dc97dd96669276723f6d50ab9134af0849"
+  },
+  {
+   "path": "imagenet-sample-images/n01955084_chiton.JPEG",
+   "label": 116,
+   "sha1": "f335fe27753106a050c130b2541d544d9597ab5e"
+  },
+  {
+   "path": "imagenet-sample-images/n01968897_chambered_nautilus.JPEG",
+   "label": 117,
+   "sha1": "05a08011c9339752b57e2fba2c091c54ab59ba01"
+  },
+  {
+   "path": "imagenet-sample-images/n01978287_Dungeness_crab.JPEG",
+   "label": 118,
+   "sha1": "4be20b8927867b8da47b56c29e95948c52932f17"
+  },
+  {
+   "path": "imagenet-sample-images/n01978455_rock_crab.JPEG",
+   "label": 119,
+   "sha1": "e0d16032f135f171f8bb1f7dcc1a86cc42c24537"
+  },
+  {
+   "path": "imagenet-sample-images/n01980166_fiddler_crab.JPEG",
+   "label": 120,
+   "sha1": "dee216ef30a03e8a8106db56ac036f89b93e8fbe"
+  },
+  {
+   "path": "imagenet-sample-images/n01981276_king_crab.JPEG",
+   "label": 121,
+   "sha1": "5e326dd06b830738c254439d2f89b04686e6dc28"
+  },
+  {
+   "path": "imagenet-sample-images/n01983481_American_lobster.JPEG",
+   "label": 122,
+   "sha1": "d4b2357c4c828101f1e69a5e3acf004da5d0a72a"
+  },
+  {
+   "path": "imagenet-sample-images/n01984695_spiny_lobster.JPEG",
+   "label": 123,
+   "sha1": "bc485efbfff2d7f4c356eefa88f8b01d0c00e1a0"
+  },
+  {
+   "path": "imagenet-sample-images/n01985128_crayfish.JPEG",
+   "label": 124,
+   "sha1": "2aef49870cf861b1353cb41ad568be76b11b83c8"
+  },
+  {
+   "path": "imagenet-sample-images/n01986214_hermit_crab.JPEG",
+   "label": 125,
+   "sha1": "201fb17b08383cae7504bc78739d1b711618709d"
+  },
+  {
+   "path": "imagenet-sample-images/n01990800_isopod.JPEG",
+   "label": 126,
+   "sha1": "98ff6df8f0ec7fdda4f993cb57cce611a03ab868"
+  },
+  {
+   "path": "imagenet-sample-images/n02002556_white_stork.JPEG",
+   "label": 127,
+   "sha1": "a8521823e1499da2a22f2cb7c6cc9f660cab5d0a"
+  },
+  {
+   "path": "imagenet-sample-images/n02002724_black_stork.JPEG",
+   "label": 128,
+   "sha1": "85a3d4f5e543d692b0a2915d56ace9164037e521"
+  },
+  {
+   "path": "imagenet-sample-images/n02006656_spoonbill.JPEG",
+   "label": 129,
+   "sha1": "868a677b49cb0a063accc7d563da4f974e361edc"
+  },
+  {
+   "path": "imagenet-sample-images/n02007558_flamingo.JPEG",
+   "label": 130,
+   "sha1": "c24cb70f46f27b032c6c070f88b8953de1c96076"
+  },
+  {
+   "path": "imagenet-sample-images/n02009229_little_blue_heron.JPEG",
+   "label": 131,
+   "sha1": "09ed1ca31c0ae93bc757eeefac94e2ca07c630c3"
+  },
+  {
+   "path": "imagenet-sample-images/n02009912_American_egret.JPEG",
+   "label": 132,
+   "sha1": "ef74e169d957fbc31fe7917a641e48a23b4d8079"
+  },
+  {
+   "path": "imagenet-sample-images/n02011460_bittern.JPEG",
+   "label": 133,
+   "sha1": "f58b22772af9dda2ca368e2079344d77e66db1cd"
+  },
+  {
+   "path": "imagenet-sample-images/n02012849_crane.JPEG",
+   "label": 134,
+   "sha1": "e077f50ce59e909acb9f93c92382aeb10351e57b"
+  },
+  {
+   "path": "imagenet-sample-images/n02013706_limpkin.JPEG",
+   "label": 135,
+   "sha1": "11afad1049eca1ba23f0e6c1bf1c7d028e5189aa"
+  },
+  {
+   "path": "imagenet-sample-images/n02017213_European_gallinule.JPEG",
+   "label": 136,
+   "sha1": "6331e5def796d6c007971d788e4a2ae12b1c249f"
+  },
+  {
+   "path": "imagenet-sample-images/n02018207_American_coot.JPEG",
+   "label": 137,
+   "sha1": "69340ef3c4ce8314d9624c183eefe38d85bc0175"
+  },
+  {
+   "path": "imagenet-sample-images/n02018795_bustard.JPEG",
+   "label": 138,
+   "sha1": "055d22c057b4f81c2b30418a8d465d4776863a1d"
+  },
+  {
+   "path": "imagenet-sample-images/n02025239_ruddy_turnstone.JPEG",
+   "label": 139,
+   "sha1": "f57f6e323726917b2603be9837d0129cae7cf89d"
+  },
+  {
+   "path": "imagenet-sample-images/n02027492_red-backed_sandpiper.JPEG",
+   "label": 140,
+   "sha1": "52e5c94912a210132e87f4998614afb922396958"
+  },
+  {
+   "path": "imagenet-sample-images/n02028035_redshank.JPEG",
+   "label": 141,
+   "sha1": "971d916ed22d879a43d616bfbe0ec2c22039aba8"
+  },
+  {
+   "path": "imagenet-sample-images/n02033041_dowitcher.JPEG",
+   "label": 142,
+   "sha1": "0afb35827f6a00d22f15e4d75dd2d6b85a2bd4e7"
+  },
+  {
+   "path": "imagenet-sample-images/n02037110_oystercatcher.JPEG",
+   "label": 143,
+   "sha1": "409bd34f87245ff53433fe873594c47b2d7bb5e1"
+  },
+  {
+   "path": "imagenet-sample-images/n02051845_pelican.JPEG",
+   "label": 144,
+   "sha1": "06e05f6c954472b726c02b735797da6489af482e"
+  },
+  {
+   "path": "imagenet-sample-images/n02056570_king_penguin.JPEG",
+   "label": 145,
+   "sha1": "b1d9863e44485ea69f11eaaa01af34c6e02c75e0"
+  },
+  {
+   "path": "imagenet-sample-images/n02058221_albatross.JPEG",
+   "label": 146,
+   "sha1": "8ecc1fb452668d0272171478f8f9cf16108e68ab"
+  },
+  {
+   "path": "imagenet-sample-images/n02066245_grey_whale.JPEG",
+   "label": 147,
+   "sha1": "27a5a690e39532e2e785159ba80144f4dd3e7d69"
+  },
+  {
+   "path": "imagenet-sample-images/n02071294_killer_whale.JPEG",
+   "label": 148,
+   "sha1": "82dbbf2f1da79c598623f895dc92787746ffec2c"
+  },
+  {
+   "path": "imagenet-sample-images/n02074367_dugong.JPEG",
+   "label": 149,
+   "sha1": "3bcd01be4e08f0c3de3976a4a14970e5c9cede84"
+  },
+  {
+   "path": "imagenet-sample-images/n02077923_sea_lion.JPEG",
+   "label": 150,
+   "sha1": "2860fb60cd549f00f422410f4f19f4b4a606b138"
+  },
+  {
+   "path": "imagenet-sample-images/n02085620_Chihuahua.JPEG",
+   "label": 151,
+   "sha1": "2e0261e14e8ef80b2e69261c337e26f366b71118"
+  },
+  {
+   "path": "imagenet-sample-images/n02085782_Japanese_spaniel.JPEG",
+   "label": 152,
+   "sha1": "7050e5c918ce484888d41134061305365f104e19"
+  },
+  {
+   "path": "imagenet-sample-images/n02085936_Maltese_dog.JPEG",
+   "label": 153,
+   "sha1": "b4ffc71a7a4a5df59a997e79be07deab3b50313d"
+  },
+  {
+   "path": "imagenet-sample-images/n02086079_Pekinese.JPEG",
+   "label": 154,
+   "sha1": "80ba7db66e5629a2a35afbe8dd79b98f9a268692"
+  },
+  {
+   "path": "imagenet-sample-images/n02086240_Shih-Tzu.JPEG",
+   "label": 155,
+   "sha1": "7b5f20f81e08f85f5ecac85df9104f7cfbbff5c0"
+  },
+  {
+   "path": "imagenet-sample-images/n02086646_Blenheim_spaniel.JPEG",
+   "label": 156,
+   "sha1": "e6344515479d0485a1dadd4a7e31c213ca98c56e"
+  },
+  {
+   "path": "imagenet-sample-images/n02086910_papillon.JPEG",
+   "label": 157,
+   "sha1": "cba2c69da143a2c9fcae0961b2ee2b5c7f489dab"
+  },
+  {
+   "path": "imagenet-sample-images/n02087046_toy_terrier.JPEG",
+   "label": 158,
+   "sha1": "d7ad2c64047cc410e04ea419cbff60d7832a7f91"
+  },
+  {
+   "path": "imagenet-sample-images/n02087394_Rhodesian_ridgeback.JPEG",
+   "label": 159,
+   "sha1": "c0cd142667c9904ea4c879605209370e19f3c3d7"
+  },
+  {
+   "path": "imagenet-sample-images/n02088094_Afghan_hound.JPEG",
+   "label": 160,
+   "sha1": "cd6d65ce0ab80a13dca246164d92c727047295bf"
+  },
+  {
+   "path": "imagenet-sample-images/n02088238_basset.JPEG",
+   "label": 161,
+   "sha1": "54c8ed8ef15098ec3df579b4fadd3e3233e32a9a"
+  },
+  {
+   "path": "imagenet-sample-images/n02088364_beagle.JPEG",
+   "label": 162,
+   "sha1": "4aea27da2a0b6ab17d474e1b5ffe9fbc770ebdc6"
+  },
+  {
+   "path": "imagenet-sample-images/n02088466_bloodhound.JPEG",
+   "label": 163,
+   "sha1": "7eaf814cd39e717efe0d8e133b88cbcffa414457"
+  },
+  {
+   "path": "imagenet-sample-images/n02088632_bluetick.JPEG",
+   "label": 164,
+   "sha1": "70a9b691e740025da235e51aae92b6a359a75496"
+  },
+  {
+   "path": "imagenet-sample-images/n02089078_black-and-tan_coonhound.JPEG",
+   "label": 165,
+   "sha1": "0db6953f9014c179d6ced79cedf3b8ea330f1513"
+  },
+  {
+   "path": "imagenet-sample-images/n02089867_Walker_hound.JPEG",
+   "label": 166,
+   "sha1": "1a4301ce3d775715340bf779435d8a5280289831"
+  },
+  {
+   "path": "imagenet-sample-images/n02089973_English_foxhound.JPEG",
+   "label": 167,
+   "sha1": "47252bda81b87719e9adfd2f1a4d0a89554ad528"
+  },
+  {
+   "path": "imagenet-sample-images/n02090379_redbone.JPEG",
+   "label": 168,
+   "sha1": "8dc86b08480ca778f37172546544c28895a6da3b"
+  },
+  {
+   "path": "imagenet-sample-images/n02090622_borzoi.JPEG",
+   "label": 169,
+   "sha1": "4f91201098c167411760d9e41d84304bf071e306"
+  },
+  {
+   "path": "imagenet-sample-images/n02090721_Irish_wolfhound.JPEG",
+   "label": 170,
+   "sha1": "2ad6a1f4774dafd4986a99a526274d2afb3f308b"
+  },
+  {
+   "path": "imagenet-sample-images/n02091032_Italian_greyhound.JPEG",
+   "label": 171,
+   "sha1": "93c09deef17bc4d15c2c67f043cbc3ebc1efa0a6"
+  },
+  {
+   "path": "imagenet-sample-images/n02091134_whippet.JPEG",
+   "label": 172,
+   "sha1": "48baf5d04289841ecec9280bd57823ab9f0d4431"
+  },
+  {
+   "path": "imagenet-sample-images/n02091244_Ibizan_hound.JPEG",
+   "label": 173,
+   "sha1": "e788549f1a1a84fd9842690e068effd1c0082729"
+  },
+  {
+   "path": "imagenet-sample-images/n02091467_Norwegian_elkhound.JPEG",
+   "label": 174,
+   "sha1": "098961028ff4452d0fd987efc30892a75a0ba216"
+  },
+  {
+   "path": "imagenet-sample-images/n02091635_otterhound.JPEG",
+   "label": 175,
+   "sha1": "d4e1910a03b6043562871d2d9c92df926bae4423"
+  },
+  {
+   "path": "imagenet-sample-images/n02091831_Saluki.JPEG",
+   "label": 176,
+   "sha1": "15cc5538185e91d8268e0d3d8f97ba1977af5689"
+  },
+  {
+   "path": "imagenet-sample-images/n02092002_Scottish_deerhound.JPEG",
+   "label": 177,
+   "sha1": "05ab4bdd52bbd4cb70bfb24482b6569e1bd0d357"
+  },
+  {
+   "path": "imagenet-sample-images/n02092339_Weimaraner.JPEG",
+   "label": 178,
+   "sha1": "c046d35afee84a6e1231468af95b17a3602ef511"
+  },
+  {
+   "path": "imagenet-sample-images/n02093256_Staffordshire_bullterrier.JPEG",
+   "label": 179,
+   "sha1": "ea857bf6c2feb599e1ce363c60c39884ed361ea0"
+  },
+  {
+   "path": "imagenet-sample-images/n02093428_American_Staffordshire_terrier.JPEG",
+   "label": 180,
+   "sha1": "7cffd8ced623f05e4638b18644e2f99180f1f2b8"
+  },
+  {
+   "path": "imagenet-sample-images/n02093647_Bedlington_terrier.JPEG",
+   "label": 181,
+   "sha1": "a74f73c9ff4a809a2ceb4fcaa083c6acde4a1d53"
+  },
+  {
+   "path": "imagenet-sample-images/n02093754_Border_terrier.JPEG",
+   "label": 182,
+   "sha1": "262732d5df8aae3150944a388e434cb168ec4833"
+  },
+  {
+   "path": "imagenet-sample-images/n02093859_Kerry_blue_terrier.JPEG",
+   "label": 183,
+   "sha1": "d254edd39b33838de96a5e7c5c403fb7f4ca9a55"
+  },
+  {
+   "path": "imagenet-sample-images/n02093991_Irish_terrier.JPEG",
+   "label": 184,
+   "sha1": "569d6b6f82824c46e1b994500a498edb774ab6ba"
+  },
+  {
+   "path": "imagenet-sample-images/n02094114_Norfolk_terrier.JPEG",
+   "label": 185,
+   "sha1": "8cfb69f3921ef3ee9723408eddd531029d34c430"
+  },
+  {
+   "path": "imagenet-sample-images/n02094258_Norwich_terrier.JPEG",
+   "label": 186,
+   "sha1": "dc8aa994905a8cdc8f3a9f48d7763d16ddc0afd5"
+  },
+  {
+   "path": "imagenet-sample-images/n02094433_Yorkshire_terrier.JPEG",
+   "label": 187,
+   "sha1": "cac95707869e3c420761498c97b0c0465928908a"
+  },
+  {
+   "path": "imagenet-sample-images/n02095314_wire-haired_fox_terrier.JPEG",
+   "label": 188,
+   "sha1": "092b7debd6ec64ccfe3446bbec157a3f1b09d381"
+  },
+  {
+   "path": "imagenet-sample-images/n02095570_Lakeland_terrier.JPEG",
+   "label": 189,
+   "sha1": "fbb01ce1808224cd848f7d9736bc8a77df261bef"
+  },
+  {
+   "path": "imagenet-sample-images/n02095889_Sealyham_terrier.JPEG",
+   "label": 190,
+   "sha1": "f602d46a09a22376a9bd490c04f7d16600ff6ec8"
+  },
+  {
+   "path": "imagenet-sample-images/n02096051_Airedale.JPEG",
+   "label": 191,
+   "sha1": "76f2aa2d977528eedc7b8351d1c971745fd05344"
+  },
+  {
+   "path": "imagenet-sample-images/n02096177_cairn.JPEG",
+   "label": 192,
+   "sha1": "d47cec0907fb8425b0c9e72c46fd273a5e8d4b37"
+  },
+  {
+   "path": "imagenet-sample-images/n02096294_Australian_terrier.JPEG",
+   "label": 193,
+   "sha1": "29f86dc676cf5c51d8733200c1024493ad0109e5"
+  },
+  {
+   "path": "imagenet-sample-images/n02096437_Dandie_Dinmont.JPEG",
+   "label": 194,
+   "sha1": "8f96e715533a07018f70394ae516c5caa9820e3d"
+  },
+  {
+   "path": "imagenet-sample-images/n02096585_Boston_bull.JPEG",
+   "label": 195,
+   "sha1": "d74c913e70f546af77c5599fc54567a2adb22ee3"
+  },
+  {
+   "path": "imagenet-sample-images/n02097047_miniature_schnauzer.JPEG",
+   "label": 196,
+   "sha1": "11502f46a087b738fba9da973914b3b5cc4083fe"
+  },
+  {
+   "path": "imagenet-sample-images/n02097130_giant_schnauzer.JPEG",
+   "label": 197,
+   "sha1": "f7f3222111fb5f7fb38970273ed603c43d1ef0fe"
+  },
+  {
+   "path": "imagenet-sample-images/n02097209_standard_schnauzer.JPEG",
+   "label": 198,
+   "sha1": "80fbab6bd8130584db367f9f23caf529b0d59bac"
+  },
+  {
+   "path": "imagenet-sample-images/n02097298_Scotch_terrier.JPEG",
+   "label": 199,
+   "sha1": "5783f2e2fac52f062cc78d99c297aa8f07d27227"
+  },
+  {
+   "path": "imagenet-sample-images/n02097474_Tibetan_terrier.JPEG",
+   "label": 200,
+   "sha1": "b344ee4efd9108882afc34febeca698f3d2b296c"
+  },
+  {
+   "path": "imagenet-sample-images/n02097658_silky_terrier.JPEG",
+   "label": 201,
+   "sha1": "022eebac0eaae6e165f4cb490455af0babebed21"
+  },
+  {
+   "path": "imagenet-sample-images/n02098105_soft-coated_wheaten_terrier.JPEG",
+   "label": 202,
+   "sha1": "994d55f2c5f71e8b236f1d861bb2687979363681"
+  },
+  {
+   "path": "imagenet-sample-images/n02098286_West_Highland_white_terrier.JPEG",
+   "label": 203,
+   "sha1": "298b66aaba8af3c8fbcac7ab5618b775cb430030"
+  },
+  {
+   "path": "imagenet-sample-images/n02098413_Lhasa.JPEG",
+   "label": 204,
+   "sha1": "7f71cb4d0912490d1c32301a3c6d182c47a8f2b0"
+  },
+  {
+   "path": "imagenet-sample-images/n02099267_flat-coated_retriever.JPEG",
+   "label": 205,
+   "sha1": "2d14a18d55e5c519d3736afa50a04cbb1d4c08f7"
+  },
+  {
+   "path": "imagenet-sample-images/n02099429_curly-coated_retriever.JPEG",
+   "label": 206,
+   "sha1": "95e319100bafaddd43b12a30af4f95d8e9b2251b"
+  },
+  {
+   "path": "imagenet-sample-images/n02099601_golden_retriever.JPEG",
+   "label": 207,
+   "sha1": "f7a9e407e82512923fb5b6b0dcea7cd4cafb18d8"
+  },
+  {
+   "path": "imagenet-sample-images/n02099712_Labrador_retriever.JPEG",
+   "label": 208,
+   "sha1": "1ee5ac1d458c06c8203b00ede9ec00bb058670e7"
+  },
+  {
+   "path": "imagenet-sample-images/n02099849_Chesapeake_Bay_retriever.JPEG",
+   "label": 209,
+   "sha1": "1521589ffbfcf984808edf589b98cea8ea32816b"
+  },
+  {
+   "path": "imagenet-sample-images/n02100236_German_short-haired_pointer.JPEG",
+   "label": 210,
+   "sha1": "d5059dd913586e29281fb530d33aae5c7757ef83"
+  },
+  {
+   "path": "imagenet-sample-images/n02100583_vizsla.JPEG",
+   "label": 211,
+   "sha1": "cf3600f22a69e0a1088a1816308555ded72a8fe3"
+  },
+  {
+   "path": "imagenet-sample-images/n02100735_English_setter.JPEG",
+   "label": 212,
+   "sha1": "eba2d36f18af40f9a69a1cbc82484e3aa365c802"
+  },
+  {
+   "path": "imagenet-sample-images/n02100877_Irish_setter.JPEG",
+   "label": 213,
+   "sha1": "23ddf0b2ecb4538111aa1b59c2fccb867f810797"
+  },
+  {
+   "path": "imagenet-sample-images/n02101006_Gordon_setter.JPEG",
+   "label": 214,
+   "sha1": "6ca125d8f53da6e92d6fc1f0ab46457c91eb0867"
+  },
+  {
+   "path": "imagenet-sample-images/n02101388_Brittany_spaniel.JPEG",
+   "label": 215,
+   "sha1": "384cdbd15b46de030f76bc97d3fc3692a40870fb"
+  },
+  {
+   "path": "imagenet-sample-images/n02101556_clumber.JPEG",
+   "label": 216,
+   "sha1": "d10eae25df5d23e15b0c536e319274df40ea5cd8"
+  },
+  {
+   "path": "imagenet-sample-images/n02102040_English_springer.JPEG",
+   "label": 217,
+   "sha1": "73fdfeb848de38ad30e1c9e57cc31b3f820a07e9"
+  },
+  {
+   "path": "imagenet-sample-images/n02102177_Welsh_springer_spaniel.JPEG",
+   "label": 218,
+   "sha1": "08236422a6321462bc63ae56e3f39677785b495f"
+  },
+  {
+   "path": "imagenet-sample-images/n02102318_cocker_spaniel.JPEG",
+   "label": 219,
+   "sha1": "9408bcd8a094216ab81d1c2369642a6131f1b492"
+  },
+  {
+   "path": "imagenet-sample-images/n02102480_Sussex_spaniel.JPEG",
+   "label": 220,
+   "sha1": "04f261af886f3e845969673656053b2836197208"
+  },
+  {
+   "path": "imagenet-sample-images/n02102973_Irish_water_spaniel.JPEG",
+   "label": 221,
+   "sha1": "cae6430f48dfec4d587eb25af672642ea96e153c"
+  },
+  {
+   "path": "imagenet-sample-images/n02104029_kuvasz.JPEG",
+   "label": 222,
+   "sha1": "943ec2fdc20dc8943a53d9a1b0f44f13d5dcf7ec"
+  },
+  {
+   "path": "imagenet-sample-images/n02104365_schipperke.JPEG",
+   "label": 223,
+   "sha1": "badecf8b7dd332e8c6596df4af20478ce355e640"
+  },
+  {
+   "path": "imagenet-sample-images/n02105056_groenendael.JPEG",
+   "label": 224,
+   "sha1": "f75ebbc46fda1296a9b224fd2517533c18d5aaf9"
+  },
+  {
+   "path": "imagenet-sample-images/n02105162_malinois.JPEG",
+   "label": 225,
+   "sha1": "65d90637a1f7fe801f091c84b3aee2e4943e270b"
+  },
+  {
+   "path": "imagenet-sample-images/n02105251_briard.JPEG",
+   "label": 226,
+   "sha1": "b3317c0c0561eebd4216bb9b3b454e038b109aef"
+  },
+  {
+   "path": "imagenet-sample-images/n02105412_kelpie.JPEG",
+   "label": 227,
+   "sha1": "6201bdc25c6ecbc01e88d95ffe157b5e64b3e481"
+  },
+  {
+   "path": "imagenet-sample-images/n02105505_komondor.JPEG",
+   "label": 228,
+   "sha1": "2de3070a8a5a54e939ba074910b0836780dbb057"
+  },
+  {
+   "path": "imagenet-sample-images/n02105641_Old_English_sheepdog.JPEG",
+   "label": 229,
+   "sha1": "b7049a0bd519ae13eec22b1dc5ca1aec62b8fdf4"
+  },
+  {
+   "path": "imagenet-sample-images/n02105855_Shetland_sheepdog.JPEG",
+   "label": 230,
+   "sha1": "7b9ed37dddcd627e0a201a7c2a05ee56a50b9c20"
+  },
+  {
+   "path": "imagenet-sample-images/n02106030_collie.JPEG",
+   "label": 231,
+   "sha1": "f51456cc94a7f07e7cd6597196977e4459398645"
+  },
+  {
+   "path": "imagenet-sample-images/n02106166_Border_collie.JPEG",
+   "label": 232,
+   "sha1": "5f0264214b33b4ada430f191b879f7b9f4830063"
+  },
+  {
+   "path": "imagenet-sample-images/n02106382_Bouvier_des_Flandres.JPEG",
+   "label": 233,
+   "sha1": "36bc735f8ee17e2d7366e4da9481f812be8d4d14"
+  },
+  {
+   "path": "imagenet-sample-images/n02106550_Rottweiler.JPEG",
+   "label": 234,
+   "sha1": "403206c7db6279e269d8c4ecb60e186d37366324"
+  },
+  {
+   "path": "imagenet-sample-images/n02106662_German_shepherd.JPEG",
+   "label": 235,
+   "sha1": "ebd2b73cd9542fdc9147760ec13b8bbbafb14b50"
+  },
+  {
+   "path": "imagenet-sample-images/n02107142_Doberman.JPEG",
+   "label": 236,
+   "sha1": "7640664831fe7f896ba0e203c03bfe3e4a9d5a7b"
+  },
+  {
+   "path": "imagenet-sample-images/n02107312_miniature_pinscher.JPEG",
+   "label": 237,
+   "sha1": "9bccbbd0a97aec496bfa1c60a75d19640eed08e0"
+  },
+  {
+   "path": "imagenet-sample-images/n02107574_Greater_Swiss_Mountain_dog.JPEG",
+   "label": 238,
+   "sha1": "2550997dbd5abfe77b40a638c255f7077b020f69"
+  },
+  {
+   "path": "imagenet-sample-images/n02107683_Bernese_mountain_dog.JPEG",
+   "label": 239,
+   "sha1": "b8e4f85fd38e018ca735998e1956b39dfb5fec0c"
+  },
+  {
+   "path": "imagenet-sample-images/n02107908_Appenzeller.JPEG",
+   "label": 240,
+   "sha1": "fcb02d18b0cada666162bfd2f1380565dd0ee548"
+  },
+  {
+   "path": "imagenet-sample-images/n02108000_EntleBucher.JPEG",
+   "label": 241,
+   "sha1": "d7fa16a84326e4f3c93b283259140e78d5d5ce05"
+  },
+  {
+   "path": "imagenet-sample-images/n02108089_boxer.JPEG",
+   "label": 242,
+   "sha1": "5e7846c317a218c9457871589c927475b438109b"
+  },
+  {
+   "path": "imagenet-sample-images/n02108422_bull_mastiff.JPEG",
+   "label": 243,
+   "sha1": "abc22920f8f528b319ae731e0535b12cfcded5ca"
+  },
+  {
+   "path": "imagenet-sample-images/n02108551_Tibetan_mastiff.JPEG",
+   "label": 244,
+   "sha1": "08f5213102abd5cc663994c66200ecfa9e0d39ae"
+  },
+  {
+   "path": "imagenet-sample-images/n02108915_French_bulldog.JPEG",
+   "label": 245,
+   "sha1": "2e59a3a23f955ca994feacdee1f42b35c9c3982a"
+  },
+  {
+   "path": "imagenet-sample-images/n02109047_Great_Dane.JPEG",
+   "label": 246,
+   "sha1": "79d21f9af7a7d05f038c1ff2ec068b6ecb83266e"
+  },
+  {
+   "path": "imagenet-sample-images/n02109525_Saint_Bernard.JPEG",
+   "label": 247,
+   "sha1": "6780cc45c21ee8b18830ff11fed3d4ddff41d20c"
+  },
+  {
+   "path": "imagenet-sample-images/n02109961_Eskimo_dog.JPEG",
+   "label": 248,
+   "sha1": "a0495d327730b7e93976e23837ed287ec4dea5b6"
+  },
+  {
+   "path": "imagenet-sample-images/n02110063_malamute.JPEG",
+   "label": 249,
+   "sha1": "7b803a127b1eb7cc8d0cdc652664aaa62abf9df8"
+  },
+  {
+   "path": "imagenet-sample-images/n02110185_Siberian_husky.JPEG",
+   "label": 250,
+   "sha1": "b04d5e362fed4e08b0e4ddc5bff6f60cf766e027"
+  },
+  {
+   "path": "imagenet-sample-images/n02110341_dalmatian.JPEG",
+   "label": 251,
+   "sha1": "72f5f3e63edad201020bcd84d180b3d4fea9b06a"
+  },
+  {
+   "path": "imagenet-sample-images/n02110627_affenpinscher.JPEG",
+   "label": 252,
+   "sha1": "463d09353df06ec8e948a33ace7a52e876bc447a"
+  },
+  {
+   "path": "imagenet-sample-images/n02110806_basenji.JPEG",
+   "label": 253,
+   "sha1": "3822eae172252c30c3c7b155aa68ea3b62d4009c"
+  },
+  {
+   "path": "imagenet-sample-images/n02110958_pug.JPEG",
+   "label": 254,
+   "sha1": "8f623f713574ed79055fabe015d31743d569a227"
+  },
+  {
+   "path": "imagenet-sample-images/n02111129_Leonberg.JPEG",
+   "label": 255,
+   "sha1": "49d625f0f1390fa2e54f4a1e373d96e3707c49ce"
+  },
+  {
+   "path": "imagenet-sample-images/n02111277_Newfoundland.JPEG",
+   "label": 256,
+   "sha1": "7245cda0a616f0e4ddee273a76f0a1c99dd20605"
+  },
+  {
+   "path": "imagenet-sample-images/n02111500_Great_Pyrenees.JPEG",
+   "label": 257,
+   "sha1": "bf8fa9018f544bed0f570f16ba354e853ff36aa1"
+  },
+  {
+   "path": "imagenet-sample-images/n02111889_Samoyed.JPEG",
+   "label": 258,
+   "sha1": "5f9b25b807a98d5bbc16e0dfa2b4a2e7402dd6a5"
+  },
+  {
+   "path": "imagenet-sample-images/n02112018_Pomeranian.JPEG",
+   "label": 259,
+   "sha1": "1895c12ee6e5604dcf5c8956a5b33b54dbbd7dd3"
+  },
+  {
+   "path": "imagenet-sample-images/n02112137_chow.JPEG",
+   "label": 260,
+   "sha1": "bc30bcc25b25ff063b818c37fcebb01ac23a935e"
+  },
+  {
+   "path": "imagenet-sample-images/n02112350_keeshond.JPEG",
+   "label": 261,
+   "sha1": "9e46bf08d4ef4e67859b5377853733dbe00b112f"
+  },
+  {
+   "path": "imagenet-sample-images/n02112706_Brabancon_griffon.JPEG",
+   "label": 262,
+   "sha1": "1990adebea23dcfa23cacb75841dc36ccbf5dccb"
+  },
+  {
+   "path": "imagenet-sample-images/n02113023_Pembroke.JPEG",
+   "label": 263,
+   "sha1": "669645a6dc411b7b8a9638a12c5955a646639922"
+  },
+  {
+   "path": "imagenet-sample-images/n02113186_Cardigan.JPEG",
+   "label": 264,
+   "sha1": "107af1d159552abaf73d10bef1657666f5e66183"
+  },
+  {
+   "path": "imagenet-sample-images/n02113624_toy_poodle.JPEG",
+   "label": 265,
+   "sha1": "521f538268a9e5c9abedec317bbb9ecb504d33ad"
+  },
+  {
+   "path": "imagenet-sample-images/n02113712_miniature_poodle.JPEG",
+   "label": 266,
+   "sha1": "e53f3fce9eaa35fcff530b8fee111c937f3a4968"
+  },
+  {
+   "path": "imagenet-sample-images/n02113799_standard_poodle.JPEG",
+   "label": 267,
+   "sha1": "0f2780d8498193ddb0cc2828bf7c7dfeabebe95c"
+  },
+  {
+   "path": "imagenet-sample-images/n02113978_Mexican_hairless.JPEG",
+   "label": 268,
+   "sha1": "b3729223c7f551bb1f8fe017cb3cecc240d9aa68"
+  },
+  {
+   "path": "imagenet-sample-images/n02114367_timber_wolf.JPEG",
+   "label": 269,
+   "sha1": "d626e1a94e9f7084e1fac412347e1875deacfb10"
+  },
+  {
+   "path": "imagenet-sample-images/n02114548_white_wolf.JPEG",
+   "label": 270,
+   "sha1": "104960ab8aabc13712b2a8e9b5466644cb7574fa"
+  },
+  {
+   "path": "imagenet-sample-images/n02114712_red_wolf.JPEG",
+   "label": 271,
+   "sha1": "59cc1649ccd385a8f697dc20d9d66f8b8cd33b7c"
+  },
+  {
+   "path": "imagenet-sample-images/n02114855_coyote.JPEG",
+   "label": 272,
+   "sha1": "5bcc9e3016818a2281813ed6f2e794c8c8919030"
+  },
+  {
+   "path": "imagenet-sample-images/n02115641_dingo.JPEG",
+   "label": 273,
+   "sha1": "0d0087f82c53149a6db5be0e6c6db8ba2189baab"
+  },
+  {
+   "path": "imagenet-sample-images/n02115913_dhole.JPEG",
+   "label": 274,
+   "sha1": "e8722c3461f25670712a2647cc56cc397d6cb63f"
+  },
+  {
+   "path": "imagenet-sample-images/n02116738_African_hunting_dog.JPEG",
+   "label": 275,
+   "sha1": "74ce0db50227a2ac523386bab5ec7d71ba9a330e"
+  },
+  {
+   "path": "imagenet-sample-images/n02117135_hyena.JPEG",
+   "label": 276,
+   "sha1": "b997d6d45dc04db963dcd741749d627b68200986"
+  },
+  {
+   "path": "imagenet-sample-images/n02119022_red_fox.JPEG",
+   "label": 277,
+   "sha1": "f6bd2c2a086fadedf695a18d28fcafaf0baab190"
+  },
+  {
+   "path": "imagenet-sample-images/n02119789_kit_fox.JPEG",
+   "label": 278,
+   "sha1": "bc267a908066f95cbf2566d1faa6d051d97aca6d"
+  },
+  {
+   "path": "imagenet-sample-images/n02120079_Arctic_fox.JPEG",
+   "label": 279,
+   "sha1": "a78166ce44edf78dd398f4052e7c5f506e088b6a"
+  },
+  {
+   "path": "imagenet-sample-images/n02120505_grey_fox.JPEG",
+   "label": 280,
+   "sha1": "7c2800e9c8d054a1d09e3183a58426f5f330a2c8"
+  },
+  {
+   "path": "imagenet-sample-images/n02123045_tabby.JPEG",
+   "label": 281,
+   "sha1": "90cafeaeebddb150f20852aaae937931fb90e88d"
+  },
+  {
+   "path": "imagenet-sample-images/n02123159_tiger_cat.JPEG",
+   "label": 282,
+   "sha1": "99bad75a6a47da05b9251cfb9fd849519dfaaf23"
+  },
+  {
+   "path": "imagenet-sample-images/n02123394_Persian_cat.JPEG",
+   "label": 283,
+   "sha1": "2b75666798db5d8d06054566f7db8c1186283e7e"
+  },
+  {
+   "path": "imagenet-sample-images/n02123597_Siamese_cat.JPEG",
+   "label": 284,
+   "sha1": "d740b6477818c06df0a18ed5bb472b75b17ec006"
+  },
+  {
+   "path": "imagenet-sample-images/n02124075_Egyptian_cat.JPEG",
+   "label": 285,
+   "sha1": "7687e8c3a85aff84f6cd7470163dd0456626aa17"
+  },
+  {
+   "path": "imagenet-sample-images/n02125311_cougar.JPEG",
+   "label": 286,
+   "sha1": "6534986955681183d7f07dd3e5e9b0a00aec9c92"
+  },
+  {
+   "path": "imagenet-sample-images/n02127052_lynx.JPEG",
+   "label": 287,
+   "sha1": "3e5877c73d300df5a6ffeef44020173bbcf72bbc"
+  },
+  {
+   "path": "imagenet-sample-images/n02128385_leopard.JPEG",
+   "label": 288,
+   "sha1": "eee4561623be727b40b6df07ec474f1c876bcf65"
+  },
+  {
+   "path": "imagenet-sample-images/n02128757_snow_leopard.JPEG",
+   "label": 289,
+   "sha1": "5a7dacbdb1b463e68e69e95c87a32fbfa2842dab"
+  },
+  {
+   "path": "imagenet-sample-images/n02128925_jaguar.JPEG",
+   "label": 290,
+   "sha1": "5f05f3741896b0ca42bf8410e4721fd601d50c42"
+  },
+  {
+   "path": "imagenet-sample-images/n02129165_lion.JPEG",
+   "label": 291,
+   "sha1": "73fbe0f75c20aed7b0827b19c47ca5f7a641610f"
+  },
+  {
+   "path": "imagenet-sample-images/n02129604_tiger.JPEG",
+   "label": 292,
+   "sha1": "7b5775de0ad6fed602426e6171318b83ac66557d"
+  },
+  {
+   "path": "imagenet-sample-images/n02130308_cheetah.JPEG",
+   "label": 293,
+   "sha1": "e3a050fd1b148284ef68ca4e0d3ea6774f05902f"
+  },
+  {
+   "path": "imagenet-sample-images/n02132136_brown_bear.JPEG",
+   "label": 294,
+   "sha1": "099848954f68148cf72ca4cc4e6a5017a99c8fc7"
+  },
+  {
+   "path": "imagenet-sample-images/n02133161_American_black_bear.JPEG",
+   "label": 295,
+   "sha1": "1718b8bc2899a33ef0e33178f341e911408eecdd"
+  },
+  {
+   "path": "imagenet-sample-images/n02134084_ice_bear.JPEG",
+   "label": 296,
+   "sha1": "49cf85e7e2d86c942284a226527bf2a522bd003a"
+  },
+  {
+   "path": "imagenet-sample-images/n02134418_sloth_bear.JPEG",
+   "label": 297,
+   "sha1": "a6f609b28289a9668022c4cca978ea003f62b865"
+  },
+  {
+   "path": "imagenet-sample-images/n02137549_mongoose.JPEG",
+   "label": 298,
+   "sha1": "e07474ab3aa40c6e619a4bab892005c7ab023d18"
+  },
+  {
+   "path": "imagenet-sample-images/n02138441_meerkat.JPEG",
+   "label": 299,
+   "sha1": "a0fa6935b8620379caffa63f57d9a1f570c6bd2a"
+  },
+  {
+   "path": "imagenet-sample-images/n02165105_tiger_beetle.JPEG",
+   "label": 300,
+   "sha1": "757e6e9a6fe403343fdfc152c6977fc6003b5721"
+  },
+  {
+   "path": "imagenet-sample-images/n02165456_ladybug.JPEG",
+   "label": 301,
+   "sha1": "69a1ce34c500d73d32942d931a5c933b4724ff56"
+  },
+  {
+   "path": "imagenet-sample-images/n02167151_ground_beetle.JPEG",
+   "label": 302,
+   "sha1": "e6e0338bd089881f1fbbcc8c4e1fec768184f1e4"
+  },
+  {
+   "path": "imagenet-sample-images/n02168699_long-horned_beetle.JPEG",
+   "label": 303,
+   "sha1": "d9f4d4c42a1d70e3042c9e4e939a8f12e9aab0fd"
+  },
+  {
+   "path": "imagenet-sample-images/n02169497_leaf_beetle.JPEG",
+   "label": 304,
+   "sha1": "5d708481047b2a3022537625f3f9650db023da9f"
+  },
+  {
+   "path": "imagenet-sample-images/n02172182_dung_beetle.JPEG",
+   "label": 305,
+   "sha1": "138be8a19b606145ab74ee38daacbfabf0495d67"
+  },
+  {
+   "path": "imagenet-sample-images/n02174001_rhinoceros_beetle.JPEG",
+   "label": 306,
+   "sha1": "b7e19fc37449e3ad0a7ab1e49005a72973354410"
+  },
+  {
+   "path": "imagenet-sample-images/n02177972_weevil.JPEG",
+   "label": 307,
+   "sha1": "dc5429550ecc67afba422c752b534711a29d2dcf"
+  },
+  {
+   "path": "imagenet-sample-images/n02190166_fly.JPEG",
+   "label": 308,
+   "sha1": "a1568f8bffe03ebddbfd97c68433bdf595ac226c"
+  },
+  {
+   "path": "imagenet-sample-images/n02206856_bee.JPEG",
+   "label": 309,
+   "sha1": "335ef41486e787e2438dd860c1b7d2161b7395a4"
+  },
+  {
+   "path": "imagenet-sample-images/n02219486_ant.JPEG",
+   "label": 310,
+   "sha1": "b69dbfbdc9c45bd65bb7e3448414948cfd3e523c"
+  },
+  {
+   "path": "imagenet-sample-images/n02226429_grasshopper.JPEG",
+   "label": 311,
+   "sha1": "ae48064e6e54e8f75820507d7eefac776b094dac"
+  },
+  {
+   "path": "imagenet-sample-images/n02229544_cricket.JPEG",
+   "label": 312,
+   "sha1": "df3ce75b08d88105f7963d9d6a16d671afea9eaa"
+  },
+  {
+   "path": "imagenet-sample-images/n02231487_walking_stick.JPEG",
+   "label": 313,
+   "sha1": "b6b8f834ce5823b295b399f600e270fe2b389a61"
+  },
+  {
+   "path": "imagenet-sample-images/n02233338_cockroach.JPEG",
+   "label": 314,
+   "sha1": "a467df24bacc0a870835c1d7617f9996f2c10ad1"
+  },
+  {
+   "path": "imagenet-sample-images/n02236044_mantis.JPEG",
+   "label": 315,
+   "sha1": "06d7396c5b2a8bc75925bc3e3db2bc2977fc7ad2"
+  },
+  {
+   "path": "imagenet-sample-images/n02256656_cicada.JPEG",
+   "label": 316,
+   "sha1": "03248f554060b5935cb0dde610762478cf07bd20"
+  },
+  {
+   "path": "imagenet-sample-images/n02259212_leafhopper.JPEG",
+   "label": 317,
+   "sha1": "c1fe89140d70bedb0f44a84aa5fe007b21945c6b"
+  },
+  {
+   "path": "imagenet-sample-images/n02264363_lacewing.JPEG",
+   "label": 318,
+   "sha1": "d523bff86fc245b04b4323888caedb3fec3fe7c9"
+  },
+  {
+   "path": "imagenet-sample-images/n02268443_dragonfly.JPEG",
+   "label": 319,
+   "sha1": "148671ac5c6c6a5c161c19ee25983a75e3e80c83"
+  },
+  {
+   "path": "imagenet-sample-images/n02268853_damselfly.JPEG",
+   "label": 320,
+   "sha1": "cc1fc7e8d612b388d87f7ee8e794067c26e1e0a9"
+  },
+  {
+   "path": "imagenet-sample-images/n02276258_admiral.JPEG",
+   "label": 321,
+   "sha1": "432baea0c4618ec93defb04e57564f412879a6d4"
+  },
+  {
+   "path": "imagenet-sample-images/n02277742_ringlet.JPEG",
+   "label": 322,
+   "sha1": "3e3ce2477d96f3aa4df5963925f9f1fbd7585b69"
+  },
+  {
+   "path": "imagenet-sample-images/n02279972_monarch.JPEG",
+   "label": 323,
+   "sha1": "cbab322576e3edb1142202941c3b0cf4d950f656"
+  },
+  {
+   "path": "imagenet-sample-images/n02280649_cabbage_butterfly.JPEG",
+   "label": 324,
+   "sha1": "be75565296917e464ef44cca6ec7e5eda2df41d3"
+  },
+  {
+   "path": "imagenet-sample-images/n02281406_sulphur_butterfly.JPEG",
+   "label": 325,
+   "sha1": "4dea658f0a7f0a36539dab67b164f796841b41d3"
+  },
+  {
+   "path": "imagenet-sample-images/n02281787_lycaenid.JPEG",
+   "label": 326,
+   "sha1": "3ecade746e0926ef4bdc303431816139a0759fc2"
+  },
+  {
+   "path": "imagenet-sample-images/n02317335_starfish.JPEG",
+   "label": 327,
+   "sha1": "565dfa73fbf80cd28c2cb2888d3c9d39b1a69c51"
+  },
+  {
+   "path": "imagenet-sample-images/n02319095_sea_urchin.JPEG",
+   "label": 328,
+   "sha1": "8fa7e2cf98eb9b0e3401bb29ecc5b91b351a4933"
+  },
+  {
+   "path": "imagenet-sample-images/n02321529_sea_cucumber.JPEG",
+   "label": 329,
+   "sha1": "e8b152192ed001c7843de65d64c90fae2d8b50c4"
+  },
+  {
+   "path": "imagenet-sample-images/n02325366_wood_rabbit.JPEG",
+   "label": 330,
+   "sha1": "6a6ec4917c8c8d3057382b3032754fb4721e5222"
+  },
+  {
+   "path": "imagenet-sample-images/n02326432_hare.JPEG",
+   "label": 331,
+   "sha1": "b0a7883e5893deaa44c991d0aa10f87b3fd52868"
+  },
+  {
+   "path": "imagenet-sample-images/n02328150_Angora.JPEG",
+   "label": 332,
+   "sha1": "645bea225c225188e1f9546a849ab126c76faa3e"
+  },
+  {
+   "path": "imagenet-sample-images/n02342885_hamster.JPEG",
+   "label": 333,
+   "sha1": "9507ae87a02dc5841a07d0f5f7fda5c1d10a77a8"
+  },
+  {
+   "path": "imagenet-sample-images/n02346627_porcupine.JPEG",
+   "label": 334,
+   "sha1": "64f5b5ff0287ffe3066f6a94d6da4275b183a2ee"
+  },
+  {
+   "path": "imagenet-sample-images/n02356798_fox_squirrel.JPEG",
+   "label": 335,
+   "sha1": "8883331de9c61a26d6b6a54c34dd23b32ddf4848"
+  },
+  {
+   "path": "imagenet-sample-images/n02361337_marmot.JPEG",
+   "label": 336,
+   "sha1": "3dde0394dfe0eff9e3333bb488762c595449e436"
+  },
+  {
+   "path": "imagenet-sample-images/n02363005_beaver.JPEG",
+   "label": 337,
+   "sha1": "72bcae50bcc4537ff87898c97bf96eba18908e0d"
+  },
+  {
+   "path": "imagenet-sample-images/n02364673_guinea_pig.JPEG",
+   "label": 338,
+   "sha1": "42c18b2efbad602a9f0f27e1ffcc0cdb4d616158"
+  },
+  {
+   "path": "imagenet-sample-images/n02389026_sorrel.JPEG",
+   "label": 339,
+   "sha1": "f5b32b0d5c7c34577acd47acaa14c6635000a5d2"
+  },
+  {
+   "path": "imagenet-sample-images/n02391049_zebra.JPEG",
+   "label": 340,
+   "sha1": "2cf82f46bfd6ef4440b39e279a460bc5f53744ec"
+  },
+  {
+   "path": "imagenet-sample-images/n02395406_hog.JPEG",
+   "label": 341,
+   "sha1": "b644f818b2c83c080ae87c5469ffb428718be7d2"
+  },
+  {
+   "path": "imagenet-sample-images/n02396427_wild_boar.JPEG",
+   "label": 342,
+   "sha1": "6ac357a4178a3df6349ed8dbf2ac4c1f86641044"
+  },
+  {
+   "path": "imagenet-sample-images/n02397096_warthog.JPEG",
+   "label": 343,
+   "sha1": "b17e3db0cddd690c82013260653e09ea5d4a90df"
+  },
+  {
+   "path": "imagenet-sample-images/n02398521_hippopotamus.JPEG",
+   "label": 344,
+   "sha1": "db605182f128bf7a8a45776e02d70c0a1ee9e4a3"
+  },
+  {
+   "path": "imagenet-sample-images/n02403003_ox.JPEG",
+   "label": 345,
+   "sha1": "d54bddc8e13c010429d267757432cdcf93f1bbfe"
+  },
+  {
+   "path": "imagenet-sample-images/n02408429_water_buffalo.JPEG",
+   "label": 346,
+   "sha1": "2b11612801351611b450b091765e33f618d7783a"
+  },
+  {
+   "path": "imagenet-sample-images/n02410509_bison.JPEG",
+   "label": 347,
+   "sha1": "cba5c2bf33dd7c2d2044af01a22c5efe575feabb"
+  },
+  {
+   "path": "imagenet-sample-images/n02412080_ram.JPEG",
+   "label": 348,
+   "sha1": "1729ed6ff76431d6239fabf8da25774518c432e5"
+  },
+  {
+   "path": "imagenet-sample-images/n02415577_bighorn.JPEG",
+   "label": 349,
+   "sha1": "20a00b78dfd2f4913b9056adf3002a82a6b8141d"
+  },
+  {
+   "path": "imagenet-sample-images/n02417914_ibex.JPEG",
+   "label": 350,
+   "sha1": "1da7cf3dfe354f1130b00bfa8c1f6302057fd834"
+  },
+  {
+   "path": "imagenet-sample-images/n02422106_hartebeest.JPEG",
+   "label": 351,
+   "sha1": "3ef996b3769c3588e042a7beb5c7d67b3ba7052e"
+  },
+  {
+   "path": "imagenet-sample-images/n02422699_impala.JPEG",
+   "label": 352,
+   "sha1": "507f48f8991d539372a54e9e26c5b4a24d27041f"
+  },
+  {
+   "path": "imagenet-sample-images/n02423022_gazelle.JPEG",
+   "label": 353,
+   "sha1": "e735d25ae1defa8a6f36525baa5ef377700e9e37"
+  },
+  {
+   "path": "imagenet-sample-images/n02437312_Arabian_camel.JPEG",
+   "label": 354,
+   "sha1": "19662e018b517aa5125e99a6fb01580976c643c6"
+  },
+  {
+   "path": "imagenet-sample-images/n02437616_llama.JPEG",
+   "label": 355,
+   "sha1": "a9ce05e7fd81006160370d58389ef0806aefe649"
+  },
+  {
+   "path": "imagenet-sample-images/n02441942_weasel.JPEG",
+   "label": 356,
+   "sha1": "dd7bf3dc74f4d37cda045abdc3d0c358f28cdca5"
+  },
+  {
+   "path": "imagenet-sample-images/n02442845_mink.JPEG",
+   "label": 357,
+   "sha1": "cc4e89452755656b2a115c04a891dadc0caca383"
+  },
+  {
+   "path": "imagenet-sample-images/n02443114_polecat.JPEG",
+   "label": 358,
+   "sha1": "0b3117d07a0f7aa39b898bf889b7e74e70330b5d"
+  },
+  {
+   "path": "imagenet-sample-images/n02443484_black-footed_ferret.JPEG",
+   "label": 359,
+   "sha1": "d2dc319a2eeb630f7c390ce279b0d48574f6bc96"
+  },
+  {
+   "path": "imagenet-sample-images/n02444819_otter.JPEG",
+   "label": 360,
+   "sha1": "bdecac0dcf2a361d043f1ef4a5435e309d3f482a"
+  },
+  {
+   "path": "imagenet-sample-images/n02445715_skunk.JPEG",
+   "label": 361,
+   "sha1": "96c3d15a7eb07189e4a54cb40a9545e326987cc7"
+  },
+  {
+   "path": "imagenet-sample-images/n02447366_badger.JPEG",
+   "label": 362,
+   "sha1": "0e9f416851d9de99af102acb30c5e5bb7d8e15ca"
+  },
+  {
+   "path": "imagenet-sample-images/n02454379_armadillo.JPEG",
+   "label": 363,
+   "sha1": "d620dbf7158b27bf7818e5cfe509208bb3320e1d"
+  },
+  {
+   "path": "imagenet-sample-images/n02457408_three-toed_sloth.JPEG",
+   "label": 364,
+   "sha1": "78899fc683e9f70b6f327c02f9d2a9a383179363"
+  },
+  {
+   "path": "imagenet-sample-images/n02480495_orangutan.JPEG",
+   "label": 365,
+   "sha1": "f47d285e94a195026a3030e4a4b23e3b1a9939f9"
+  },
+  {
+   "path": "imagenet-sample-images/n02480855_gorilla.JPEG",
+   "label": 366,
+   "sha1": "9296bae7802abfc1a09cc052cc91ba9650b78ab6"
+  },
+  {
+   "path": "imagenet-sample-images/n02481823_chimpanzee.JPEG",
+   "label": 367,
+   "sha1": "4cfd0260a5b20ecf9345adb8830667b635471610"
+  },
+  {
+   "path": "imagenet-sample-images/n02483362_gibbon.JPEG",
+   "label": 368,
+   "sha1": "826086a43cd4d98548863223f7e211066edf79eb"
+  },
+  {
+   "path": "imagenet-sample-images/n02483708_siamang.JPEG",
+   "label": 369,
+   "sha1": "e4f0b3d97aa6e7f4999623623aa748241766fb47"
+  },
+  {
+   "path": "imagenet-sample-images/n02484975_guenon.JPEG",
+   "label": 370,
+   "sha1": "96e2fed984c14f9e22c26ad582adeee542b78729"
+  },
+  {
+   "path": "imagenet-sample-images/n02486261_patas.JPEG",
+   "label": 371,
+   "sha1": "79e0193259a5f49da395a53b62aff43386abe02a"
+  },
+  {
+   "path": "imagenet-sample-images/n02486410_baboon.JPEG",
+   "label": 372,
+   "sha1": "779b1019519903daf513d2901f7c8879c7c71f59"
+  },
+  {
+   "path": "imagenet-sample-images/n02487347_macaque.JPEG",
+   "label": 373,
+   "sha1": "e4b1d1c15b3bc43dece64ced09faa601e1241f47"
+  },
+  {
+   "path": "imagenet-sample-images/n02488291_langur.JPEG",
+   "label": 374,
+   "sha1": "eccf9c369135c96ef10d666c93a71c44dd053980"
+  },
+  {
+   "path": "imagenet-sample-images/n02488702_colobus.JPEG",
+   "label": 375,
+   "sha1": "6f5fafa735bfbcaeeea76d3ec5d57591c23e96ec"
+  },
+  {
+   "path": "imagenet-sample-images/n02489166_proboscis_monkey.JPEG",
+   "label": 376,
+   "sha1": "e870a6775e7fa7b4823ebe62730c458196343e33"
+  },
+  {
+   "path": "imagenet-sample-images/n02490219_marmoset.JPEG",
+   "label": 377,
+   "sha1": "61d79e869d1b3fe1f8f5c551834dfa7129c95c6f"
+  },
+  {
+   "path": "imagenet-sample-images/n02492035_capuchin.JPEG",
+   "label": 378,
+   "sha1": "28dc15608033b551aecf8b341f5da7246c3c8de7"
+  },
+  {
+   "path": "imagenet-sample-images/n02492660_howler_monkey.JPEG",
+   "label": 379,
+   "sha1": "172cb883fd141371c953a6b1fbc949a320b51990"
+  },
+  {
+   "path": "imagenet-sample-images/n02493509_titi.JPEG",
+   "label": 380,
+   "sha1": "68e796c9659a2ae29c98eb0ba36de73db21307e0"
+  },
+  {
+   "path": "imagenet-sample-images/n02493793_spider_monkey.JPEG",
+   "label": 381,
+   "sha1": "e1cab3fd789046b329c421b95d88ea7ed69b7d85"
+  },
+  {
+   "path": "imagenet-sample-images/n02494079_squirrel_monkey.JPEG",
+   "label": 382,
+   "sha1": "f7e95b6791821ef7dfef73452883d718d6145d6d"
+  },
+  {
+   "path": "imagenet-sample-images/n02497673_Madagascar_cat.JPEG",
+   "label": 383,
+   "sha1": "49c533d68a3154e2b5aa6a70154b4bd9912a09bd"
+  },
+  {
+   "path": "imagenet-sample-images/n02500267_indri.JPEG",
+   "label": 384,
+   "sha1": "8efd50c7bb4047371b56345ec5018a83be3bfc8f"
+  },
+  {
+   "path": "imagenet-sample-images/n02504013_Indian_elephant.JPEG",
+   "label": 385,
+   "sha1": "70cb2ef24c06c2676218eeabee4a667a38c773ef"
+  },
+  {
+   "path": "imagenet-sample-images/n02504458_African_elephant.JPEG",
+   "label": 386,
+   "sha1": "db32f154123eea6895fcc87aca48c13982c7cc3a"
+  },
+  {
+   "path": "imagenet-sample-images/n02509815_lesser_panda.JPEG",
+   "label": 387,
+   "sha1": "8b33ccc7519b33c161ec62d79a655d7e5d0e3a78"
+  },
+  {
+   "path": "imagenet-sample-images/n02510455_giant_panda.JPEG",
+   "label": 388,
+   "sha1": "765e1062b75ac2c938fd42115a80421926c39fbf"
+  },
+  {
+   "path": "imagenet-sample-images/n02514041_barracouta.JPEG",
+   "label": 389,
+   "sha1": "138444235d24c748d228b782f6498d817001c4ec"
+  },
+  {
+   "path": "imagenet-sample-images/n02526121_eel.JPEG",
+   "label": 390,
+   "sha1": "9d3aca5ebfac7fd1319f54be2793174304b83316"
+  },
+  {
+   "path": "imagenet-sample-images/n02536864_coho.JPEG",
+   "label": 391,
+   "sha1": "ab4acbdd464f545fa8fd586f58a5a70496bb5f3d"
+  },
+  {
+   "path": "imagenet-sample-images/n02606052_rock_beauty.JPEG",
+   "label": 392,
+   "sha1": "9967367ba706432340902b9d4a456d0f8ee2674a"
+  },
+  {
+   "path": "imagenet-sample-images/n02607072_anemone_fish.JPEG",
+   "label": 393,
+   "sha1": "e8cce0b10ca4c82b4f064b2b541e878a1dce5596"
+  },
+  {
+   "path": "imagenet-sample-images/n02640242_sturgeon.JPEG",
+   "label": 394,
+   "sha1": "79ca354dc3707e050c55dc0c7fa16fca35cbd12f"
+  },
+  {
+   "path": "imagenet-sample-images/n02641379_gar.JPEG",
+   "label": 395,
+   "sha1": "7aff1a5f7e4735f6a465963afaae2e29e621b9b6"
+  },
+  {
+   "path": "imagenet-sample-images/n02643566_lionfish.JPEG",
+   "label": 396,
+   "sha1": "a9a7247184ea67dfe04cddce15c8efb871692371"
+  },
+  {
+   "path": "imagenet-sample-images/n02655020_puffer.JPEG",
+   "label": 397,
+   "sha1": "767882045c0cc7827c1850a661df537e379fea43"
+  },
+  {
+   "path": "imagenet-sample-images/n02666196_abacus.JPEG",
+   "label": 398,
+   "sha1": "a2ec5336340dcd8024dbd91632892d4c92ff37ea"
+  },
+  {
+   "path": "imagenet-sample-images/n02667093_abaya.JPEG",
+   "label": 399,
+   "sha1": "4f979b5b245f543172200c85900636bccf3dbe8a"
+  },
+  {
+   "path": "imagenet-sample-images/n02669723_academic_gown.JPEG",
+   "label": 400,
+   "sha1": "d81ce4b5fb199cd183b7ff93c90dfd1a6cd5ab14"
+  },
+  {
+   "path": "imagenet-sample-images/n02672831_accordion.JPEG",
+   "label": 401,
+   "sha1": "743c050d4e7671585092dbc3563f5524f2f31f75"
+  },
+  {
+   "path": "imagenet-sample-images/n02676566_acoustic_guitar.JPEG",
+   "label": 402,
+   "sha1": "1f9c2bebbfb9044b0d730527d70f751363dfc3bc"
+  },
+  {
+   "path": "imagenet-sample-images/n02687172_aircraft_carrier.JPEG",
+   "label": 403,
+   "sha1": "46bf578e5667f38e44e370a09d1e9cdd1c41ad6e"
+  },
+  {
+   "path": "imagenet-sample-images/n02690373_airliner.JPEG",
+   "label": 404,
+   "sha1": "ec075ff0f243c70415ee138c30faf7853e80e406"
+  },
+  {
+   "path": "imagenet-sample-images/n02692877_airship.JPEG",
+   "label": 405,
+   "sha1": "d5f09b736828b45590018aeac2c077b885f7dc2d"
+  },
+  {
+   "path": "imagenet-sample-images/n02699494_altar.JPEG",
+   "label": 406,
+   "sha1": "c5a558b42c6fcc6c694e5b9a7a9d7e77118c07dc"
+  },
+  {
+   "path": "imagenet-sample-images/n02701002_ambulance.JPEG",
+   "label": 407,
+   "sha1": "886a289cbaeb05505267aeba75fce9bbbf9bd937"
+  },
+  {
+   "path": "imagenet-sample-images/n02704792_amphibian.JPEG",
+   "label": 408,
+   "sha1": "62a41692f9571dfb4a770b74ef9fe4d9251745eb"
+  },
+  {
+   "path": "imagenet-sample-images/n02708093_analog_clock.JPEG",
+   "label": 409,
+   "sha1": "b5152f2b89a9acbfff387cf0c48dafe4300e8b69"
+  },
+  {
+   "path": "imagenet-sample-images/n02727426_apiary.JPEG",
+   "label": 410,
+   "sha1": "d4fce8162b7889abd864fe22b1b6275972bd1b08"
+  },
+  {
+   "path": "imagenet-sample-images/n02730930_apron.JPEG",
+   "label": 411,
+   "sha1": "2e23fa7ae5df19d439ba27ffe81cb93467bee1b4"
+  },
+  {
+   "path": "imagenet-sample-images/n02747177_ashcan.JPEG",
+   "label": 412,
+   "sha1": "acdc0a1b26d091534bc2f24fc0a792eaa0f01462"
+  },
+  {
+   "path": "imagenet-sample-images/n02749479_assault_rifle.JPEG",
+   "label": 413,
+   "sha1": "b3f25cd56608e6e1f8f0bd0c9bdd2e8fea5c36be"
+  },
+  {
+   "path": "imagenet-sample-images/n02769748_backpack.JPEG",
+   "label": 414,
+   "sha1": "e3ea919e635248bbf022fd3e7bb6d61bc0a876a1"
+  },
+  {
+   "path": "imagenet-sample-images/n02776631_bakery.JPEG",
+   "label": 415,
+   "sha1": "66691405b0e67cd8f428e98f0c19a7f16847483a"
+  },
+  {
+   "path": "imagenet-sample-images/n02777292_balance_beam.JPEG",
+   "label": 416,
+   "sha1": "55dcbacb3d9dc3806ccd04c7b31d35eab53d5df1"
+  },
+  {
+   "path": "imagenet-sample-images/n02782093_balloon.JPEG",
+   "label": 417,
+   "sha1": "17e0c6f6bd42511b538eab8d4081ba8baae3de47"
+  },
+  {
+   "path": "imagenet-sample-images/n02783161_ballpoint.JPEG",
+   "label": 418,
+   "sha1": "a716b6f4bc683c5234b6c45e4790a900ff5a15ed"
+  },
+  {
+   "path": "imagenet-sample-images/n02786058_Band_Aid.JPEG",
+   "label": 419,
+   "sha1": "b430ef0c971e1223e7ef0f45a74a2cb53b3f30ab"
+  },
+  {
+   "path": "imagenet-sample-images/n02787622_banjo.JPEG",
+   "label": 420,
+   "sha1": "2a62d4f21741c229f0c3d1553525716f5493040a"
+  },
+  {
+   "path": "imagenet-sample-images/n02788148_bannister.JPEG",
+   "label": 421,
+   "sha1": "49a19e941020d2ac8c28a30dcbc8763225f0a250"
+  },
+  {
+   "path": "imagenet-sample-images/n02790996_barbell.JPEG",
+   "label": 422,
+   "sha1": "e3d720a932dcf20dc73bd7f6a8dbe3e62697824b"
+  },
+  {
+   "path": "imagenet-sample-images/n02791124_barber_chair.JPEG",
+   "label": 423,
+   "sha1": "74d03e5e0b255b9cf3d2d35dbac8d30273ebe170"
+  },
+  {
+   "path": "imagenet-sample-images/n02791270_barbershop.JPEG",
+   "label": 424,
+   "sha1": "b708488d4ca8663c65fc45057d48fd575eaaecb2"
+  },
+  {
+   "path": "imagenet-sample-images/n02793495_barn.JPEG",
+   "label": 425,
+   "sha1": "d5a990de59e49298fab42eec6e072f65ce27d652"
+  },
+  {
+   "path": "imagenet-sample-images/n02794156_barometer.JPEG",
+   "label": 426,
+   "sha1": "d0017b1d5bed666e9ded3f56e870f762bbfddb2e"
+  },
+  {
+   "path": "imagenet-sample-images/n02795169_barrel.JPEG",
+   "label": 427,
+   "sha1": "fbe42722b522eee903e43cf58db35337a67604fe"
+  },
+  {
+   "path": "imagenet-sample-images/n02797295_barrow.JPEG",
+   "label": 428,
+   "sha1": "c616bb9f66988d4d47fd20530a7459ef762a7e6b"
+  },
+  {
+   "path": "imagenet-sample-images/n02799071_baseball.JPEG",
+   "label": 429,
+   "sha1": "2471185cb184f72f9ecec4727083a7788e492668"
+  },
+  {
+   "path": "imagenet-sample-images/n02802426_basketball.JPEG",
+   "label": 430,
+   "sha1": "a673f03c8b72ec5d2e7ccf86f2e24e9e24789871"
+  },
+  {
+   "path": "imagenet-sample-images/n02804414_bassinet.JPEG",
+   "label": 431,
+   "sha1": "b527a70f9b9d2381f615417365a4b971ae9f95bc"
+  },
+  {
+   "path": "imagenet-sample-images/n02804610_bassoon.JPEG",
+   "label": 432,
+   "sha1": "b704dd0516edbbd1f2922d46d8af779a5e351bd1"
+  },
+  {
+   "path": "imagenet-sample-images/n02807133_bathing_cap.JPEG",
+   "label": 433,
+   "sha1": "e4e27e6ab21636147739ffe8dfab43df569b9ec8"
+  },
+  {
+   "path": "imagenet-sample-images/n02808304_bath_towel.JPEG",
+   "label": 434,
+   "sha1": "51cffde84d1610e3413806fc0737cb1932d15afd"
+  },
+  {
+   "path": "imagenet-sample-images/n02808440_bathtub.JPEG",
+   "label": 435,
+   "sha1": "60380acb579667369418a00c6a011fd01c670d76"
+  },
+  {
+   "path": "imagenet-sample-images/n02814533_beach_wagon.JPEG",
+   "label": 436,
+   "sha1": "648154ae45499d5ed95a6f1933bb730cc0e23611"
+  },
+  {
+   "path": "imagenet-sample-images/n02814860_beacon.JPEG",
+   "label": 437,
+   "sha1": "0286ad4693435f5c70aae641e7a57febede039fa"
+  },
+  {
+   "path": "imagenet-sample-images/n02815834_beaker.JPEG",
+   "label": 438,
+   "sha1": "7dad204ce0a02d5d1a7e9499726c9d53157b3e32"
+  },
+  {
+   "path": "imagenet-sample-images/n02817516_bearskin.JPEG",
+   "label": 439,
+   "sha1": "0c039affc8df687f79029ebe57c33db81fd1c7e6"
+  },
+  {
+   "path": "imagenet-sample-images/n02823428_beer_bottle.JPEG",
+   "label": 440,
+   "sha1": "75f3ff36cc09340d312eb756c7a4ee3051ca43b1"
+  },
+  {
+   "path": "imagenet-sample-images/n02823750_beer_glass.JPEG",
+   "label": 441,
+   "sha1": "ed6d31d3a3de0204dfe94337483d89b6c5405256"
+  },
+  {
+   "path": "imagenet-sample-images/n02825657_bell_cote.JPEG",
+   "label": 442,
+   "sha1": "8fe5632adaa2a09432d6004fa8ffd11dcf298631"
+  },
+  {
+   "path": "imagenet-sample-images/n02834397_bib.JPEG",
+   "label": 443,
+   "sha1": "7f6059602bc97853550e886126b0781d159c79da"
+  },
+  {
+   "path": "imagenet-sample-images/n02835271_bicycle-built-for-two.JPEG",
+   "label": 444,
+   "sha1": "a24f7a7a179012bdc25c7ddb5468663b3d11e9f8"
+  },
+  {
+   "path": "imagenet-sample-images/n02837789_bikini.JPEG",
+   "label": 445,
+   "sha1": "33da39a64a8fd48603dccc8386022fc999c7338f"
+  },
+  {
+   "path": "imagenet-sample-images/n02840245_binder.JPEG",
+   "label": 446,
+   "sha1": "c2d912e3113533a4504ff66c5dde625c77c38b65"
+  },
+  {
+   "path": "imagenet-sample-images/n02841315_binoculars.JPEG",
+   "label": 447,
+   "sha1": "80b4b12675512e48a8d0274b9926f5d723608aed"
+  },
+  {
+   "path": "imagenet-sample-images/n02843684_birdhouse.JPEG",
+   "label": 448,
+   "sha1": "297edb4f6e0801d08859162b236c36a31586d6d2"
+  },
+  {
+   "path": "imagenet-sample-images/n02859443_boathouse.JPEG",
+   "label": 449,
+   "sha1": "43ef4159bb17e22036cd0730f58072eeb8d2b87d"
+  },
+  {
+   "path": "imagenet-sample-images/n02860847_bobsled.JPEG",
+   "label": 450,
+   "sha1": "dc437ea42e1a5905bbe6ca7a6bded1fb6ecf77ce"
+  },
+  {
+   "path": "imagenet-sample-images/n02865351_bolo_tie.JPEG",
+   "label": 451,
+   "sha1": "5ba9d1223f00fe57834651c0918c244fd37e26fb"
+  },
+  {
+   "path": "imagenet-sample-images/n02869837_bonnet.JPEG",
+   "label": 452,
+   "sha1": "bfe8027c197761fdbe61a9ef7aac3eb41b9887c1"
+  },
+  {
+   "path": "imagenet-sample-images/n02870880_bookcase.JPEG",
+   "label": 453,
+   "sha1": "2e7e133000d939cecf26a1921f2b5961d1f1056b"
+  },
+  {
+   "path": "imagenet-sample-images/n02871525_bookshop.JPEG",
+   "label": 454,
+   "sha1": "ae8f7a94cfb75cf3c45981ef181ee0eb1005102f"
+  },
+  {
+   "path": "imagenet-sample-images/n02877765_bottlecap.JPEG",
+   "label": 455,
+   "sha1": "4722e08f48e7a9bba93a46cdbcec883c01441058"
+  },
+  {
+   "path": "imagenet-sample-images/n02879718_bow.JPEG",
+   "label": 456,
+   "sha1": "25a99c2ce5fbe8bd8435a30ccb0020b71e50ff6b"
+  },
+  {
+   "path": "imagenet-sample-images/n02883205_bow_tie.JPEG",
+   "label": 457,
+   "sha1": "f064f5da2437c03d95c7dc321d07adf599408a30"
+  },
+  {
+   "path": "imagenet-sample-images/n02892201_brass.JPEG",
+   "label": 458,
+   "sha1": "59e7c0d87055d9e875d9929e9ce839b7355ee877"
+  },
+  {
+   "path": "imagenet-sample-images/n02892767_brassiere.JPEG",
+   "label": 459,
+   "sha1": "62c46dfa3480b7d16297814c1d80abdef70bb0b7"
+  },
+  {
+   "path": "imagenet-sample-images/n02894605_breakwater.JPEG",
+   "label": 460,
+   "sha1": "1a3e5af074f7673b520785a446beffcd626dfd31"
+  },
+  {
+   "path": "imagenet-sample-images/n02895154_breastplate.JPEG",
+   "label": 461,
+   "sha1": "9117ab77035b6c1fc9a7dda7512d86d516035cff"
+  },
+  {
+   "path": "imagenet-sample-images/n02906734_broom.JPEG",
+   "label": 462,
+   "sha1": "3b17b35908bbc69a82d1629f6243e4245ea88c4a"
+  },
+  {
+   "path": "imagenet-sample-images/n02909870_bucket.JPEG",
+   "label": 463,
+   "sha1": "85618283f1a3bea01f4a4a4e9243d717ca32ec61"
+  },
+  {
+   "path": "imagenet-sample-images/n02910353_buckle.JPEG",
+   "label": 464,
+   "sha1": "4f2d9602000f5274ea04466b62ef71ce32c20b5b"
+  },
+  {
+   "path": "imagenet-sample-images/n02916936_bulletproof_vest.JPEG",
+   "label": 465,
+   "sha1": "786677d12b160ebfdf9779b04bd4129d93fd1088"
+  },
+  {
+   "path": "imagenet-sample-images/n02917067_bullet_train.JPEG",
+   "label": 466,
+   "sha1": "9426801a7deef07d18f87d4060b44dace4aaebed"
+  },
+  {
+   "path": "imagenet-sample-images/n02927161_butcher_shop.JPEG",
+   "label": 467,
+   "sha1": "4e03ae095d8b5415b9ca574bed5fde902642fafc"
+  },
+  {
+   "path": "imagenet-sample-images/n02930766_cab.JPEG",
+   "label": 468,
+   "sha1": "8c062dae1b2e9b9d3ab644c5b44ac98fec8961e1"
+  },
+  {
+   "path": "imagenet-sample-images/n02939185_caldron.JPEG",
+   "label": 469,
+   "sha1": "8e505213316084933e83c5b43d9807660728e9d4"
+  },
+  {
+   "path": "imagenet-sample-images/n02948072_candle.JPEG",
+   "label": 470,
+   "sha1": "39d9faada9a5d746e6cc654c121bd78f86db32a2"
+  },
+  {
+   "path": "imagenet-sample-images/n02950826_cannon.JPEG",
+   "label": 471,
+   "sha1": "a137bc8f33f6f7753b6091bf0f71e8dcac7b6802"
+  },
+  {
+   "path": "imagenet-sample-images/n02951358_canoe.JPEG",
+   "label": 472,
+   "sha1": "d082b82b93b0a77d2730416e6af2813be22196c6"
+  },
+  {
+   "path": "imagenet-sample-images/n02951585_can_opener.JPEG",
+   "label": 473,
+   "sha1": "2aae54d971db49ded8203761506f5956bb2e1f92"
+  },
+  {
+   "path": "imagenet-sample-images/n02963159_cardigan.JPEG",
+   "label": 474,
+   "sha1": "cf293c873c625f27c8572e18e3cdc518c41b83e3"
+  },
+  {
+   "path": "imagenet-sample-images/n02965783_car_mirror.JPEG",
+   "label": 475,
+   "sha1": "0ba977d4773057b083594fa3ea28957076262cc7"
+  },
+  {
+   "path": "imagenet-sample-images/n02966193_carousel.JPEG",
+   "label": 476,
+   "sha1": "8041d57dcb28abac257ac835e4d401eef127873f"
+  },
+  {
+   "path": "imagenet-sample-images/n02966687_carpenter's_kit.JPEG",
+   "label": 477,
+   "sha1": "258e2dc4d3f22154db31cb8355cfd2f888568270"
+  },
+  {
+   "path": "imagenet-sample-images/n02971356_carton.JPEG",
+   "label": 478,
+   "sha1": "23b813d2078c5f1b982d52df40283534bc0f7d3f"
+  },
+  {
+   "path": "imagenet-sample-images/n02974003_car_wheel.JPEG",
+   "label": 479,
+   "sha1": "8dfd3de3ce6c0690d51cb43cc7aa40cfe8ab55eb"
+  },
+  {
+   "path": "imagenet-sample-images/n02977058_cash_machine.JPEG",
+   "label": 480,
+   "sha1": "81b9150c7f5dc52a436b240998db73ee9ee37f65"
+  },
+  {
+   "path": "imagenet-sample-images/n02978881_cassette.JPEG",
+   "label": 481,
+   "sha1": "693df53c4d203069e6a0e89b1ad7ef150d72fa2b"
+  },
+  {
+   "path": "imagenet-sample-images/n02979186_cassette_player.JPEG",
+   "label": 482,
+   "sha1": "3fa7b1aa9a18ec20d69be1393fdf99ac8434f023"
+  },
+  {
+   "path": "imagenet-sample-images/n02980441_castle.JPEG",
+   "label": 483,
+   "sha1": "37465a40e6b07ae5655efd894bb60b2bc5a0c2b7"
+  },
+  {
+   "path": "imagenet-sample-images/n02981792_catamaran.JPEG",
+   "label": 484,
+   "sha1": "d066c21cd997c910088ba067962a4fdb634edac7"
+  },
+  {
+   "path": "imagenet-sample-images/n02988304_CD_player.JPEG",
+   "label": 485,
+   "sha1": "9d03aab6e83d25abac07d4c145ed8ec080dce357"
+  },
+  {
+   "path": "imagenet-sample-images/n02992211_cello.JPEG",
+   "label": 486,
+   "sha1": "4547ffe3f2163108f22e269c9ed01dde5a4da597"
+  },
+  {
+   "path": "imagenet-sample-images/n02992529_cellular_telephone.JPEG",
+   "label": 487,
+   "sha1": "45fdb74970a69c24930938c27f9fbed86ebbc4bb"
+  },
+  {
+   "path": "imagenet-sample-images/n02999410_chain.JPEG",
+   "label": 488,
+   "sha1": "42765555d14415072a4d7c2dfc97558ac3c392c3"
+  },
+  {
+   "path": "imagenet-sample-images/n03000134_chainlink_fence.JPEG",
+   "label": 489,
+   "sha1": "1fb16158a359653c9cd9d702afbd00bc18a137a2"
+  },
+  {
+   "path": "imagenet-sample-images/n03000247_chain_mail.JPEG",
+   "label": 490,
+   "sha1": "8c1c6e3e2bfd9cd18e773cdc02974cf3ed13f4e7"
+  },
+  {
+   "path": "imagenet-sample-images/n03000684_chain_saw.JPEG",
+   "label": 491,
+   "sha1": "4e7de562a99fdea846672d43e741ae9c81878e5a"
+  },
+  {
+   "path": "imagenet-sample-images/n03014705_chest.JPEG",
+   "label": 492,
+   "sha1": "8679abd96cc84d87efc772dd6518f7bceb3fc09a"
+  },
+  {
+   "path": "imagenet-sample-images/n03016953_chiffonier.JPEG",
+   "label": 493,
+   "sha1": "a3e668db04566a6a4c5c5867c4489d0e1cea53ee"
+  },
+  {
+   "path": "imagenet-sample-images/n03017168_chime.JPEG",
+   "label": 494,
+   "sha1": "7be5a629f53f433e357950fab3eea8e24d6cc86c"
+  },
+  {
+   "path": "imagenet-sample-images/n03018349_china_cabinet.JPEG",
+   "label": 495,
+   "sha1": "0c8c8574e3fd33a23e37660300b90753f487f7be"
+  },
+  {
+   "path": "imagenet-sample-images/n03026506_Christmas_stocking.JPEG",
+   "label": 496,
+   "sha1": "817d60e6b3bd6804f9902eade0f35d9a469a95a6"
+  },
+  {
+   "path": "imagenet-sample-images/n03028079_church.JPEG",
+   "label": 497,
+   "sha1": "733aac76e10510ab8db2e558a8661d8793b2fd2d"
+  },
+  {
+   "path": "imagenet-sample-images/n03032252_cinema.JPEG",
+   "label": 498,
+   "sha1": "dc24d259e8d84789ab705de79940e6bec72fcdb4"
+  },
+  {
+   "path": "imagenet-sample-images/n03041632_cleaver.JPEG",
+   "label": 499,
+   "sha1": "e4f9375d332cc4e5c1e2b9f080de30669b989f1f"
+  },
+  {
+   "path": "imagenet-sample-images/n03042490_cliff_dwelling.JPEG",
+   "label": 500,
+   "sha1": "86470ada9f4353011eb934c4e5e87cd5bbd700f7"
+  },
+  {
+   "path": "imagenet-sample-images/n03045698_cloak.JPEG",
+   "label": 501,
+   "sha1": "dbcfc5ba2b4425c7aee859c46256dbe447a4498d"
+  },
+  {
+   "path": "imagenet-sample-images/n03047690_clog.JPEG",
+   "label": 502,
+   "sha1": "4756e9e538128d98ea094cb0e704285bb729a5a7"
+  },
+  {
+   "path": "imagenet-sample-images/n03062245_cocktail_shaker.JPEG",
+   "label": 503,
+   "sha1": "72f31357e7b9a06eb8888200ef827320ee6e78fd"
+  },
+  {
+   "path": "imagenet-sample-images/n03063599_coffee_mug.JPEG",
+   "label": 504,
+   "sha1": "c8f1364d96ec99ae51049c67f87ae56e99480ec0"
+  },
+  {
+   "path": "imagenet-sample-images/n03063689_coffeepot.JPEG",
+   "label": 505,
+   "sha1": "a52a7f4ec34803b7446d0a479fb129cadc136a43"
+  },
+  {
+   "path": "imagenet-sample-images/n03065424_coil.JPEG",
+   "label": 506,
+   "sha1": "757c8723a2a89482f1714b848d1e84652d3473d9"
+  },
+  {
+   "path": "imagenet-sample-images/n03075370_combination_lock.JPEG",
+   "label": 507,
+   "sha1": "4fe70151cb12c26df170fa776af4747ec518eaf0"
+  },
+  {
+   "path": "imagenet-sample-images/n03085013_computer_keyboard.JPEG",
+   "label": 508,
+   "sha1": "ffea622d6a00dc559caeb5aaad321a49cef4ebcf"
+  },
+  {
+   "path": "imagenet-sample-images/n03089624_confectionery.JPEG",
+   "label": 509,
+   "sha1": "a3e0cb6737642d81487cf1f1ae89edbb9cf965b3"
+  },
+  {
+   "path": "imagenet-sample-images/n03095699_container_ship.JPEG",
+   "label": 510,
+   "sha1": "96fb19fbc0d5a99f1bd7d8e39ab0eedc2a37ae1f"
+  },
+  {
+   "path": "imagenet-sample-images/n03100240_convertible.JPEG",
+   "label": 511,
+   "sha1": "eaf9bcf3fae695940c3c9511cd21d7a421431881"
+  },
+  {
+   "path": "imagenet-sample-images/n03109150_corkscrew.JPEG",
+   "label": 512,
+   "sha1": "ff08d1c495d17d0cdc018e17315ca8e8d2e6421a"
+  },
+  {
+   "path": "imagenet-sample-images/n03110669_cornet.JPEG",
+   "label": 513,
+   "sha1": "a9b1cb4a7b9474e735060d28dc938cd6f6090149"
+  },
+  {
+   "path": "imagenet-sample-images/n03124043_cowboy_boot.JPEG",
+   "label": 514,
+   "sha1": "cc27a8fa2f0ffed02a6bcb1819f77eaad32b9b63"
+  },
+  {
+   "path": "imagenet-sample-images/n03124170_cowboy_hat.JPEG",
+   "label": 515,
+   "sha1": "6231f9b7371b87ebec9d65c825bd8d107052549d"
+  },
+  {
+   "path": "imagenet-sample-images/n03125729_cradle.JPEG",
+   "label": 516,
+   "sha1": "86be723e5f8810f77126647a35cc4c8ec35a3716"
+  },
+  {
+   "path": "imagenet-sample-images/n03126707_crane.JPEG",
+   "label": 517,
+   "sha1": "3abba27319bbaeda3b2cbd2f8ef169cf724d23ad"
+  },
+  {
+   "path": "imagenet-sample-images/n03127747_crash_helmet.JPEG",
+   "label": 518,
+   "sha1": "1b17a6a095801c7485e5007a8c9ae6720cca06a7"
+  },
+  {
+   "path": "imagenet-sample-images/n03127925_crate.JPEG",
+   "label": 519,
+   "sha1": "d1b650c64de23f3d56a9dcef42f597a60e9ff904"
+  },
+  {
+   "path": "imagenet-sample-images/n03131574_crib.JPEG",
+   "label": 520,
+   "sha1": "281f11998bd8711827fa4f88d3f9ff42b108f26d"
+  },
+  {
+   "path": "imagenet-sample-images/n03133878_Crock_Pot.JPEG",
+   "label": 521,
+   "sha1": "d16f5920a515d4c79024ef78faa582622357a408"
+  },
+  {
+   "path": "imagenet-sample-images/n03134739_croquet_ball.JPEG",
+   "label": 522,
+   "sha1": "dc04b170692cf7252350c3d874764be932664efe"
+  },
+  {
+   "path": "imagenet-sample-images/n03141823_crutch.JPEG",
+   "label": 523,
+   "sha1": "b757b541484a7bb32c008786a0695566639a3d2d"
+  },
+  {
+   "path": "imagenet-sample-images/n03146219_cuirass.JPEG",
+   "label": 524,
+   "sha1": "bd8d50ca615db2c926e4706da57a04a65ea486f9"
+  },
+  {
+   "path": "imagenet-sample-images/n03160309_dam.JPEG",
+   "label": 525,
+   "sha1": "0c68b89ca08a6b992a2966a35eb5e9915da1d3ed"
+  },
+  {
+   "path": "imagenet-sample-images/n03179701_desk.JPEG",
+   "label": 526,
+   "sha1": "60475920c843d7900f16d1c976204a59a3be1be1"
+  },
+  {
+   "path": "imagenet-sample-images/n03180011_desktop_computer.JPEG",
+   "label": 527,
+   "sha1": "2a88ca2824b72ba61ab5a515f536dbaf1e2b7c8d"
+  },
+  {
+   "path": "imagenet-sample-images/n03187595_dial_telephone.JPEG",
+   "label": 528,
+   "sha1": "eaecb592e08eb017986c8af93056767de9031c02"
+  },
+  {
+   "path": "imagenet-sample-images/n03188531_diaper.JPEG",
+   "label": 529,
+   "sha1": "634f63394be6a9ac838f5b0fe2be89e95bc5cc71"
+  },
+  {
+   "path": "imagenet-sample-images/n03196217_digital_clock.JPEG",
+   "label": 530,
+   "sha1": "b3aa65b28231cec5232ebc3e99738195af7b86ba"
+  },
+  {
+   "path": "imagenet-sample-images/n03197337_digital_watch.JPEG",
+   "label": 531,
+   "sha1": "0b9fd667f844e80eb44f3b95c7b77c7f2f8242d1"
+  },
+  {
+   "path": "imagenet-sample-images/n03201208_dining_table.JPEG",
+   "label": 532,
+   "sha1": "a370cee9c3bcf2d16e6c324369d8522b8af06d06"
+  },
+  {
+   "path": "imagenet-sample-images/n03207743_dishrag.JPEG",
+   "label": 533,
+   "sha1": "029df7fbefd10d685abf646302089aa2650ba473"
+  },
+  {
+   "path": "imagenet-sample-images/n03207941_dishwasher.JPEG",
+   "label": 534,
+   "sha1": "eb8d4ac83c8bc935815ed3c4dd34aa57bd0f2e9c"
+  },
+  {
+   "path": "imagenet-sample-images/n03208938_disk_brake.JPEG",
+   "label": 535,
+   "sha1": "1f3e211259f8c9a9f2b8e0d94ddc08184402b961"
+  },
+  {
+   "path": "imagenet-sample-images/n03216828_dock.JPEG",
+   "label": 536,
+   "sha1": "48f80b451ddc429dd41836e16598131bc578fe7b"
+  },
+  {
+   "path": "imagenet-sample-images/n03218198_dogsled.JPEG",
+   "label": 537,
+   "sha1": "96e1917af0f41a802a38c471371e8bc0994fccd3"
+  },
+  {
+   "path": "imagenet-sample-images/n03220513_dome.JPEG",
+   "label": 538,
+   "sha1": "2683441e86c96b86048c92f2e20a075646cc76e9"
+  },
+  {
+   "path": "imagenet-sample-images/n03223299_doormat.JPEG",
+   "label": 539,
+   "sha1": "b84de73bd7894b28c5a332b74ae40153ad08add7"
+  },
+  {
+   "path": "imagenet-sample-images/n03240683_drilling_platform.JPEG",
+   "label": 540,
+   "sha1": "a05066f3e426f151f82520890a4ab731bb4d237a"
+  },
+  {
+   "path": "imagenet-sample-images/n03249569_drum.JPEG",
+   "label": 541,
+   "sha1": "a97f53318659735b57da7588704dd9ca6c0cd186"
+  },
+  {
+   "path": "imagenet-sample-images/n03250847_drumstick.JPEG",
+   "label": 542,
+   "sha1": "2f9e6643d0d7615fbd1e2b7b47c7368e1f0dee1f"
+  },
+  {
+   "path": "imagenet-sample-images/n03255030_dumbbell.JPEG",
+   "label": 543,
+   "sha1": "6b15c6a9cffae48b17faec64f0a02d7c8db3815f"
+  },
+  {
+   "path": "imagenet-sample-images/n03259280_Dutch_oven.JPEG",
+   "label": 544,
+   "sha1": "f28b75b16e5552b238ee9caa05f1a2568ca5b8e9"
+  },
+  {
+   "path": "imagenet-sample-images/n03271574_electric_fan.JPEG",
+   "label": 545,
+   "sha1": "4b79ebbedd583e07d0fa7c54acc031f4ac692bfe"
+  },
+  {
+   "path": "imagenet-sample-images/n03272010_electric_guitar.JPEG",
+   "label": 546,
+   "sha1": "ce7aea08d0136d2b962cee5b1f3005ce47f07fcf"
+  },
+  {
+   "path": "imagenet-sample-images/n03272562_electric_locomotive.JPEG",
+   "label": 547,
+   "sha1": "b10f97dc905349175ae071486fdc74bc9d91c074"
+  },
+  {
+   "path": "imagenet-sample-images/n03290653_entertainment_center.JPEG",
+   "label": 548,
+   "sha1": "6b9c6c29ee3f0bb80e12996fc53d35f39b24dda5"
+  },
+  {
+   "path": "imagenet-sample-images/n03291819_envelope.JPEG",
+   "label": 549,
+   "sha1": "e4ce7084702062fdd5b874e13af3383dc064cb6d"
+  },
+  {
+   "path": "imagenet-sample-images/n03297495_espresso_maker.JPEG",
+   "label": 550,
+   "sha1": "8eb0a95688344ae33db977fc86cfcc706d637a1b"
+  },
+  {
+   "path": "imagenet-sample-images/n03314780_face_powder.JPEG",
+   "label": 551,
+   "sha1": "92a8c476fb83d9c20073880c625b3010e378801c"
+  },
+  {
+   "path": "imagenet-sample-images/n03325584_feather_boa.JPEG",
+   "label": 552,
+   "sha1": "1146fbf1b95f0d03ac5be4774a6a7aabfb2710f5"
+  },
+  {
+   "path": "imagenet-sample-images/n03337140_file.JPEG",
+   "label": 553,
+   "sha1": "c624cd97fd5ccee451c8b5cc5f86b0be37e6f25e"
+  },
+  {
+   "path": "imagenet-sample-images/n03344393_fireboat.JPEG",
+   "label": 554,
+   "sha1": "bb4d050d18f17b3331e4eace9d2a5877dcc2ffbe"
+  },
+  {
+   "path": "imagenet-sample-images/n03345487_fire_engine.JPEG",
+   "label": 555,
+   "sha1": "e7670f1162bfde787e6b6d81b5406155d2eabd6c"
+  },
+  {
+   "path": "imagenet-sample-images/n03347037_fire_screen.JPEG",
+   "label": 556,
+   "sha1": "e1f8c0a580e9498f619aaad4d69a2db17c835b9b"
+  },
+  {
+   "path": "imagenet-sample-images/n03355925_flagpole.JPEG",
+   "label": 557,
+   "sha1": "4dc1fad2a0c211b02cc688bfa8dcc9aca7b44f27"
+  },
+  {
+   "path": "imagenet-sample-images/n03372029_flute.JPEG",
+   "label": 558,
+   "sha1": "f8f743a416273409ab6661b030095d6e7fd240fb"
+  },
+  {
+   "path": "imagenet-sample-images/n03376595_folding_chair.JPEG",
+   "label": 559,
+   "sha1": "7bcd5e0497f88d00681f779d4d357c3bb7fcb241"
+  },
+  {
+   "path": "imagenet-sample-images/n03379051_football_helmet.JPEG",
+   "label": 560,
+   "sha1": "f1dd821c93fe0cf4823674b2375a1f9505a2ab81"
+  },
+  {
+   "path": "imagenet-sample-images/n03384352_forklift.JPEG",
+   "label": 561,
+   "sha1": "1dfda23ee182b6e96898813ae625af3ab5d049dc"
+  },
+  {
+   "path": "imagenet-sample-images/n03388043_fountain.JPEG",
+   "label": 562,
+   "sha1": "5f24faa277b2cde3500a658195b0efe28f53bc57"
+  },
+  {
+   "path": "imagenet-sample-images/n03388183_fountain_pen.JPEG",
+   "label": 563,
+   "sha1": "61a3567549bd59038249c8143425c4535696c8ea"
+  },
+  {
+   "path": "imagenet-sample-images/n03388549_four-poster.JPEG",
+   "label": 564,
+   "sha1": "84452cb564073890c34a1dc93be2f636d01ebf37"
+  },
+  {
+   "path": "imagenet-sample-images/n03393912_freight_car.JPEG",
+   "label": 565,
+   "sha1": "d8f05bf842c7204573545e111c1171a084c19783"
+  },
+  {
+   "path": "imagenet-sample-images/n03394916_French_horn.JPEG",
+   "label": 566,
+   "sha1": "8ff24474a4b0571f1606afdad5cbfb257772b9f7"
+  },
+  {
+   "path": "imagenet-sample-images/n03400231_frying_pan.JPEG",
+   "label": 567,
+   "sha1": "0ef81bf890164325f2612d86fe4d38515d790dc0"
+  },
+  {
+   "path": "imagenet-sample-images/n03404251_fur_coat.JPEG",
+   "label": 568,
+   "sha1": "9a7c90753d63b5f469bd550ea861f170a3e9ecc2"
+  },
+  {
+   "path": "imagenet-sample-images/n03417042_garbage_truck.JPEG",
+   "label": 569,
+   "sha1": "ae75683ba67d59fffb05d6de7168a03022d4b6b4"
+  },
+  {
+   "path": "imagenet-sample-images/n03424325_gasmask.JPEG",
+   "label": 570,
+   "sha1": "c1d86fa06e81e398b75968e4d3367cb2fb4ffc08"
+  },
+  {
+   "path": "imagenet-sample-images/n03425413_gas_pump.JPEG",
+   "label": 571,
+   "sha1": "100efb2ef0cef99d5b26a82904e5970192085ed9"
+  },
+  {
+   "path": "imagenet-sample-images/n03443371_goblet.JPEG",
+   "label": 572,
+   "sha1": "8820f63e2e918d534fc798aac2ebf525a1b80a33"
+  },
+  {
+   "path": "imagenet-sample-images/n03444034_go-kart.JPEG",
+   "label": 573,
+   "sha1": "6172d7d65e11e516db02d2d5c39f869763a24a75"
+  },
+  {
+   "path": "imagenet-sample-images/n03445777_golf_ball.JPEG",
+   "label": 574,
+   "sha1": "933151364df7c1788f2816e8648cdfd1884577bc"
+  },
+  {
+   "path": "imagenet-sample-images/n03445924_golfcart.JPEG",
+   "label": 575,
+   "sha1": "2b745e84f406d4cbe5a1e5c622af085c908c3f38"
+  },
+  {
+   "path": "imagenet-sample-images/n03447447_gondola.JPEG",
+   "label": 576,
+   "sha1": "00191020dd9f3e653e71284535129358f4526daf"
+  },
+  {
+   "path": "imagenet-sample-images/n03447721_gong.JPEG",
+   "label": 577,
+   "sha1": "273261c1e4c6d0fc013f5eb0e4718a88b53ba1a1"
+  },
+  {
+   "path": "imagenet-sample-images/n03450230_gown.JPEG",
+   "label": 578,
+   "sha1": "564c24cd9cd11174f8047c6d540978197b28598e"
+  },
+  {
+   "path": "imagenet-sample-images/n03452741_grand_piano.JPEG",
+   "label": 579,
+   "sha1": "3c1bac7c408afaa5de23907023642a20b69e8ddb"
+  },
+  {
+   "path": "imagenet-sample-images/n03457902_greenhouse.JPEG",
+   "label": 580,
+   "sha1": "482b7280757c1a2074273c6ef76b4348f413fdfa"
+  },
+  {
+   "path": "imagenet-sample-images/n03459775_grille.JPEG",
+   "label": 581,
+   "sha1": "d9ca86a48985ea39bf605bf5b45bb2ea159baad2"
+  },
+  {
+   "path": "imagenet-sample-images/n03461385_grocery_store.JPEG",
+   "label": 582,
+   "sha1": "3fa005b32d66690e700a8a721312cdddc6f34c7f"
+  },
+  {
+   "path": "imagenet-sample-images/n03467068_guillotine.JPEG",
+   "label": 583,
+   "sha1": "d64b5ed053785a2ee1b133092f8e79546db783a2"
+  },
+  {
+   "path": "imagenet-sample-images/n03476684_hair_slide.JPEG",
+   "label": 584,
+   "sha1": "6bd7393f2ffae8026116e6ddd4ce384d3a978e72"
+  },
+  {
+   "path": "imagenet-sample-images/n03476991_hair_spray.JPEG",
+   "label": 585,
+   "sha1": "2349cd6698405893cc9b63572ea0755117887fdb"
+  },
+  {
+   "path": "imagenet-sample-images/n03478589_half_track.JPEG",
+   "label": 586,
+   "sha1": "30ffa158b287d287502b46e9f8f8a606f453049f"
+  },
+  {
+   "path": "imagenet-sample-images/n03481172_hammer.JPEG",
+   "label": 587,
+   "sha1": "fb2a072dc7858d38bf4b1af7be46e55d7055352c"
+  },
+  {
+   "path": "imagenet-sample-images/n03482405_hamper.JPEG",
+   "label": 588,
+   "sha1": "9d834f889f43c87e402a74da16262dacb4d9bb6f"
+  },
+  {
+   "path": "imagenet-sample-images/n03483316_hand_blower.JPEG",
+   "label": 589,
+   "sha1": "a5806eef7d3c71381e4405190920943b43884b3c"
+  },
+  {
+   "path": "imagenet-sample-images/n03485407_hand-held_computer.JPEG",
+   "label": 590,
+   "sha1": "eb7c01c0ec20383aa140a79ddc0e924b6def43f4"
+  },
+  {
+   "path": "imagenet-sample-images/n03485794_handkerchief.JPEG",
+   "label": 591,
+   "sha1": "39807745cf3c2b631a27e2bf612fa0f51af4b020"
+  },
+  {
+   "path": "imagenet-sample-images/n03492542_hard_disc.JPEG",
+   "label": 592,
+   "sha1": "1a42ec0ede8f201e940883175bf5d6289bfe8119"
+  },
+  {
+   "path": "imagenet-sample-images/n03494278_harmonica.JPEG",
+   "label": 593,
+   "sha1": "dd4ae84ac18c0113e83cb816bd2dbdaa6a30fe55"
+  },
+  {
+   "path": "imagenet-sample-images/n03495258_harp.JPEG",
+   "label": 594,
+   "sha1": "a5692e6209449a7b420893ad3b38ac8050f15117"
+  },
+  {
+   "path": "imagenet-sample-images/n03496892_harvester.JPEG",
+   "label": 595,
+   "sha1": "e25bb2c5535eff05f3903bbc6da3bd9c8244cf3f"
+  },
+  {
+   "path": "imagenet-sample-images/n03498962_hatchet.JPEG",
+   "label": 596,
+   "sha1": "dd967007a0ea87ce80dc176943a67c9a245f3a8f"
+  },
+  {
+   "path": "imagenet-sample-images/n03527444_holster.JPEG",
+   "label": 597,
+   "sha1": "71915c5d7b9957a94c7fe2c4ceee5346f608850d"
+  },
+  {
+   "path": "imagenet-sample-images/n03529860_home_theater.JPEG",
+   "label": 598,
+   "sha1": "ebcfdb84b362d6b867b02c76013c036d95566347"
+  },
+  {
+   "path": "imagenet-sample-images/n03530642_honeycomb.JPEG",
+   "label": 599,
+   "sha1": "e887e20a83b2d73d390e952592c643b70cf6fb5a"
+  },
+  {
+   "path": "imagenet-sample-images/n03532672_hook.JPEG",
+   "label": 600,
+   "sha1": "c041751be51f261523f3871ce690f5ec2975c3e5"
+  },
+  {
+   "path": "imagenet-sample-images/n03534580_hoopskirt.JPEG",
+   "label": 601,
+   "sha1": "61ca38ed0fe0579d01d081fe14e19684512f013f"
+  },
+  {
+   "path": "imagenet-sample-images/n03535780_horizontal_bar.JPEG",
+   "label": 602,
+   "sha1": "e1800d7bdcfcafcf4fbba64e613841ed880fcc7d"
+  },
+  {
+   "path": "imagenet-sample-images/n03538406_horse_cart.JPEG",
+   "label": 603,
+   "sha1": "ad1323332d89bb4afdb213b85f80534f03bd603d"
+  },
+  {
+   "path": "imagenet-sample-images/n03544143_hourglass.JPEG",
+   "label": 604,
+   "sha1": "2b2b0214a58299fb5f529d9b2ab44eca9e6b53ef"
+  },
+  {
+   "path": "imagenet-sample-images/n03584254_iPod.JPEG",
+   "label": 605,
+   "sha1": "94fa0d6e97e03689a48f28feee00c09a6369536f"
+  },
+  {
+   "path": "imagenet-sample-images/n03584829_iron.JPEG",
+   "label": 606,
+   "sha1": "8990488347abf2b39839e9c64000d2c33991c545"
+  },
+  {
+   "path": "imagenet-sample-images/n03590841_jack-o'-lantern.JPEG",
+   "label": 607,
+   "sha1": "267c2942ab3baaec248985eee99d23a471dfee4e"
+  },
+  {
+   "path": "imagenet-sample-images/n03594734_jean.JPEG",
+   "label": 608,
+   "sha1": "46b373c5b2365a6319a822360bcdeb4ee6da951f"
+  },
+  {
+   "path": "imagenet-sample-images/n03594945_jeep.JPEG",
+   "label": 609,
+   "sha1": "b551ba487546cd71f9907d88f10764247e3df4bf"
+  },
+  {
+   "path": "imagenet-sample-images/n03595614_jersey.JPEG",
+   "label": 610,
+   "sha1": "1b1e5472d9b4ecaa7bf1e20c6999b23b60dd960a"
+  },
+  {
+   "path": "imagenet-sample-images/n03598930_jigsaw_puzzle.JPEG",
+   "label": 611,
+   "sha1": "659182fd4dd6439ed3201af0a07bccc2c4f23472"
+  },
+  {
+   "path": "imagenet-sample-images/n03599486_jinrikisha.JPEG",
+   "label": 612,
+   "sha1": "3b7f6a4f350cec760c332858664ae63bbfcbdf0f"
+  },
+  {
+   "path": "imagenet-sample-images/n03602883_joystick.JPEG",
+   "label": 613,
+   "sha1": "fbc386789bd27828a8631bfd5395c7ccc0e66caf"
+  },
+  {
+   "path": "imagenet-sample-images/n03617480_kimono.JPEG",
+   "label": 614,
+   "sha1": "e501a4a10cc4f1489abe7fd7c18ff1322ca310e3"
+  },
+  {
+   "path": "imagenet-sample-images/n03623198_knee_pad.JPEG",
+   "label": 615,
+   "sha1": "aeffc155150d40bacbf7cc7afaa1aaaeb87d02ed"
+  },
+  {
+   "path": "imagenet-sample-images/n03627232_knot.JPEG",
+   "label": 616,
+   "sha1": "d947e2536103d0f016f82aef20a014eb85bd1d36"
+  },
+  {
+   "path": "imagenet-sample-images/n03630383_lab_coat.JPEG",
+   "label": 617,
+   "sha1": "691166d0733d0da222dd9bec437519ed91972406"
+  },
+  {
+   "path": "imagenet-sample-images/n03633091_ladle.JPEG",
+   "label": 618,
+   "sha1": "cff06fde3751932b92eef3fbb775993b2adac7b7"
+  },
+  {
+   "path": "imagenet-sample-images/n03637318_lampshade.JPEG",
+   "label": 619,
+   "sha1": "0e9356ffcd0ffd96deb1ad3dd5f03726921dc22d"
+  },
+  {
+   "path": "imagenet-sample-images/n03642806_laptop.JPEG",
+   "label": 620,
+   "sha1": "2fab412a7503393afa9a87e618e985fd709b5dae"
+  },
+  {
+   "path": "imagenet-sample-images/n03649909_lawn_mower.JPEG",
+   "label": 621,
+   "sha1": "5a421997c761a91c7d33e7d896b3709abfdfcd03"
+  },
+  {
+   "path": "imagenet-sample-images/n03657121_lens_cap.JPEG",
+   "label": 622,
+   "sha1": "419084559a28131f8f925e6388437d77573af9b9"
+  },
+  {
+   "path": "imagenet-sample-images/n03658185_letter_opener.JPEG",
+   "label": 623,
+   "sha1": "c4ae4e5792515f358c4d578ced7d2ee40d2fd3b8"
+  },
+  {
+   "path": "imagenet-sample-images/n03661043_library.JPEG",
+   "label": 624,
+   "sha1": "3ce54a6fe877bbfb2471913260ed6255529635b7"
+  },
+  {
+   "path": "imagenet-sample-images/n03662601_lifeboat.JPEG",
+   "label": 625,
+   "sha1": "6afe736aee4ae47cb85ff7b9a365f45307d6cdad"
+  },
+  {
+   "path": "imagenet-sample-images/n03666591_lighter.JPEG",
+   "label": 626,
+   "sha1": "34204ef7134534ee513f8cfe1c90dbb09f0579e4"
+  },
+  {
+   "path": "imagenet-sample-images/n03670208_limousine.JPEG",
+   "label": 627,
+   "sha1": "0d40cf8d69d7260065369d98c35f11b637b6674c"
+  },
+  {
+   "path": "imagenet-sample-images/n03673027_liner.JPEG",
+   "label": 628,
+   "sha1": "17359cccab55c3eac4744264518e40012aca7997"
+  },
+  {
+   "path": "imagenet-sample-images/n03676483_lipstick.JPEG",
+   "label": 629,
+   "sha1": "687b2a2836c3e37b6a583fa912c0a0f9dc380df9"
+  },
+  {
+   "path": "imagenet-sample-images/n03680355_Loafer.JPEG",
+   "label": 630,
+   "sha1": "4150b8eb1cded38557d8b882cc77d1c9c3044313"
+  },
+  {
+   "path": "imagenet-sample-images/n03690938_lotion.JPEG",
+   "label": 631,
+   "sha1": "452d1690cf71ad6cffcc197d1540940533f58714"
+  },
+  {
+   "path": "imagenet-sample-images/n03691459_loudspeaker.JPEG",
+   "label": 632,
+   "sha1": "07144fae7d980bb68e1ac805e30093c55b439d02"
+  },
+  {
+   "path": "imagenet-sample-images/n03692522_loupe.JPEG",
+   "label": 633,
+   "sha1": "990b467830db8a86c569807c7e773c7e1ebfca10"
+  },
+  {
+   "path": "imagenet-sample-images/n03697007_lumbermill.JPEG",
+   "label": 634,
+   "sha1": "1b9b9945c154e16479e132ab71f447112428bf9a"
+  },
+  {
+   "path": "imagenet-sample-images/n03706229_magnetic_compass.JPEG",
+   "label": 635,
+   "sha1": "4935ebd61694af5ce8f2fc4d5eab8afcc8ea6107"
+  },
+  {
+   "path": "imagenet-sample-images/n03709823_mailbag.JPEG",
+   "label": 636,
+   "sha1": "18344c413d18b3f834e68ff3a124e6a2db1535ab"
+  },
+  {
+   "path": "imagenet-sample-images/n03710193_mailbox.JPEG",
+   "label": 637,
+   "sha1": "a73fc2136b8662bcb79e88b0908dc3904f2b4fc4"
+  },
+  {
+   "path": "imagenet-sample-images/n03710637_maillot.JPEG",
+   "label": 638,
+   "sha1": "781994cfc1ce558487f2545ee66a47272fc9b963"
+  },
+  {
+   "path": "imagenet-sample-images/n03710721_maillot.JPEG",
+   "label": 639,
+   "sha1": "c429c76db2fe15665969b641d4f0fd772ae95e55"
+  },
+  {
+   "path": "imagenet-sample-images/n03717622_manhole_cover.JPEG",
+   "label": 640,
+   "sha1": "388e92d3dca2d9cbd69801850ac4f9a493960c22"
+  },
+  {
+   "path": "imagenet-sample-images/n03720891_maraca.JPEG",
+   "label": 641,
+   "sha1": "7b8860878d5f32c0fd0bf77a0b03d3d8d11dca67"
+  },
+  {
+   "path": "imagenet-sample-images/n03721384_marimba.JPEG",
+   "label": 642,
+   "sha1": "960c76afd8cb6c229738283f1c7ae6f6dedb2029"
+  },
+  {
+   "path": "imagenet-sample-images/n03724870_mask.JPEG",
+   "label": 643,
+   "sha1": "9276e3bb3ec836ab0494a34a13d461e761614428"
+  },
+  {
+   "path": "imagenet-sample-images/n03729826_matchstick.JPEG",
+   "label": 644,
+   "sha1": "5a5d69a7aef41c6d2b277f83ae2f7619cdb049c4"
+  },
+  {
+   "path": "imagenet-sample-images/n03733131_maypole.JPEG",
+   "label": 645,
+   "sha1": "71f6b19facca4cfcbcb941b8ee73b7db2b784f9e"
+  },
+  {
+   "path": "imagenet-sample-images/n03733281_maze.JPEG",
+   "label": 646,
+   "sha1": "e298283ac7954f18ef3998e7a74e620dc90c4b11"
+  },
+  {
+   "path": "imagenet-sample-images/n03733805_measuring_cup.JPEG",
+   "label": 647,
+   "sha1": "7d5b774a0c42fcb9af7088375c1df0e5f90c066d"
+  },
+  {
+   "path": "imagenet-sample-images/n03742115_medicine_chest.JPEG",
+   "label": 648,
+   "sha1": "e85b844ef1f72c6d4baaa6a31f9dac71d9690f8d"
+  },
+  {
+   "path": "imagenet-sample-images/n03743016_megalith.JPEG",
+   "label": 649,
+   "sha1": "b686081e3c9144b922175d4e72115d5693b73f6b"
+  },
+  {
+   "path": "imagenet-sample-images/n03759954_microphone.JPEG",
+   "label": 650,
+   "sha1": "2e4af7a145846608a1f8e39bfc8f87a0bf61414a"
+  },
+  {
+   "path": "imagenet-sample-images/n03761084_microwave.JPEG",
+   "label": 651,
+   "sha1": "23706f6172bf8bec46286f9089d329a5f4a7fbee"
+  },
+  {
+   "path": "imagenet-sample-images/n03763968_military_uniform.JPEG",
+   "label": 652,
+   "sha1": "4ea8628f4a3dc4798e0903470893d7d024faca79"
+  },
+  {
+   "path": "imagenet-sample-images/n03764736_milk_can.JPEG",
+   "label": 653,
+   "sha1": "3745ca2e2279bbd8cb9b424a32ca32689327e040"
+  },
+  {
+   "path": "imagenet-sample-images/n03769881_minibus.JPEG",
+   "label": 654,
+   "sha1": "4364f7409462de2e9c77be1c9af0e5dda61ea17e"
+  },
+  {
+   "path": "imagenet-sample-images/n03770439_miniskirt.JPEG",
+   "label": 655,
+   "sha1": "715eab05d897349e82ad406d9a4ed54722c44206"
+  },
+  {
+   "path": "imagenet-sample-images/n03770679_minivan.JPEG",
+   "label": 656,
+   "sha1": "0fb38180d0d16f9286e1860489197f98af79d524"
+  },
+  {
+   "path": "imagenet-sample-images/n03773504_missile.JPEG",
+   "label": 657,
+   "sha1": "66b09092ec5ef7216fe29fd84ae31c2cfb985eeb"
+  },
+  {
+   "path": "imagenet-sample-images/n03775071_mitten.JPEG",
+   "label": 658,
+   "sha1": "5b2922a62a1cbb2c05d7bd8b88a137fd2d4942b6"
+  },
+  {
+   "path": "imagenet-sample-images/n03775546_mixing_bowl.JPEG",
+   "label": 659,
+   "sha1": "d8b92beb5a7fe1ab151645263ac25c43e203fe04"
+  },
+  {
+   "path": "imagenet-sample-images/n03776460_mobile_home.JPEG",
+   "label": 660,
+   "sha1": "a1e0389fe8a9c6f6d7cd66c7bf99c8e855840c90"
+  },
+  {
+   "path": "imagenet-sample-images/n03777568_Model_T.JPEG",
+   "label": 661,
+   "sha1": "23bf31b5df9b1801b5f813d59a597f1a047cc2b8"
+  },
+  {
+   "path": "imagenet-sample-images/n03777754_modem.JPEG",
+   "label": 662,
+   "sha1": "08c710ee4fb80ae451f08cb165766753759bf5a0"
+  },
+  {
+   "path": "imagenet-sample-images/n03781244_monastery.JPEG",
+   "label": 663,
+   "sha1": "91734e540e1559281735a11439098330830a5498"
+  },
+  {
+   "path": "imagenet-sample-images/n03782006_monitor.JPEG",
+   "label": 664,
+   "sha1": "f0badb3b2eb7642571cc7065c3671475ef485d44"
+  },
+  {
+   "path": "imagenet-sample-images/n03785016_moped.JPEG",
+   "label": 665,
+   "sha1": "c822c90136f95d16222e3236a2f238d731a1b08e"
+  },
+  {
+   "path": "imagenet-sample-images/n03786901_mortar.JPEG",
+   "label": 666,
+   "sha1": "6d8204b3c2c24a5fe1584b64fcf3e83f0c76dc55"
+  },
+  {
+   "path": "imagenet-sample-images/n03787032_mortarboard.JPEG",
+   "label": 667,
+   "sha1": "5e445e51e0c358b223c80267a5664d2863f6f86c"
+  },
+  {
+   "path": "imagenet-sample-images/n03788195_mosque.JPEG",
+   "label": 668,
+   "sha1": "dc4333da3072ab67afb1298ce8f7af96c858d376"
+  },
+  {
+   "path": "imagenet-sample-images/n03788365_mosquito_net.JPEG",
+   "label": 669,
+   "sha1": "3db7b8c15f5bacaf5d4428014e8aeb20cbfef4be"
+  },
+  {
+   "path": "imagenet-sample-images/n03791053_motor_scooter.JPEG",
+   "label": 670,
+   "sha1": "6462e6a1d48ab148ed2493e94ad283067a3f1243"
+  },
+  {
+   "path": "imagenet-sample-images/n03792782_mountain_bike.JPEG",
+   "label": 671,
+   "sha1": "ab55204e043b2a35affe3b3733ceb6a93bbfc8b9"
+  },
+  {
+   "path": "imagenet-sample-images/n03792972_mountain_tent.JPEG",
+   "label": 672,
+   "sha1": "0f47327c28ca9a3b506815d07fd441610601411d"
+  },
+  {
+   "path": "imagenet-sample-images/n03793489_mouse.JPEG",
+   "label": 673,
+   "sha1": "c4b73132f9782c7a82ffa3438b8a5ebf6ddc7796"
+  },
+  {
+   "path": "imagenet-sample-images/n03794056_mousetrap.JPEG",
+   "label": 674,
+   "sha1": "8f66df6cd9a00ee87546e636cff619a8831f85e8"
+  },
+  {
+   "path": "imagenet-sample-images/n03796401_moving_van.JPEG",
+   "label": 675,
+   "sha1": "0f8b80b9fea2d9838939ca973d1dd4ddb889c167"
+  },
+  {
+   "path": "imagenet-sample-images/n03803284_muzzle.JPEG",
+   "label": 676,
+   "sha1": "8a99d5843cf5ae10a1889e979b939c21ec23ca92"
+  },
+  {
+   "path": "imagenet-sample-images/n03804744_nail.JPEG",
+   "label": 677,
+   "sha1": "65d310f4cb93866d49807455863acbe85da0e7df"
+  },
+  {
+   "path": "imagenet-sample-images/n03814639_neck_brace.JPEG",
+   "label": 678,
+   "sha1": "911df1c22151cad4863c465558b4ee917875f002"
+  },
+  {
+   "path": "imagenet-sample-images/n03814906_necklace.JPEG",
+   "label": 679,
+   "sha1": "3cc7b2c1625637ce84ff1b092586d0efa1d13ea7"
+  },
+  {
+   "path": "imagenet-sample-images/n03825788_nipple.JPEG",
+   "label": 680,
+   "sha1": "ce1f255f12fd73e7db0d0f6e7bcbad4eb3a55252"
+  },
+  {
+   "path": "imagenet-sample-images/n03832673_notebook.JPEG",
+   "label": 681,
+   "sha1": "97ab1d42a2c7e5f4e9113e6ba3a8ae1099043c76"
+  },
+  {
+   "path": "imagenet-sample-images/n03837869_obelisk.JPEG",
+   "label": 682,
+   "sha1": "6ea5bb49072c3a293f003555798df6000ce5f4f2"
+  },
+  {
+   "path": "imagenet-sample-images/n03838899_oboe.JPEG",
+   "label": 683,
+   "sha1": "4233d098b687bb3368f82fb8d23205830ec0a31f"
+  },
+  {
+   "path": "imagenet-sample-images/n03840681_ocarina.JPEG",
+   "label": 684,
+   "sha1": "2425e72aea2909258e3ad1fb0b297a8e327c958f"
+  },
+  {
+   "path": "imagenet-sample-images/n03841143_odometer.JPEG",
+   "label": 685,
+   "sha1": "d2875d8b7e7ffe4921f4c1e783c3ea7fa4bdf263"
+  },
+  {
+   "path": "imagenet-sample-images/n03843555_oil_filter.JPEG",
+   "label": 686,
+   "sha1": "fea4c0bc61eb254eeba29af9b14296c583fcfbd3"
+  },
+  {
+   "path": "imagenet-sample-images/n03854065_organ.JPEG",
+   "label": 687,
+   "sha1": "eae101718d6304c1c152cba0c080661708818a8e"
+  },
+  {
+   "path": "imagenet-sample-images/n03857828_oscilloscope.JPEG",
+   "label": 688,
+   "sha1": "9f3d4423d78d6f43a823df7f602891de98e1f2fa"
+  },
+  {
+   "path": "imagenet-sample-images/n03866082_overskirt.JPEG",
+   "label": 689,
+   "sha1": "5f972ac2d0a33a61e03f4c96a4f881575dbec5ba"
+  },
+  {
+   "path": "imagenet-sample-images/n03868242_oxcart.JPEG",
+   "label": 690,
+   "sha1": "a16f1bbb97cc8821ec7d682d0b06df179d5286df"
+  },
+  {
+   "path": "imagenet-sample-images/n03868863_oxygen_mask.JPEG",
+   "label": 691,
+   "sha1": "7e1bd4b21c74785eb1e615c2f1f86b2d28a59ef4"
+  },
+  {
+   "path": "imagenet-sample-images/n03871628_packet.JPEG",
+   "label": 692,
+   "sha1": "ff38f5c9ab4cafea12fa7c28bb3e2a71e44a331e"
+  },
+  {
+   "path": "imagenet-sample-images/n03873416_paddle.JPEG",
+   "label": 693,
+   "sha1": "96ca214c4a8d3c426858c4709b73846c7a65cf04"
+  },
+  {
+   "path": "imagenet-sample-images/n03874293_paddlewheel.JPEG",
+   "label": 694,
+   "sha1": "03075b54e9fb2c551f498a8dbeb858e6252ef895"
+  },
+  {
+   "path": "imagenet-sample-images/n03874599_padlock.JPEG",
+   "label": 695,
+   "sha1": "f3dea84c52129825760bfd2dc298e2a1c0daaf29"
+  },
+  {
+   "path": "imagenet-sample-images/n03876231_paintbrush.JPEG",
+   "label": 696,
+   "sha1": "bd69e1b853e3012f03f3e818527cabc0bf24dbce"
+  },
+  {
+   "path": "imagenet-sample-images/n03877472_pajama.JPEG",
+   "label": 697,
+   "sha1": "9167f968c1176142ad906fe2a4f5a841af84fe75"
+  },
+  {
+   "path": "imagenet-sample-images/n03877845_palace.JPEG",
+   "label": 698,
+   "sha1": "94f1ed6fe667d4ec8576951eb73cbc60a42e2b39"
+  },
+  {
+   "path": "imagenet-sample-images/n03884397_panpipe.JPEG",
+   "label": 699,
+   "sha1": "15590f54b40e1340c11a3d0324efc058bdfd9e4b"
+  },
+  {
+   "path": "imagenet-sample-images/n03887697_paper_towel.JPEG",
+   "label": 700,
+   "sha1": "34be5d5a5cabd4597e69d2ef2c8e7992214ee348"
+  },
+  {
+   "path": "imagenet-sample-images/n03888257_parachute.JPEG",
+   "label": 701,
+   "sha1": "50bb7c13ffe88cf931f6b9fa9261b541ddf19a9c"
+  },
+  {
+   "path": "imagenet-sample-images/n03888605_parallel_bars.JPEG",
+   "label": 702,
+   "sha1": "1f6437c7a72977b9276b5bb86a9d47be19c6e6ce"
+  },
+  {
+   "path": "imagenet-sample-images/n03891251_park_bench.JPEG",
+   "label": 703,
+   "sha1": "8627f7bd4231f8d0565da040d75ab9e020129c0e"
+  },
+  {
+   "path": "imagenet-sample-images/n03891332_parking_meter.JPEG",
+   "label": 704,
+   "sha1": "67d63ad7eb2d7b08ebb3fe249e44a370ab210d19"
+  },
+  {
+   "path": "imagenet-sample-images/n03895866_passenger_car.JPEG",
+   "label": 705,
+   "sha1": "fadf524ffaecfe10cbc5602d1ed336b31d5ac8f0"
+  },
+  {
+   "path": "imagenet-sample-images/n03899768_patio.JPEG",
+   "label": 706,
+   "sha1": "f07d1a710051de4e72b2b8f19dd5f6876a0e66a9"
+  },
+  {
+   "path": "imagenet-sample-images/n03902125_pay-phone.JPEG",
+   "label": 707,
+   "sha1": "a51bdf24c7e4231f1e42b6c4653fdbf68ed2d576"
+  },
+  {
+   "path": "imagenet-sample-images/n03903868_pedestal.JPEG",
+   "label": 708,
+   "sha1": "1146a9a89f22411972d046a08f5b200e69b66c5c"
+  },
+  {
+   "path": "imagenet-sample-images/n03908618_pencil_box.JPEG",
+   "label": 709,
+   "sha1": "1bae321cb3c09b3db73c0f96ebe041b26c961f72"
+  },
+  {
+   "path": "imagenet-sample-images/n03908714_pencil_sharpener.JPEG",
+   "label": 710,
+   "sha1": "8c4f59179aff5d09f0ced1d561317d36b24e9406"
+  },
+  {
+   "path": "imagenet-sample-images/n03916031_perfume.JPEG",
+   "label": 711,
+   "sha1": "9bb15afdc31433ef86e0db1b10a66022583f24e8"
+  },
+  {
+   "path": "imagenet-sample-images/n03920288_Petri_dish.JPEG",
+   "label": 712,
+   "sha1": "8fab639bb60caeeedcbf38de87b04168be52de8a"
+  },
+  {
+   "path": "imagenet-sample-images/n03924679_photocopier.JPEG",
+   "label": 713,
+   "sha1": "1df8997b1773be72c5fd364696f93d09ef434bb1"
+  },
+  {
+   "path": "imagenet-sample-images/n03929660_pick.JPEG",
+   "label": 714,
+   "sha1": "9f579e64d516a084a2a476b4d7012a6f7206b3a3"
+  },
+  {
+   "path": "imagenet-sample-images/n03929855_pickelhaube.JPEG",
+   "label": 715,
+   "sha1": "1d54a9b716d0aad58b35e6ebd52e477bf719e6b1"
+  },
+  {
+   "path": "imagenet-sample-images/n03930313_picket_fence.JPEG",
+   "label": 716,
+   "sha1": "70168ae0b08511bd49651908e798984815c9f6ce"
+  },
+  {
+   "path": "imagenet-sample-images/n03930630_pickup.JPEG",
+   "label": 717,
+   "sha1": "cdd1e0ef955d2cf58280e3e26436f89957b68109"
+  },
+  {
+   "path": "imagenet-sample-images/n03933933_pier.JPEG",
+   "label": 718,
+   "sha1": "927b5704fb821a19444b9474f1a12ba57aa9e680"
+  },
+  {
+   "path": "imagenet-sample-images/n03935335_piggy_bank.JPEG",
+   "label": 719,
+   "sha1": "689a40e54f2ff184deb29dac5772a5d8569b1192"
+  },
+  {
+   "path": "imagenet-sample-images/n03937543_pill_bottle.JPEG",
+   "label": 720,
+   "sha1": "837228086d2a5c03372d43a51a58fde8b2058148"
+  },
+  {
+   "path": "imagenet-sample-images/n03938244_pillow.JPEG",
+   "label": 721,
+   "sha1": "9fcc95fdf67abff91ec910dae86c27cb8072a75a"
+  },
+  {
+   "path": "imagenet-sample-images/n03942813_ping-pong_ball.JPEG",
+   "label": 722,
+   "sha1": "abca1baf154917d4c261a29fe526dfa51dff8ac0"
+  },
+  {
+   "path": "imagenet-sample-images/n03944341_pinwheel.JPEG",
+   "label": 723,
+   "sha1": "aa0708c54f27005d6a62848f049cf324efcd317a"
+  },
+  {
+   "path": "imagenet-sample-images/n03947888_pirate.JPEG",
+   "label": 724,
+   "sha1": "b64f2a817a94a2cf27ac058da801e8d6c93ea616"
+  },
+  {
+   "path": "imagenet-sample-images/n03950228_pitcher.JPEG",
+   "label": 725,
+   "sha1": "f7334d895bc067925099b1afab07ebcc6553addd"
+  },
+  {
+   "path": "imagenet-sample-images/n03954731_plane.JPEG",
+   "label": 726,
+   "sha1": "ae8ef17f3c268f8d81071d9c1246a4bd815f53d8"
+  },
+  {
+   "path": "imagenet-sample-images/n03956157_planetarium.JPEG",
+   "label": 727,
+   "sha1": "aacab6a942116b4fbe43dfd6fc0299637f23957a"
+  },
+  {
+   "path": "imagenet-sample-images/n03958227_plastic_bag.JPEG",
+   "label": 728,
+   "sha1": "ca0da2f9b5899c5426e11356e23f41d8172af532"
+  },
+  {
+   "path": "imagenet-sample-images/n03961711_plate_rack.JPEG",
+   "label": 729,
+   "sha1": "23097049772c2a38a332c1534de8275304794555"
+  },
+  {
+   "path": "imagenet-sample-images/n03967562_plow.JPEG",
+   "label": 730,
+   "sha1": "8ce4e8904fa6f46c22e98b87f6bbc927cab4f831"
+  },
+  {
+   "path": "imagenet-sample-images/n03970156_plunger.JPEG",
+   "label": 731,
+   "sha1": "176cc0c961e3e9ab62fa5693a52a4761368cc947"
+  },
+  {
+   "path": "imagenet-sample-images/n03976467_Polaroid_camera.JPEG",
+   "label": 732,
+   "sha1": "80b0c50bf58d21f2240546768f4111842c5d6444"
+  },
+  {
+   "path": "imagenet-sample-images/n03976657_pole.JPEG",
+   "label": 733,
+   "sha1": "973bad9cbcbf6e141b93fa6063ac1ea7ab2c0a89"
+  },
+  {
+   "path": "imagenet-sample-images/n03977966_police_van.JPEG",
+   "label": 734,
+   "sha1": "803fbe9cb7c05384ab9607e94d1c33c1f40cf89f"
+  },
+  {
+   "path": "imagenet-sample-images/n03980874_poncho.JPEG",
+   "label": 735,
+   "sha1": "9d954ca82167944076970d9c70a1825f33f539e0"
+  },
+  {
+   "path": "imagenet-sample-images/n03982430_pool_table.JPEG",
+   "label": 736,
+   "sha1": "4053379728f7f4713ec2d2aa8d6f08182fb6020f"
+  },
+  {
+   "path": "imagenet-sample-images/n03983396_pop_bottle.JPEG",
+   "label": 737,
+   "sha1": "10a7b215ef40b9e1e443a802de131b9dd5448318"
+  },
+  {
+   "path": "imagenet-sample-images/n03991062_pot.JPEG",
+   "label": 738,
+   "sha1": "f3e8f36852874dea3ae16f0ef9f1ce5cee0f6263"
+  },
+  {
+   "path": "imagenet-sample-images/n03992509_potter's_wheel.JPEG",
+   "label": 739,
+   "sha1": "1d6ed89fafdbe1044703399e1144553c5337a9b2"
+  },
+  {
+   "path": "imagenet-sample-images/n03995372_power_drill.JPEG",
+   "label": 740,
+   "sha1": "2bb94bf82801219d3089e4f80dd6b522daf69b62"
+  },
+  {
+   "path": "imagenet-sample-images/n03998194_prayer_rug.JPEG",
+   "label": 741,
+   "sha1": "9213234f58c1d256ddd521718cd96ca756dec68d"
+  },
+  {
+   "path": "imagenet-sample-images/n04004767_printer.JPEG",
+   "label": 742,
+   "sha1": "375990e1f7a89d216abe478bc3e197333579969b"
+  },
+  {
+   "path": "imagenet-sample-images/n04005630_prison.JPEG",
+   "label": 743,
+   "sha1": "34a649e6f45757c3f95f7e4c81307f2049fb20e6"
+  },
+  {
+   "path": "imagenet-sample-images/n04008634_projectile.JPEG",
+   "label": 744,
+   "sha1": "488c22f1d23c1c29912d7c155a54609ce32b3d82"
+  },
+  {
+   "path": "imagenet-sample-images/n04009552_projector.JPEG",
+   "label": 745,
+   "sha1": "40dbdefe4b50d167f09a0882973d7edf693a2de1"
+  },
+  {
+   "path": "imagenet-sample-images/n04019541_puck.JPEG",
+   "label": 746,
+   "sha1": "40eef5e8ceb95d4e53e41c55c744aefa9e56c61d"
+  },
+  {
+   "path": "imagenet-sample-images/n04023962_punching_bag.JPEG",
+   "label": 747,
+   "sha1": "98ee3522a6721763c52c93858bba2853493cee2e"
+  },
+  {
+   "path": "imagenet-sample-images/n04026417_purse.JPEG",
+   "label": 748,
+   "sha1": "769824b407af4dfa05cebf30bd8c19f268374a40"
+  },
+  {
+   "path": "imagenet-sample-images/n04033901_quill.JPEG",
+   "label": 749,
+   "sha1": "169955ce5a300bdfd9e92d1f08831492becd53bf"
+  },
+  {
+   "path": "imagenet-sample-images/n04033995_quilt.JPEG",
+   "label": 750,
+   "sha1": "cf08937903377242ccc93273dc54ff0a7e6ee043"
+  },
+  {
+   "path": "imagenet-sample-images/n04037443_racer.JPEG",
+   "label": 751,
+   "sha1": "268858ebb44e9ebafd297b9366cd05e12509b896"
+  },
+  {
+   "path": "imagenet-sample-images/n04039381_racket.JPEG",
+   "label": 752,
+   "sha1": "ac1a2f0cba0e03d995e9431449be1f64e46129f1"
+  },
+  {
+   "path": "imagenet-sample-images/n04040759_radiator.JPEG",
+   "label": 753,
+   "sha1": "3458bf1271ad66073bc8d76f44de01929d83f8bd"
+  },
+  {
+   "path": "imagenet-sample-images/n04041544_radio.JPEG",
+   "label": 754,
+   "sha1": "86a9003d87df1e0af2e79dea28d2333123ad4dd6"
+  },
+  {
+   "path": "imagenet-sample-images/n04044716_radio_telescope.JPEG",
+   "label": 755,
+   "sha1": "390bf2561e30cd586a915a6a5809bc01ba62ff71"
+  },
+  {
+   "path": "imagenet-sample-images/n04049303_rain_barrel.JPEG",
+   "label": 756,
+   "sha1": "c50624fadb1f3e5190347d0dd6170a5dad24e042"
+  },
+  {
+   "path": "imagenet-sample-images/n04065272_recreational_vehicle.JPEG",
+   "label": 757,
+   "sha1": "730543838413ec7ef326f80c92b09c3b52c37d6e"
+  },
+  {
+   "path": "imagenet-sample-images/n04067472_reel.JPEG",
+   "label": 758,
+   "sha1": "6e44622ecc676d86273dd9fb984b0f1ba25c0701"
+  },
+  {
+   "path": "imagenet-sample-images/n04069434_reflex_camera.JPEG",
+   "label": 759,
+   "sha1": "993a1de350bc9add934c920f5cc8ee59681bcb32"
+  },
+  {
+   "path": "imagenet-sample-images/n04070727_refrigerator.JPEG",
+   "label": 760,
+   "sha1": "b7aaa5f7e0c9d4e820e8c4680dbd2a34b67d8e50"
+  },
+  {
+   "path": "imagenet-sample-images/n04074963_remote_control.JPEG",
+   "label": 761,
+   "sha1": "c0cb1658e214391860fddb23d2b74889b2db02ed"
+  },
+  {
+   "path": "imagenet-sample-images/n04081281_restaurant.JPEG",
+   "label": 762,
+   "sha1": "ba11af5b84ea7a6dc7316c40b117e741f12a862f"
+  },
+  {
+   "path": "imagenet-sample-images/n04086273_revolver.JPEG",
+   "label": 763,
+   "sha1": "f258c820da3ddd157efa953ca38ec5bcfb9376f8"
+  },
+  {
+   "path": "imagenet-sample-images/n04090263_rifle.JPEG",
+   "label": 764,
+   "sha1": "08406c76fe31dc9bb8cf3473fb03014e0274aff4"
+  },
+  {
+   "path": "imagenet-sample-images/n04099969_rocking_chair.JPEG",
+   "label": 765,
+   "sha1": "2134ec38ee52a0d307f5f17cd46731ad791639b7"
+  },
+  {
+   "path": "imagenet-sample-images/n04111531_rotisserie.JPEG",
+   "label": 766,
+   "sha1": "f0a91eccc0efeb6703f210cd07cba1a0c2e70622"
+  },
+  {
+   "path": "imagenet-sample-images/n04116512_rubber_eraser.JPEG",
+   "label": 767,
+   "sha1": "557333d4538a71cdb40af69d2a31dfaba36a0a06"
+  },
+  {
+   "path": "imagenet-sample-images/n04118538_rugby_ball.JPEG",
+   "label": 768,
+   "sha1": "ec46ec64467d20bdd899993b675260b8717b65d5"
+  },
+  {
+   "path": "imagenet-sample-images/n04118776_rule.JPEG",
+   "label": 769,
+   "sha1": "f18a52908e09cdae2b0de83fdfb7f49f174d652f"
+  },
+  {
+   "path": "imagenet-sample-images/n04120489_running_shoe.JPEG",
+   "label": 770,
+   "sha1": "aa6f2d62bad1b71d93aae5a0faf3ef0c245f8f10"
+  },
+  {
+   "path": "imagenet-sample-images/n04125021_safe.JPEG",
+   "label": 771,
+   "sha1": "1dd0f5daaf387cf849c775f8c96163d1d6a6cfef"
+  },
+  {
+   "path": "imagenet-sample-images/n04127249_safety_pin.JPEG",
+   "label": 772,
+   "sha1": "2d4c170c80b7b5901565b3aba89676ecf364a4b8"
+  },
+  {
+   "path": "imagenet-sample-images/n04131690_saltshaker.JPEG",
+   "label": 773,
+   "sha1": "47e8bac4d6e8dd1e2bfe6f1d2375f690dc78de5e"
+  },
+  {
+   "path": "imagenet-sample-images/n04133789_sandal.JPEG",
+   "label": 774,
+   "sha1": "69fcbed41c33eeda06d43fb14b0998f50e432f5f"
+  },
+  {
+   "path": "imagenet-sample-images/n04136333_sarong.JPEG",
+   "label": 775,
+   "sha1": "f7027bc1baf439e3f1ff1da7936e24c5dd72c944"
+  },
+  {
+   "path": "imagenet-sample-images/n04141076_sax.JPEG",
+   "label": 776,
+   "sha1": "d5135b09dd96b83b6ab06e8dbdc891f0f1178355"
+  },
+  {
+   "path": "imagenet-sample-images/n04141327_scabbard.JPEG",
+   "label": 777,
+   "sha1": "2461986ee180ec76c1ec74710ab8c45463b0decf"
+  },
+  {
+   "path": "imagenet-sample-images/n04141975_scale.JPEG",
+   "label": 778,
+   "sha1": "8497429507a6514d041e9b25772c42176ab342c4"
+  },
+  {
+   "path": "imagenet-sample-images/n04146614_school_bus.JPEG",
+   "label": 779,
+   "sha1": "3cceb7db3105704c4d33e4592c255b2f65cd3e22"
+  },
+  {
+   "path": "imagenet-sample-images/n04147183_schooner.JPEG",
+   "label": 780,
+   "sha1": "88c5f70af5ee0dafb174b2d0809dc6150a6d4dcc"
+  },
+  {
+   "path": "imagenet-sample-images/n04149813_scoreboard.JPEG",
+   "label": 781,
+   "sha1": "2433f02fcfaa768e6d9a8f96190ba9f0a0b6a869"
+  },
+  {
+   "path": "imagenet-sample-images/n04152593_screen.JPEG",
+   "label": 782,
+   "sha1": "cbaf6c31c3d9f3553750671acdfe39a992c50885"
+  },
+  {
+   "path": "imagenet-sample-images/n04153751_screw.JPEG",
+   "label": 783,
+   "sha1": "249cee821b8fe6efd515aa46d40dd03b3140d9a2"
+  },
+  {
+   "path": "imagenet-sample-images/n04154565_screwdriver.JPEG",
+   "label": 784,
+   "sha1": "31a47c42f60be4359191da6a1e94096c2cbf3a48"
+  },
+  {
+   "path": "imagenet-sample-images/n04162706_seat_belt.JPEG",
+   "label": 785,
+   "sha1": "82663c3d27a1302e748c781f9dd5ebf721d25d21"
+  },
+  {
+   "path": "imagenet-sample-images/n04179913_sewing_machine.JPEG",
+   "label": 786,
+   "sha1": "556237450b9c27039410ae6c9d9d0f19e6b41a51"
+  },
+  {
+   "path": "imagenet-sample-images/n04192698_shield.JPEG",
+   "label": 787,
+   "sha1": "629ca7c13c31ec83a9751576d8692a0bee0c4bb4"
+  },
+  {
+   "path": "imagenet-sample-images/n04200800_shoe_shop.JPEG",
+   "label": 788,
+   "sha1": "a575c120814cfbb142fb6f65dc995250be97c089"
+  },
+  {
+   "path": "imagenet-sample-images/n04201297_shoji.JPEG",
+   "label": 789,
+   "sha1": "398fbfbbff388e6b62592bd817f52ff176d0a257"
+  },
+  {
+   "path": "imagenet-sample-images/n04204238_shopping_basket.JPEG",
+   "label": 790,
+   "sha1": "2aadb4261ffa716a8e561459244e4866cb78ceaa"
+  },
+  {
+   "path": "imagenet-sample-images/n04204347_shopping_cart.JPEG",
+   "label": 791,
+   "sha1": "9230dda879d4a05d51eeaf398b1469832684afa0"
+  },
+  {
+   "path": "imagenet-sample-images/n04208210_shovel.JPEG",
+   "label": 792,
+   "sha1": "e5065d26ca8aefd372f12081cfc0442556c846bf"
+  },
+  {
+   "path": "imagenet-sample-images/n04209133_shower_cap.JPEG",
+   "label": 793,
+   "sha1": "268f3072906fa272e51380b7b7ca5075785659d5"
+  },
+  {
+   "path": "imagenet-sample-images/n04209239_shower_curtain.JPEG",
+   "label": 794,
+   "sha1": "cb7adc3a84deaeecad895f0a6aa6d04370f2875a"
+  },
+  {
+   "path": "imagenet-sample-images/n04228054_ski.JPEG",
+   "label": 795,
+   "sha1": "077b3513b0462f85838a1723d21f98b6ed8bebe5"
+  },
+  {
+   "path": "imagenet-sample-images/n04229816_ski_mask.JPEG",
+   "label": 796,
+   "sha1": "7210d27b51214f7e949e9ddf3875b8c6a66f0b02"
+  },
+  {
+   "path": "imagenet-sample-images/n04235860_sleeping_bag.JPEG",
+   "label": 797,
+   "sha1": "7f5fbea8ba67e6044a4137f8b4b385e3901f011a"
+  },
+  {
+   "path": "imagenet-sample-images/n04238763_slide_rule.JPEG",
+   "label": 798,
+   "sha1": "a54d3ebb00b5b41c40f316e3f165ed5e7e8878db"
+  },
+  {
+   "path": "imagenet-sample-images/n04239074_sliding_door.JPEG",
+   "label": 799,
+   "sha1": "fa558e654f57b6f0e83b1ccffff297eda929006c"
+  },
+  {
+   "path": "imagenet-sample-images/n04243546_slot.JPEG",
+   "label": 800,
+   "sha1": "45b84b99e10f941c6067c1262afb92095a3b8d85"
+  },
+  {
+   "path": "imagenet-sample-images/n04251144_snorkel.JPEG",
+   "label": 801,
+   "sha1": "8325d06790b76e90ec6e9bb93dc2ce23b74fec61"
+  },
+  {
+   "path": "imagenet-sample-images/n04252077_snowmobile.JPEG",
+   "label": 802,
+   "sha1": "fb9e588185daa2c9e1936bbe837e29170517b105"
+  },
+  {
+   "path": "imagenet-sample-images/n04252225_snowplow.JPEG",
+   "label": 803,
+   "sha1": "e3f64c55044be7af807a4d54c42691d8279866e8"
+  },
+  {
+   "path": "imagenet-sample-images/n04254120_soap_dispenser.JPEG",
+   "label": 804,
+   "sha1": "1c1eb8e8e00267a0fb54eee9a8e966c07c16b5e5"
+  },
+  {
+   "path": "imagenet-sample-images/n04254680_soccer_ball.JPEG",
+   "label": 805,
+   "sha1": "fd4fc5be716a0575529a6bef1a428ef157add294"
+  },
+  {
+   "path": "imagenet-sample-images/n04254777_sock.JPEG",
+   "label": 806,
+   "sha1": "7f0a124b3117bee9c4185ef3f30cf6ebcb40d2e5"
+  },
+  {
+   "path": "imagenet-sample-images/n04258138_solar_dish.JPEG",
+   "label": 807,
+   "sha1": "ccdc9950efde3d5cc4fbafc9564b4ed1019dc1ae"
+  },
+  {
+   "path": "imagenet-sample-images/n04259630_sombrero.JPEG",
+   "label": 808,
+   "sha1": "462cca90cad8058ed94ea6e8e0dabb674890e6f5"
+  },
+  {
+   "path": "imagenet-sample-images/n04263257_soup_bowl.JPEG",
+   "label": 809,
+   "sha1": "444ccaaa5b8c3e29e612bfab599d50af00b8614b"
+  },
+  {
+   "path": "imagenet-sample-images/n04264628_space_bar.JPEG",
+   "label": 810,
+   "sha1": "56d8f68832c3488ff1e39878c4439d5b51b3508b"
+  },
+  {
+   "path": "imagenet-sample-images/n04265275_space_heater.JPEG",
+   "label": 811,
+   "sha1": "6369321ec3ba1f1cce05ad2311563c611db6f226"
+  },
+  {
+   "path": "imagenet-sample-images/n04266014_space_shuttle.JPEG",
+   "label": 812,
+   "sha1": "ef2389488d0c6ec5f1cded5d8859a09e14799756"
+  },
+  {
+   "path": "imagenet-sample-images/n04270147_spatula.JPEG",
+   "label": 813,
+   "sha1": "6c20df685fe7b83fc98415dd4ffd1097f04357a0"
+  },
+  {
+   "path": "imagenet-sample-images/n04273569_speedboat.JPEG",
+   "label": 814,
+   "sha1": "e843e9ff171e54aa7f37ea0c52a6894718bb4c2e"
+  },
+  {
+   "path": "imagenet-sample-images/n04275548_spider_web.JPEG",
+   "label": 815,
+   "sha1": "a1010282be2b54e997ffa35733167b0c1ed6a1dc"
+  },
+  {
+   "path": "imagenet-sample-images/n04277352_spindle.JPEG",
+   "label": 816,
+   "sha1": "fb11b2d1ed0f7521e5e42a61fdf55d3c071bedf3"
+  },
+  {
+   "path": "imagenet-sample-images/n04285008_sports_car.JPEG",
+   "label": 817,
+   "sha1": "b15392e9a517b8d79fa25ee121442149c2eaa205"
+  },
+  {
+   "path": "imagenet-sample-images/n04286575_spotlight.JPEG",
+   "label": 818,
+   "sha1": "5e04fc21024e52340d483d3c1b7bdc494bbd640e"
+  },
+  {
+   "path": "imagenet-sample-images/n04296562_stage.JPEG",
+   "label": 819,
+   "sha1": "0e92334183fc129593017c7f6d53d02affa9055b"
+  },
+  {
+   "path": "imagenet-sample-images/n04310018_steam_locomotive.JPEG",
+   "label": 820,
+   "sha1": "1639364b24a8f63df78d21105449824bd8a39376"
+  },
+  {
+   "path": "imagenet-sample-images/n04311004_steel_arch_bridge.JPEG",
+   "label": 821,
+   "sha1": "307225eef609593090958745520ab8148db92416"
+  },
+  {
+   "path": "imagenet-sample-images/n04311174_steel_drum.JPEG",
+   "label": 822,
+   "sha1": "a8749f43d724fd0c5efba98b12e2bedabfcf134b"
+  },
+  {
+   "path": "imagenet-sample-images/n04317175_stethoscope.JPEG",
+   "label": 823,
+   "sha1": "0ce1d3e5209407881ae664d606189b3ed8c11767"
+  },
+  {
+   "path": "imagenet-sample-images/n04325704_stole.JPEG",
+   "label": 824,
+   "sha1": "99b9894f2f67435740b5f604c4aafe5099a58c19"
+  },
+  {
+   "path": "imagenet-sample-images/n04326547_stone_wall.JPEG",
+   "label": 825,
+   "sha1": "c543fb0522b927e623e12f5b386b6b417505ffd0"
+  },
+  {
+   "path": "imagenet-sample-images/n04328186_stopwatch.JPEG",
+   "label": 826,
+   "sha1": "bc12bf669663bf86539f44df56f1752c29d44c9f"
+  },
+  {
+   "path": "imagenet-sample-images/n04330267_stove.JPEG",
+   "label": 827,
+   "sha1": "1aa005633cfef48d362170bca18dfd44e56051e0"
+  },
+  {
+   "path": "imagenet-sample-images/n04332243_strainer.JPEG",
+   "label": 828,
+   "sha1": "a390424d4a37c85174f6c1f19b17cdb9b00793f5"
+  },
+  {
+   "path": "imagenet-sample-images/n04335435_streetcar.JPEG",
+   "label": 829,
+   "sha1": "4ad24a9ec06470d16ae9dd7c09e9d7c054a6ea2a"
+  },
+  {
+   "path": "imagenet-sample-images/n04336792_stretcher.JPEG",
+   "label": 830,
+   "sha1": "3a3171b57a04826dd06b8c57d5ef402b72b10043"
+  },
+  {
+   "path": "imagenet-sample-images/n04344873_studio_couch.JPEG",
+   "label": 831,
+   "sha1": "f575f0d7bfe5bf59f6625d8ed8ecbbe419e37c96"
+  },
+  {
+   "path": "imagenet-sample-images/n04346328_stupa.JPEG",
+   "label": 832,
+   "sha1": "a655826dd6491c886a1c3c3592a71a70ec5f2dc7"
+  },
+  {
+   "path": "imagenet-sample-images/n04347754_submarine.JPEG",
+   "label": 833,
+   "sha1": "2e28ad37f7fa23fa7c57245aed018cfa53b59cd4"
+  },
+  {
+   "path": "imagenet-sample-images/n04350905_suit.JPEG",
+   "label": 834,
+   "sha1": "05b19e4cb33aab9f49beaf4b37787ff2144ba366"
+  },
+  {
+   "path": "imagenet-sample-images/n04355338_sundial.JPEG",
+   "label": 835,
+   "sha1": "40feb78bbd0123cc12c4454bafa5dd93d7115b2d"
+  },
+  {
+   "path": "imagenet-sample-images/n04355933_sunglass.JPEG",
+   "label": 836,
+   "sha1": "6e84ac64c5629b72055f57a4b0539a4a2964fe54"
+  },
+  {
+   "path": "imagenet-sample-images/n04356056_sunglasses.JPEG",
+   "label": 837,
+   "sha1": "e14978417bb46fe682c19cb4ff336cedb27d6f06"
+  },
+  {
+   "path": "imagenet-sample-images/n04357314_sunscreen.JPEG",
+   "label": 838,
+   "sha1": "d23ef942371a7ee1e4e22e5d38ab6432960ee326"
+  },
+  {
+   "path": "imagenet-sample-images/n04366367_suspension_bridge.JPEG",
+   "label": 839,
+   "sha1": "856f9b62b5c4eca0401617686a60a1c9f3c1fc03"
+  },
+  {
+   "path": "imagenet-sample-images/n04367480_swab.JPEG",
+   "label": 840,
+   "sha1": "c6b7494c9b23e6a37aabbede7c2d37ed3f0e0c0b"
+  },
+  {
+   "path": "imagenet-sample-images/n04370456_sweatshirt.JPEG",
+   "label": 841,
+   "sha1": "be17371a493a3a475e544ca79233015b2434fa2d"
+  },
+  {
+   "path": "imagenet-sample-images/n04371430_swimming_trunks.JPEG",
+   "label": 842,
+   "sha1": "7df5510da5ced9c6698620437d0ac90614839585"
+  },
+  {
+   "path": "imagenet-sample-images/n04371774_swing.JPEG",
+   "label": 843,
+   "sha1": "125fbcd0999a1dad63d54fc99e7fef58d1cc611e"
+  },
+  {
+   "path": "imagenet-sample-images/n04372370_switch.JPEG",
+   "label": 844,
+   "sha1": "dc9ec5cde9ee832cc68c4b4befa3a8c9bdcc33d6"
+  },
+  {
+   "path": "imagenet-sample-images/n04376876_syringe.JPEG",
+   "label": 845,
+   "sha1": "12357af453f058118f7e13e9e2579960a5e95461"
+  },
+  {
+   "path": "imagenet-sample-images/n04380533_table_lamp.JPEG",
+   "label": 846,
+   "sha1": "80342a11b12157b1276ad14b0265159ae53e783b"
+  },
+  {
+   "path": "imagenet-sample-images/n04389033_tank.JPEG",
+   "label": 847,
+   "sha1": "9b49127ebb3e90a6d80807b1855d03d884966ac5"
+  },
+  {
+   "path": "imagenet-sample-images/n04392985_tape_player.JPEG",
+   "label": 848,
+   "sha1": "1beff9a4e3b687864b075726f0246f97cd0f349e"
+  },
+  {
+   "path": "imagenet-sample-images/n04398044_teapot.JPEG",
+   "label": 849,
+   "sha1": "0a82a5a4712c50cbd3a4da7cfa3a384adb64190f"
+  },
+  {
+   "path": "imagenet-sample-images/n04399382_teddy.JPEG",
+   "label": 850,
+   "sha1": "9eba8ed37818a86f479bb51f09ffd91c98d96cf5"
+  },
+  {
+   "path": "imagenet-sample-images/n04404412_television.JPEG",
+   "label": 851,
+   "sha1": "adab8bcdc9053f758156a5abbf7cf12f0c89d4a6"
+  },
+  {
+   "path": "imagenet-sample-images/n04409515_tennis_ball.JPEG",
+   "label": 852,
+   "sha1": "13a7f635db28d6c7512ea0b950408d4928316527"
+  },
+  {
+   "path": "imagenet-sample-images/n04417672_thatch.JPEG",
+   "label": 853,
+   "sha1": "740bec41c1fd72fc5f4511c942dbd55a7dbd85fc"
+  },
+  {
+   "path": "imagenet-sample-images/n04418357_theater_curtain.JPEG",
+   "label": 854,
+   "sha1": "513b274dd20f3a1b7a5f299db2a702ae366fd51c"
+  },
+  {
+   "path": "imagenet-sample-images/n04423845_thimble.JPEG",
+   "label": 855,
+   "sha1": "29f56a57784840ff23ec18ef97af0ee47cccbe1c"
+  },
+  {
+   "path": "imagenet-sample-images/n04428191_thresher.JPEG",
+   "label": 856,
+   "sha1": "8d9df69df17ef41dfd969dd685ea9660cb9859e8"
+  },
+  {
+   "path": "imagenet-sample-images/n04429376_throne.JPEG",
+   "label": 857,
+   "sha1": "f1b71e5a7eb11c0a1cd568bf63c3588cec2df8a1"
+  },
+  {
+   "path": "imagenet-sample-images/n04435653_tile_roof.JPEG",
+   "label": 858,
+   "sha1": "9e0fb5db4bd9536ff503330193eb8df064fa23de"
+  },
+  {
+   "path": "imagenet-sample-images/n04442312_toaster.JPEG",
+   "label": 859,
+   "sha1": "391a5d861a4addf36a99cbb5a0be8d2dde1061de"
+  },
+  {
+   "path": "imagenet-sample-images/n04443257_tobacco_shop.JPEG",
+   "label": 860,
+   "sha1": "61bbb184394304d8c5085d077d5ec7c469b7dc23"
+  },
+  {
+   "path": "imagenet-sample-images/n04447861_toilet_seat.JPEG",
+   "label": 861,
+   "sha1": "efbd21bdd43362c725323cb8ed858ff119c8195e"
+  },
+  {
+   "path": "imagenet-sample-images/n04456115_torch.JPEG",
+   "label": 862,
+   "sha1": "c522e2f9adc2c52c8c6927e514cfa5e8a7c4f1ca"
+  },
+  {
+   "path": "imagenet-sample-images/n04458633_totem_pole.JPEG",
+   "label": 863,
+   "sha1": "9f2f4d14a54f8401d33fdea551f01271352c7591"
+  },
+  {
+   "path": "imagenet-sample-images/n04461696_tow_truck.JPEG",
+   "label": 864,
+   "sha1": "e9591f4e64febca18c46ee457861b85ded6bc6d1"
+  },
+  {
+   "path": "imagenet-sample-images/n04462240_toyshop.JPEG",
+   "label": 865,
+   "sha1": "a03c6b76c5952297bec3b760f5061ae0b122823e"
+  },
+  {
+   "path": "imagenet-sample-images/n04465501_tractor.JPEG",
+   "label": 866,
+   "sha1": "508c92e29f3fa4b6d0a07f3bade0811762f1bd38"
+  },
+  {
+   "path": "imagenet-sample-images/n04467665_trailer_truck.JPEG",
+   "label": 867,
+   "sha1": "76c40586966990d8bdd60a696279ee78ed0cde77"
+  },
+  {
+   "path": "imagenet-sample-images/n04476259_tray.JPEG",
+   "label": 868,
+   "sha1": "58314d947b55c6bc697692339f05626d9a501ba6"
+  },
+  {
+   "path": "imagenet-sample-images/n04479046_trench_coat.JPEG",
+   "label": 869,
+   "sha1": "5ec0c46f58ba08a791e15580ac5051340b337f49"
+  },
+  {
+   "path": "imagenet-sample-images/n04482393_tricycle.JPEG",
+   "label": 870,
+   "sha1": "cbd3ec5703fbf2b5946f55d8352af2c750df31a2"
+  },
+  {
+   "path": "imagenet-sample-images/n04483307_trimaran.JPEG",
+   "label": 871,
+   "sha1": "219db7a90ede7e113649063c16873bf199f4bba1"
+  },
+  {
+   "path": "imagenet-sample-images/n04485082_tripod.JPEG",
+   "label": 872,
+   "sha1": "f1fe87b7613162d70f1572f68c8ea6ab3b24bc33"
+  },
+  {
+   "path": "imagenet-sample-images/n04486054_triumphal_arch.JPEG",
+   "label": 873,
+   "sha1": "902a74bf698fdee29595b9a04ce6cbe35e1054bc"
+  },
+  {
+   "path": "imagenet-sample-images/n04487081_trolleybus.JPEG",
+   "label": 874,
+   "sha1": "cd5aa4d3f2e5486a487a501bbd2ab2eada0bde8a"
+  },
+  {
+   "path": "imagenet-sample-images/n04487394_trombone.JPEG",
+   "label": 875,
+   "sha1": "e89544c16790161f924638fa9bde5f5911341210"
+  },
+  {
+   "path": "imagenet-sample-images/n04493381_tub.JPEG",
+   "label": 876,
+   "sha1": "728fa3efe68374ef9e984aba307a71a74eaa63e1"
+  },
+  {
+   "path": "imagenet-sample-images/n04501370_turnstile.JPEG",
+   "label": 877,
+   "sha1": "e0bef77a44c45ebc37ac3ff195a1a5c37e6cdeab"
+  },
+  {
+   "path": "imagenet-sample-images/n04505470_typewriter_keyboard.JPEG",
+   "label": 878,
+   "sha1": "19a2663429ad7201a93649b1f915926d63fc39e5"
+  },
+  {
+   "path": "imagenet-sample-images/n04507155_umbrella.JPEG",
+   "label": 879,
+   "sha1": "11a0cfd0590a4bebb9ffee59d1a84c67ad40e894"
+  },
+  {
+   "path": "imagenet-sample-images/n04509417_unicycle.JPEG",
+   "label": 880,
+   "sha1": "59dff2297e3326e682aa2440d9a6857b15474ee1"
+  },
+  {
+   "path": "imagenet-sample-images/n04515003_upright.JPEG",
+   "label": 881,
+   "sha1": "01349f760e252ea0193483c56955c1bb2921a5c9"
+  },
+  {
+   "path": "imagenet-sample-images/n04517823_vacuum.JPEG",
+   "label": 882,
+   "sha1": "eac7605ac54b33fd9934f848d818ac6dddce5a53"
+  },
+  {
+   "path": "imagenet-sample-images/n04522168_vase.JPEG",
+   "label": 883,
+   "sha1": "845ea7e264dd04055888ad55e04d8e68117aa53e"
+  },
+  {
+   "path": "imagenet-sample-images/n04523525_vault.JPEG",
+   "label": 884,
+   "sha1": "e634b6b906c72d0d5d87da4fba866ff8f56a199a"
+  },
+  {
+   "path": "imagenet-sample-images/n04525038_velvet.JPEG",
+   "label": 885,
+   "sha1": "9b89ce82c274238cb48f5934590db863110b9970"
+  },
+  {
+   "path": "imagenet-sample-images/n04525305_vending_machine.JPEG",
+   "label": 886,
+   "sha1": "178ca4ff4a41c5e9edfa4b2e3d15721d3f568162"
+  },
+  {
+   "path": "imagenet-sample-images/n04532106_vestment.JPEG",
+   "label": 887,
+   "sha1": "5572431d755e7588e54d3a64aba43a58d872fe00"
+  },
+  {
+   "path": "imagenet-sample-images/n04532670_viaduct.JPEG",
+   "label": 888,
+   "sha1": "2232279d4e3a4cdb327b2546589cf7a0279f68b5"
+  },
+  {
+   "path": "imagenet-sample-images/n04536866_violin.JPEG",
+   "label": 889,
+   "sha1": "b99b09544205213e418a0807c401e8a6ef848e80"
+  },
+  {
+   "path": "imagenet-sample-images/n04540053_volleyball.JPEG",
+   "label": 890,
+   "sha1": "5eca29453d91f07804ef5187f064da310884c370"
+  },
+  {
+   "path": "imagenet-sample-images/n04542943_waffle_iron.JPEG",
+   "label": 891,
+   "sha1": "f50d49a70453aeb52a299b8630d4159a44a26c61"
+  },
+  {
+   "path": "imagenet-sample-images/n04548280_wall_clock.JPEG",
+   "label": 892,
+   "sha1": "0719e1ddaa985e8d76dd6ab22b1dcd93bf1e917c"
+  },
+  {
+   "path": "imagenet-sample-images/n04548362_wallet.JPEG",
+   "label": 893,
+   "sha1": "f22ca92e25cdb7bd57ffe51271559436661b9219"
+  },
+  {
+   "path": "imagenet-sample-images/n04550184_wardrobe.JPEG",
+   "label": 894,
+   "sha1": "220515fd146c4437a52d842dee5387430a0d7695"
+  },
+  {
+   "path": "imagenet-sample-images/n04552348_warplane.JPEG",
+   "label": 895,
+   "sha1": "462e678956e16a23a49548c4a07015ef61046b99"
+  },
+  {
+   "path": "imagenet-sample-images/n04553703_washbasin.JPEG",
+   "label": 896,
+   "sha1": "12bcdd15f2227984773725a3020986f799398de3"
+  },
+  {
+   "path": "imagenet-sample-images/n04554684_washer.JPEG",
+   "label": 897,
+   "sha1": "cee06cb1d7edf9e2952d955ae1fe54507e583b8d"
+  },
+  {
+   "path": "imagenet-sample-images/n04557648_water_bottle.JPEG",
+   "label": 898,
+   "sha1": "ed0f4b64106011401fe2b6d4909139410b2f83a7"
+  },
+  {
+   "path": "imagenet-sample-images/n04560804_water_jug.JPEG",
+   "label": 899,
+   "sha1": "8d5df5e44979614f31adbe0b34ccf4a7efeb0ab6"
+  },
+  {
+   "path": "imagenet-sample-images/n04562935_water_tower.JPEG",
+   "label": 900,
+   "sha1": "8ee9864e1b8d970d2eaf6a8158a89b2b9a8bb384"
+  },
+  {
+   "path": "imagenet-sample-images/n04579145_whiskey_jug.JPEG",
+   "label": 901,
+   "sha1": "da4af5ed74ab3e6daae9a7e4ee2fbccb623022cc"
+  },
+  {
+   "path": "imagenet-sample-images/n04579432_whistle.JPEG",
+   "label": 902,
+   "sha1": "b5f8d438a44189913b2d830849b95f802cb6202a"
+  },
+  {
+   "path": "imagenet-sample-images/n04584207_wig.JPEG",
+   "label": 903,
+   "sha1": "7a8688512a9947a7ca2e9ec59d642db537b6afcf"
+  },
+  {
+   "path": "imagenet-sample-images/n04589890_window_screen.JPEG",
+   "label": 904,
+   "sha1": "1cc5d26259d6beab82d177a87f3f73676c690af3"
+  },
+  {
+   "path": "imagenet-sample-images/n04590129_window_shade.JPEG",
+   "label": 905,
+   "sha1": "594424e085bb21994b8e72dc77af05988ef09fa7"
+  },
+  {
+   "path": "imagenet-sample-images/n04591157_Windsor_tie.JPEG",
+   "label": 906,
+   "sha1": "eb8eaefe24724947f814642d77e1590d1f7b37ff"
+  },
+  {
+   "path": "imagenet-sample-images/n04591713_wine_bottle.JPEG",
+   "label": 907,
+   "sha1": "b886d0c23c31fbdc7d9301137f9e3799dd3c4868"
+  },
+  {
+   "path": "imagenet-sample-images/n04592741_wing.JPEG",
+   "label": 908,
+   "sha1": "9e4da4e2f649aa1c3f89f8510214cc8637355432"
+  },
+  {
+   "path": "imagenet-sample-images/n04596742_wok.JPEG",
+   "label": 909,
+   "sha1": "30f21d5b7881625e55b4af5d3558c54cdf5208d1"
+  },
+  {
+   "path": "imagenet-sample-images/n04597913_wooden_spoon.JPEG",
+   "label": 910,
+   "sha1": "a30568a283d1445b403385c0245538cb87f0b8eb"
+  },
+  {
+   "path": "imagenet-sample-images/n04599235_wool.JPEG",
+   "label": 911,
+   "sha1": "8c7c6c1797effb8cd11cc9b6d7be9866e7709aab"
+  },
+  {
+   "path": "imagenet-sample-images/n04604644_worm_fence.JPEG",
+   "label": 912,
+   "sha1": "58ce446eeeac1bc08f7ecfae3d7d2dd8b2b1cee5"
+  },
+  {
+   "path": "imagenet-sample-images/n04606251_wreck.JPEG",
+   "label": 913,
+   "sha1": "e0b3f4155489230e97d9d7c5beaa67e4b30731b7"
+  },
+  {
+   "path": "imagenet-sample-images/n04612504_yawl.JPEG",
+   "label": 914,
+   "sha1": "f5db5687f43786d52961f96a6864baef7278649f"
+  },
+  {
+   "path": "imagenet-sample-images/n04613696_yurt.JPEG",
+   "label": 915,
+   "sha1": "a8546ab68de495ae2709742fa12587bf6613a5fa"
+  },
+  {
+   "path": "imagenet-sample-images/n06359193_web_site.JPEG",
+   "label": 916,
+   "sha1": "3706324220a7d7575133d01627399a3e2e9aca32"
+  },
+  {
+   "path": "imagenet-sample-images/n06596364_comic_book.JPEG",
+   "label": 917,
+   "sha1": "e5c8084c1aaf24692a23a1376fccaa501b84b482"
+  },
+  {
+   "path": "imagenet-sample-images/n06785654_crossword_puzzle.JPEG",
+   "label": 918,
+   "sha1": "27f74d8793556d5129396abe28aa7c68891fdc2c"
+  },
+  {
+   "path": "imagenet-sample-images/n06794110_street_sign.JPEG",
+   "label": 919,
+   "sha1": "af4fef623d644bfc8be8ec351422163805424a59"
+  },
+  {
+   "path": "imagenet-sample-images/n06874185_traffic_light.JPEG",
+   "label": 920,
+   "sha1": "5f7e31616e0d0319c16071beb9145afcf1f6341d"
+  },
+  {
+   "path": "imagenet-sample-images/n07248320_book_jacket.JPEG",
+   "label": 921,
+   "sha1": "fff38c0081eafd10c442f686e52bef15b0530f95"
+  },
+  {
+   "path": "imagenet-sample-images/n07565083_menu.JPEG",
+   "label": 922,
+   "sha1": "b2e91ca397c840d56866eee7459617bf0e0008be"
+  },
+  {
+   "path": "imagenet-sample-images/n07579787_plate.JPEG",
+   "label": 923,
+   "sha1": "c77ab92ba8be44f4eb2cbfcfb4b73eaaab45e037"
+  },
+  {
+   "path": "imagenet-sample-images/n07583066_guacamole.JPEG",
+   "label": 924,
+   "sha1": "eca451aa7cfd2ceab993cdb62374bfc4f15b8154"
+  },
+  {
+   "path": "imagenet-sample-images/n07584110_consomme.JPEG",
+   "label": 925,
+   "sha1": "7a5be2729c7a75d08ad2cf84588e3431cb4876cc"
+  },
+  {
+   "path": "imagenet-sample-images/n07590611_hot_pot.JPEG",
+   "label": 926,
+   "sha1": "d019daf7ab3d6aee9a41fed1f3cc1cd99ca3489e"
+  },
+  {
+   "path": "imagenet-sample-images/n07613480_trifle.JPEG",
+   "label": 927,
+   "sha1": "cf9b37a6454b55595c99d1e1654576fa6ba23d59"
+  },
+  {
+   "path": "imagenet-sample-images/n07614500_ice_cream.JPEG",
+   "label": 928,
+   "sha1": "dd2c0d29a6cc0bc3d0ed369c0687caf020fce9b3"
+  },
+  {
+   "path": "imagenet-sample-images/n07615774_ice_lolly.JPEG",
+   "label": 929,
+   "sha1": "d65880126cbbe529affb2c6e95a959e566ab345c"
+  },
+  {
+   "path": "imagenet-sample-images/n07684084_French_loaf.JPEG",
+   "label": 930,
+   "sha1": "5c63b71198450063b6b301b1b08a42e79f3d9240"
+  },
+  {
+   "path": "imagenet-sample-images/n07693725_bagel.JPEG",
+   "label": 931,
+   "sha1": "2e13f180eea81fbc17ee51489f6283cfbac5883f"
+  },
+  {
+   "path": "imagenet-sample-images/n07695742_pretzel.JPEG",
+   "label": 932,
+   "sha1": "58439bb3ad2dcfd4805201ba0d95492b31955a59"
+  },
+  {
+   "path": "imagenet-sample-images/n07697313_cheeseburger.JPEG",
+   "label": 933,
+   "sha1": "b475c568d507e593e8898c260474091cd06d6b18"
+  },
+  {
+   "path": "imagenet-sample-images/n07697537_hotdog.JPEG",
+   "label": 934,
+   "sha1": "15251b70db233ba4a66473d72dfe6cf56fffb1af"
+  },
+  {
+   "path": "imagenet-sample-images/n07711569_mashed_potato.JPEG",
+   "label": 935,
+   "sha1": "b50a6fbc4f06efa95818dfac6e2833238e03dd96"
+  },
+  {
+   "path": "imagenet-sample-images/n07714571_head_cabbage.JPEG",
+   "label": 936,
+   "sha1": "c9663ee8824aeeaf32ae564957a47884a5166608"
+  },
+  {
+   "path": "imagenet-sample-images/n07714990_broccoli.JPEG",
+   "label": 937,
+   "sha1": "8e6e98da923a6e235f7a14326404fbf1b66a0640"
+  },
+  {
+   "path": "imagenet-sample-images/n07715103_cauliflower.JPEG",
+   "label": 938,
+   "sha1": "ce73275afddf158a6253cc6c6132fb48d91de3c5"
+  },
+  {
+   "path": "imagenet-sample-images/n07716358_zucchini.JPEG",
+   "label": 939,
+   "sha1": "0003de5a85b027b5ac8ecd3ec25dc346e5e2e8c9"
+  },
+  {
+   "path": "imagenet-sample-images/n07716906_spaghetti_squash.JPEG",
+   "label": 940,
+   "sha1": "a5afe191b1cdf0db8ae679e8686abb0943f19884"
+  },
+  {
+   "path": "imagenet-sample-images/n07717410_acorn_squash.JPEG",
+   "label": 941,
+   "sha1": "c4eb661bff1d7af71c7658d86557afacb2c16ac9"
+  },
+  {
+   "path": "imagenet-sample-images/n07717556_butternut_squash.JPEG",
+   "label": 942,
+   "sha1": "bd6ceccfbe679fb11c679aaa7ba9e9117f4d5f13"
+  },
+  {
+   "path": "imagenet-sample-images/n07718472_cucumber.JPEG",
+   "label": 943,
+   "sha1": "8378add731269c77ced5c7c97c04b3aede754d0d"
+  },
+  {
+   "path": "imagenet-sample-images/n07718747_artichoke.JPEG",
+   "label": 944,
+   "sha1": "7b606663081d0e55eacbfaf584b44e478774c0fa"
+  },
+  {
+   "path": "imagenet-sample-images/n07720875_bell_pepper.JPEG",
+   "label": 945,
+   "sha1": "9c66acb85cf0124df01d6088fae98c336e9d58ed"
+  },
+  {
+   "path": "imagenet-sample-images/n07730033_cardoon.JPEG",
+   "label": 946,
+   "sha1": "7d6dd9565864f8017dd340fbeabeafa1b6a4189c"
+  },
+  {
+   "path": "imagenet-sample-images/n07734744_mushroom.JPEG",
+   "label": 947,
+   "sha1": "a98f6ef56c8443425f8603b89561be84d4d77c4b"
+  },
+  {
+   "path": "imagenet-sample-images/n07742313_Granny_Smith.JPEG",
+   "label": 948,
+   "sha1": "25c3f19af6df33aed0f519336658fd1ec7dd213f"
+  },
+  {
+   "path": "imagenet-sample-images/n07745940_strawberry.JPEG",
+   "label": 949,
+   "sha1": "b1a47e4bd2ffa6f9616b185e114462042a2067dc"
+  },
+  {
+   "path": "imagenet-sample-images/n07747607_orange.JPEG",
+   "label": 950,
+   "sha1": "b65eaf9fe573e16131b6b3a18bab88283378f2f0"
+  },
+  {
+   "path": "imagenet-sample-images/n07749582_lemon.JPEG",
+   "label": 951,
+   "sha1": "da6af4ae07e213f50fcf70dba36bab1bb4fbf250"
+  },
+  {
+   "path": "imagenet-sample-images/n07753113_fig.JPEG",
+   "label": 952,
+   "sha1": "dafdd6bc9af01438e1b173d5fc7f7579b700c2fc"
+  },
+  {
+   "path": "imagenet-sample-images/n07753275_pineapple.JPEG",
+   "label": 953,
+   "sha1": "8542fa1ac768b719fa3e957529a7c4d77d87639c"
+  },
+  {
+   "path": "imagenet-sample-images/n07753592_banana.JPEG",
+   "label": 954,
+   "sha1": "b615c1a6ef12e46962f89f8f8ee03753e71c8aeb"
+  },
+  {
+   "path": "imagenet-sample-images/n07754684_jackfruit.JPEG",
+   "label": 955,
+   "sha1": "dbd633ddee3825bec5e83226f38488c1f467b25c"
+  },
+  {
+   "path": "imagenet-sample-images/n07760859_custard_apple.JPEG",
+   "label": 956,
+   "sha1": "fb8cbe6c028041d92620f0c173f4d2419e6a3284"
+  },
+  {
+   "path": "imagenet-sample-images/n07768694_pomegranate.JPEG",
+   "label": 957,
+   "sha1": "3fde25dae34aa25488affc166f80c33f41b5662d"
+  },
+  {
+   "path": "imagenet-sample-images/n07802026_hay.JPEG",
+   "label": 958,
+   "sha1": "cdd09a7183c9f3c782202f52e4f24d1e905d9f0a"
+  },
+  {
+   "path": "imagenet-sample-images/n07831146_carbonara.JPEG",
+   "label": 959,
+   "sha1": "6ed97aa0d3d435598fb2e057fbf972d9f57d0ab6"
+  },
+  {
+   "path": "imagenet-sample-images/n07836838_chocolate_sauce.JPEG",
+   "label": 960,
+   "sha1": "c7241ad56980609337d5258dac505a1a514a881b"
+  },
+  {
+   "path": "imagenet-sample-images/n07860988_dough.JPEG",
+   "label": 961,
+   "sha1": "f46ea59ec788081e072f57bd5c502b6b80abe4d3"
+  },
+  {
+   "path": "imagenet-sample-images/n07871810_meat_loaf.JPEG",
+   "label": 962,
+   "sha1": "d09a4873b3ec41616104cb7b22f2393aaa36e0f0"
+  },
+  {
+   "path": "imagenet-sample-images/n07873807_pizza.JPEG",
+   "label": 963,
+   "sha1": "ef6a1f753f298eff4fabf7c8c40926be90889d2b"
+  },
+  {
+   "path": "imagenet-sample-images/n07875152_potpie.JPEG",
+   "label": 964,
+   "sha1": "386659d53ae114407539f48dde4239f0a36f6985"
+  },
+  {
+   "path": "imagenet-sample-images/n07880968_burrito.JPEG",
+   "label": 965,
+   "sha1": "f26eb8f65d441a46d54b1ce057f329d7d769729a"
+  },
+  {
+   "path": "imagenet-sample-images/n07892512_red_wine.JPEG",
+   "label": 966,
+   "sha1": "4cffd320056a1435ef8100e38462aee211cb0322"
+  },
+  {
+   "path": "imagenet-sample-images/n07920052_espresso.JPEG",
+   "label": 967,
+   "sha1": "0a7ea0d182c1db58bc0f713a1e833cd214786f90"
+  },
+  {
+   "path": "imagenet-sample-images/n07930864_cup.JPEG",
+   "label": 968,
+   "sha1": "34042f7cf7b819ae5001c1802f2286b220d38b2f"
+  },
+  {
+   "path": "imagenet-sample-images/n07932039_eggnog.JPEG",
+   "label": 969,
+   "sha1": "b98337a67803f2d53eae4a6aa39f10fcb16419a8"
+  },
+  {
+   "path": "imagenet-sample-images/n09193705_alp.JPEG",
+   "label": 970,
+   "sha1": "7b3b846f0e66e6f5c9918894fee76badd6fd9d56"
+  },
+  {
+   "path": "imagenet-sample-images/n09229709_bubble.JPEG",
+   "label": 971,
+   "sha1": "e48bfcc9d8bc48a7dce9a5147e8fd6c6cf68e74f"
+  },
+  {
+   "path": "imagenet-sample-images/n09246464_cliff.JPEG",
+   "label": 972,
+   "sha1": "7f937dde53df6bd417cd89771fa6a8ad33432a23"
+  },
+  {
+   "path": "imagenet-sample-images/n09256479_coral_reef.JPEG",
+   "label": 973,
+   "sha1": "1dfbd317d4ef11be15b84535f7afaf7f5abea04d"
+  },
+  {
+   "path": "imagenet-sample-images/n09288635_geyser.JPEG",
+   "label": 974,
+   "sha1": "edd100478c4522863e1949edad611630b7e33a3d"
+  },
+  {
+   "path": "imagenet-sample-images/n09332890_lakeside.JPEG",
+   "label": 975,
+   "sha1": "19cc02caf8b65dd1385f235505a6767af7ff280c"
+  },
+  {
+   "path": "imagenet-sample-images/n09399592_promontory.JPEG",
+   "label": 976,
+   "sha1": "3f7952d893dddb3e4bac9e948b603ea7a58a48e7"
+  },
+  {
+   "path": "imagenet-sample-images/n09421951_sandbar.JPEG",
+   "label": 977,
+   "sha1": "968ab3500c68cff0ea9df24e025ef546f384228e"
+  },
+  {
+   "path": "imagenet-sample-images/n09428293_seashore.JPEG",
+   "label": 978,
+   "sha1": "4db1061f461221d4c8dc5da7ae546b27e22c8ce9"
+  },
+  {
+   "path": "imagenet-sample-images/n09468604_valley.JPEG",
+   "label": 979,
+   "sha1": "5ac73900a0492f241dce2977c9615800e14c1b4b"
+  },
+  {
+   "path": "imagenet-sample-images/n09472597_volcano.JPEG",
+   "label": 980,
+   "sha1": "6d9d6ebef471dc6e3eec06b037ee0a461f4caccc"
+  },
+  {
+   "path": "imagenet-sample-images/n09835506_ballplayer.JPEG",
+   "label": 981,
+   "sha1": "b161561a863a1c4109560213c4c9cef0d33d9762"
+  },
+  {
+   "path": "imagenet-sample-images/n10148035_groom.JPEG",
+   "label": 982,
+   "sha1": "35db9640dad7930031d1ebe902feeb60188be52a"
+  },
+  {
+   "path": "imagenet-sample-images/n10565667_scuba_diver.JPEG",
+   "label": 983,
+   "sha1": "ea1c1f1afaa0c3ced4c9f37a93e85b39eb2025f7"
+  },
+  {
+   "path": "imagenet-sample-images/n11879895_rapeseed.JPEG",
+   "label": 984,
+   "sha1": "b57d7cd4ee0a87ccaad6c66db2d09bf86eb40374"
+  },
+  {
+   "path": "imagenet-sample-images/n11939491_daisy.JPEG",
+   "label": 985,
+   "sha1": "97c95f3bede4d4bb315cb459b569041a19fa6ab9"
+  },
+  {
+   "path": "imagenet-sample-images/n12057211_yellow_lady's_slipper.JPEG",
+   "label": 986,
+   "sha1": "3bcfecb398df56c2e0fcfc27563470c94e8bdf7d"
+  },
+  {
+   "path": "imagenet-sample-images/n12144580_corn.JPEG",
+   "label": 987,
+   "sha1": "d0eb6c871ff4f0ddf21da706dd8c8a9a52022457"
+  },
+  {
+   "path": "imagenet-sample-images/n12267677_acorn.JPEG",
+   "label": 988,
+   "sha1": "cbb831abb4150f01bd17779096848dd938e576cd"
+  },
+  {
+   "path": "imagenet-sample-images/n12620546_hip.JPEG",
+   "label": 989,
+   "sha1": "69cc85e01c429953771de63b6377cd53ca004cba"
+  },
+  {
+   "path": "imagenet-sample-images/n12768682_buckeye.JPEG",
+   "label": 990,
+   "sha1": "1b125a622105f82c2b3d88f0c315ebceb16191e6"
+  },
+  {
+   "path": "imagenet-sample-images/n12985857_coral_fungus.JPEG",
+   "label": 991,
+   "sha1": "70aff14173edcddcf5e128595e5d903754a89605"
+  },
+  {
+   "path": "imagenet-sample-images/n12998815_agaric.JPEG",
+   "label": 992,
+   "sha1": "63741dc29999cc60a5e8222b232d2dc9dcfc51c5"
+  },
+  {
+   "path": "imagenet-sample-images/n13037406_gyromitra.JPEG",
+   "label": 993,
+   "sha1": "e975b3c3ad0c50c8ede5198163a02dd96e7ebf97"
+  },
+  {
+   "path": "imagenet-sample-images/n13040303_stinkhorn.JPEG",
+   "label": 994,
+   "sha1": "88dd2b9276b0620045c224a974c709709138a401"
+  },
+  {
+   "path": "imagenet-sample-images/n13044778_earthstar.JPEG",
+   "label": 995,
+   "sha1": "93a6eb730ac94a96ea7a8f84984910130da1e704"
+  },
+  {
+   "path": "imagenet-sample-images/n13052670_hen-of-the-woods.JPEG",
+   "label": 996,
+   "sha1": "168da2c146516da923ade486dc6d2e623d4b79a1"
+  },
+  {
+   "path": "imagenet-sample-images/n13054560_bolete.JPEG",
+   "label": 997,
+   "sha1": "3f46e150a5ea463e4a815a01d0017dfce2748a84"
+  },
+  {
+   "path": "imagenet-sample-images/n13133613_ear.JPEG",
+   "label": 998,
+   "sha1": "8444e2a62872cd0e786881b894326f75033caad3"
+  },
+  {
+   "path": "imagenet-sample-images/n15075141_toilet_tissue.JPEG",
+   "label": 999,
+   "sha1": "5c506cc34ae6125aa10adf2d3371fefea906ac63"
+  }
+ ]
+}

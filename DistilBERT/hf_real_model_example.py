@@ -28,7 +28,7 @@ from datasets import load_dataset
 from transformers import AutoModelForSequenceClassification, AutoTokenizer, TrainingArguments, Trainer
 import evaluate as hf_evaluate
 
-from compress_model import replace_linear_with_tt, count_parameters, model_size_mb, benchmark_latency
+from ttcompress.surgery import replace_linear_with_tt, count_parameters, model_size_mb, benchmark_latency
 
 
 def main():

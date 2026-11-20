@@ -55,7 +55,7 @@ from typing import List, Sequence, Tuple
 
 import numpy as np
 
-from tt_core import tt_svd, tt_reconstruct
+from ttcompress.tt import tt_svd, tt_reconstruct
 
 
 # ==========================================================================

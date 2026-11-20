@@ -29,8 +29,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from tt_core import hosvd_mode_singular_values, suggest_rank_for_energy, factorize_balanced
-from compress_model import (
+from ttcompress.tt import hosvd_mode_singular_values, suggest_rank_for_energy, factorize_balanced
+from ttcompress.surgery import (
     replace_conv_with_tt,
     count_parameters,
     model_size_mb,

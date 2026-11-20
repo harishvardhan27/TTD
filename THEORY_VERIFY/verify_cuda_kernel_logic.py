@@ -24,7 +24,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 
-from tt_core import TTLinear
+from ttcompress.tt import TTLinear
 
 
 def simulate_cuda_kernel(x_b, core0, core1, core2, n1, n2, n3, m1, m2, m3, r1, r2):

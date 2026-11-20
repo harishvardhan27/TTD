@@ -22,7 +22,7 @@ import torch.nn.functional as F
 import torchvision
 from torchvision import transforms
 
-from compress_model import replace_conv_with_tt, count_parameters, model_size_mb, benchmark_latency
+from ttcompress.surgery import replace_conv_with_tt, count_parameters, model_size_mb, benchmark_latency
 
 
 def main():

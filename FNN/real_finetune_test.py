@@ -19,7 +19,7 @@ import torch
 import torch.nn.functional as F
 import timm
 
-from compress_model import replace_conv_with_tt_adaptive, count_parameters, model_size_mb
+from ttcompress.surgery import replace_conv_with_tt_adaptive, count_parameters, model_size_mb
 from real_model_eval import load_samples, evaluate_top1
 
 torch.manual_seed(0)
@@ -56,7 +56,7 @@ def main():
     print("earlier direct measurement; the adaptive per-layer target-error version")
     print("preserved accuracy better but grew the model, so this tests the actual")
     print("compression regime instead)...")
-    from compress_model import replace_conv_with_tt
+    from ttcompress.surgery import replace_conv_with_tt
     student = copy.deepcopy(teacher)
     replace_conv_with_tt(student, num_modes=2, rank=32, verbose=False)
     tt_params = count_parameters(student)
