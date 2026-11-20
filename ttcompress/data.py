@@ -208,7 +208,9 @@ def load_cached(name: str, data_cfg: dict, limit: Optional[int] = None, seed: in
     key = hashlib.sha1(key_src.encode()).hexdigest()[:12]
     cache = DATA_ROOT / "cache" / f"{name}_{key}.pt"
     if cache.exists():
-        d = torch.load(cache)
+        # mmap: image pages are file-backed, so the OS can evict and re-read them under
+        # memory pressure instead of holding ~1.2 GB (v2_test) of anonymous memory.
+        d = torch.load(cache, mmap=True)
         return d["x"], d["y"]
     tf = _uint8_transform(data_cfg)
     xs, ys = [], []

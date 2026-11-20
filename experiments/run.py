@@ -442,6 +442,9 @@ def main():
             f"[build {t_build:.0f}s, eval {t_eval:.0f}s]")
         if "summary" in info:
             log(f"    {info['summary']}")
+        del m, logits  # release this variant before building the next one
+        import gc
+        gc.collect()
     log("=== done")
 
 
