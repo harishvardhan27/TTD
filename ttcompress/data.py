@@ -213,14 +213,16 @@ def load_cached(name: str, data_cfg: dict, limit: Optional[int] = None, seed: in
         d = torch.load(cache, mmap=True)
         return d["x"], d["y"]
     tf = _uint8_transform(data_cfg)
-    xs, ys = [], []
-    for label, path in items:
-        xs.append(tf(Image.open(path).convert("RGB")))
-        ys.append(label)
-    x, y = torch.stack(xs), torch.tensor(ys)
+    size = data_cfg["input_size"][-1]
+    x = torch.empty((len(items), 3, size, size), dtype=torch.uint8)  # one copy, no list + stack
+    for i, (_, path) in enumerate(items):
+        x[i] = tf(Image.open(path).convert("RGB"))
+    y = torch.tensor([label for label, _ in items])
     cache.parent.mkdir(parents=True, exist_ok=True)
     torch.save({"x": x, "y": y, "files": [_rel(p) for _, p in items]}, cache)
-    return x, y
+    del x
+    d = torch.load(cache, mmap=True)
+    return d["x"], d["y"]
 
 
 def normalize(x_uint8: torch.Tensor, data_cfg: dict) -> torch.Tensor:

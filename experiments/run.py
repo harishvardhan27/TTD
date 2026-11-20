@@ -148,11 +148,15 @@ def _load_items(items, cfg, tag):
     key = hashlib.sha1((files + json.dumps({k: cfg.get(k) for k in ("input_size", "crop_pct", "interpolation")})).encode()).hexdigest()[:12]
     path = D.DATA_ROOT / "cache" / f"{tag}_{key}.pt"
     if path.exists():
-        return torch.load(path)["x"]
+        return torch.load(path, mmap=True)["x"]  # file-backed pages (transfer set is ~2.2 GB)
     tf = D._uint8_transform(cfg)
-    x = torch.stack([tf(Image.open(p).convert("RGB")) for _, p in items])
+    size = cfg["input_size"][-1]
+    x = torch.empty((len(items), 3, size, size), dtype=torch.uint8)  # one copy, no list + stack
+    for i, (_, p) in enumerate(items):
+        x[i] = tf(Image.open(p).convert("RGB"))
     torch.save({"x": x}, path)
-    return x
+    del x
+    return torch.load(path, mmap=True)["x"]
 
 
 # --------------------------------------------------------------------------

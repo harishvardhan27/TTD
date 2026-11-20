@@ -98,9 +98,27 @@ return U (m×r), V (r×n)       # layer computes U (V x) + b
 ```
 
 ### 5.2 Global rank allocation
-Algorithm 2 (greedy) and the exact multiple-choice-knapsack DP; guarantee
-(5.2) in the derivations: greedy is within one chunk's normalised error of
-the optimum of the summed relative-error objective.
+Each targeted layer `i` has options {rank g, 2g, …, R_i} (R_i: at least 10%
+parameter saving) **and "keep dense"**. With per-layer relative squared output
+errors `E_i(r)` from one SVD each, we minimise `Σ_i w_i E_i(r_i)` subject to
+`Σ_i cost_i(r_i) ≤ b · Σ_i m_i n_i`, solved exactly as a multiple-choice
+knapsack by dynamic programming (Algorithm 2). The weights `w_i` are measured
+sensitivities: the KL divergence of the model's output when only layer `i` is
+truncated to a probe rank, divided by `E_i` at that rank (64 training-side
+images). A greedy allocator (no dense option, `w_i = 1`) is the ablation
+baseline; its guarantee is (5.2) of the derivations.
+
+Algorithm 2 (frozen pipeline):
+```
+for each layer i: SVD of W_i L_i  -> E_i(r) for all r;  w_i <- KL_i(probe) / E_i(probe)
+options_i <- {(r, r(m_i+n_i), w_i E_i(r)) : r = g, 2g, …, R_i} ∪ {(dense, m_i n_i, 0)}
+DP over budget cells: best[c] = min_k best_prev[c - cost_k] + err_k      # exact (discretised)
+backtrack -> rank or "dense" per layer
+```
+On ImageNetV2-dev (DeiT-S, b = 0.6) the keep-dense option, not the exactness
+of the DP, accounts for its gain over greedy (agreement: greedy 42.6%, DP
+without dense option 40.9%, DP 49.4%, DP + sensitivity weights 52.5%;
+`results/tables/deit_small_v2_dev_dev{,2,3}.md`).
 
 ### 5.3 Hybrid quantization
 Dynamic INT8 on every `nn.Linear` including both factors (verified operator
