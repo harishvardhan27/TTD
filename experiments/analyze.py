@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 import json
 import math
 import sys
@@ -171,9 +172,8 @@ def setup_mpl():
 
 
 def fig_budget(flat_rows, base_top1, tag):
-    rows = [r for r in flat_rows if not r["failed"] and r["kind"] == "lowrank" and r["scope"] == "attn+mlp"
-            and r["policy"] == "budget" and not r["quant"] and not r["allocator"] and not r["damp"]
-            and not r["calib"] and not r["min_saving"]]
+    main = re.compile(r"^(plain|data)_attn\+mlp_b[0-9.]+$")  # the main budget sweep, by name
+    rows = [r for r in flat_rows if not r["failed"] and main.match(r["name"])]
     if len({r["budget"] for r in rows}) < 2:
         return None
     plt = setup_mpl()
@@ -185,16 +185,57 @@ def fig_budget(flat_rows, base_top1, tag):
         xs, ys = [p[0] for p in pts], [p[1] * 100 for p in pts]
         err = [[(p[1] - p[2]) * 100 for p in pts], [(p[3] - p[1]) * 100 for p in pts]]
         ax.errorbar(xs, ys, yerr=err, color=C[meth], marker="o", markersize=5, capsize=0, elinewidth=1,
-                    markeredgecolor=SURFACE, markeredgewidth=1.5, label=f"{meth} SVD")
-        ax.annotate(f"{meth}", (xs[-1], ys[-1]), xytext=(4, 0), textcoords="offset points", color=INK, va="center")
+                    markeredgecolor=SURFACE, markeredgewidth=1.5, label=f"{'whitened' if meth == 'data' else 'plain'} SVD")
     ax.axhline(base_top1 * 100, color=MUTED, linewidth=1, linestyle="--")
-    ax.annotate("FP32 baseline", (ax.get_xlim()[0], base_top1 * 100), xytext=(2, 3), textcoords="offset points",
-                color=MUTED, fontsize=8)
+    ax.annotate(f"FP32 baseline {base_top1*100:.1f}%", (0.5, base_top1 * 100), xycoords=("axes fraction", "data"),
+                xytext=(0, -11), textcoords="offset points", color=MUTED, fontsize=8, ha="center")
     ax.set_xlabel("budget b (fraction of attn+MLP weights kept)")
     ax.set_ylabel("top-1 (%)  ±95% Wilson CI")
     ax.legend(loc="lower right")
     fig.tight_layout()
     p = FIGS / f"{tag}_acc_vs_budget.png"
+    fig.savefig(p, dpi=200)
+    plt.close(fig)
+    return p
+
+
+def family(r):
+    n, q = r["name"], (r["quant"] == "int8" or "int8" in r["name"])
+    if r["kind"] == "baseline":
+        return "FP32 dense"
+    if r["kind"] == "int8" or n == "ort_int8_dense":
+        return "INT8 dense"
+    if r["kind"] == "tt":
+        return "Tensor-Train"
+    if n.startswith("plain") and not q:
+        return "plain SVD"
+    if q:
+        return "low-rank + INT8"
+    return "whitened SVD"
+
+
+FAM_STYLE = {"FP32 dense": (INK, "s"), "INT8 dense": (C["int8"], "s"), "plain SVD": (C["plain"], "o"),
+             "whitened SVD": (C["data"], "o"), "low-rank + INT8": (C["other"], "D"), "Tensor-Train": (C["tt"], "^")}
+
+
+def fig_pareto(flat_rows, tag):
+    """Top-1 vs serialized size (deployable artifact) for every evaluated variant."""
+    rows = [r for r in flat_rows if not r["failed"] and r.get("size_mb") and not r["name"].startswith(("reg_", "abl_", "frozen_"))]
+    if len(rows) < 3:
+        return None
+    plt = setup_mpl()
+    fig, ax = plt.subplots(figsize=(5.2, 3.6))
+    for fam, (col, mk) in FAM_STYLE.items():
+        pts = [(r["size_mb"], r["top1"] * 100, r) for r in rows if family(r) == fam]
+        if not pts:
+            continue
+        ax.scatter([p[0] for p in pts], [p[1] for p in pts], color=col, marker=mk, s=28, edgecolor=SURFACE,
+                   linewidth=1.2, label=fam, zorder=3)
+    ax.set_xlabel("serialized model size (MB)")
+    ax.set_ylabel("top-1 (%)")
+    ax.legend(loc="lower right", fontsize=7)
+    fig.tight_layout()
+    p = FIGS / f"{tag}_pareto_size.png"
     fig.savefig(p, dpi=200)
     plt.close(fig)
     return p
@@ -217,7 +258,7 @@ def fig_layers(rows_by_name, names, tag):
             kept = [l["rank"] * sum(l["shape"]) / (l["shape"][0] * l["shape"][1]) if l.get("rank") else 1.0 for l in L]
             for ax, v in ((axes[0, j], err), (axes[1, j], kept)):
                 ax.plot(blocks, v, color=C[meth], marker="o", markersize=3.5, linewidth=1.5,
-                        markeredgecolor=SURFACE, markeredgewidth=0.8, label=f"{meth} SVD")
+                        markeredgecolor=SURFACE, markeredgewidth=0.8, label=f"{'whitened' if meth == 'data' else 'plain'} SVD")
             axes[0, j].set_title(t, fontsize=9, color=INK)
     axes[0, 0].set_ylabel("held-out output\nrel. error")
     axes[1, 0].set_ylabel("params kept\n(fraction of layer)")
@@ -299,6 +340,7 @@ def main():
     figs = []
     if base:
         figs.append(fig_budget(fr, base["top1"], tag))
+    figs.append(fig_pareto(fr, tag))
     byname = {r["name"]: r for r in rows if not r["failed"]}
     cand = [n for n in ("plain_attn+mlp_b0.6", "data_attn+mlp_b0.6") if n in byname]
     figs.append(fig_layers(byname, cand, tag))
