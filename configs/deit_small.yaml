@@ -44,6 +44,8 @@ suites:
     - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8}              # B7, A5, A6
     - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8, order: qf}   # operation order
     - grid: {method: plain, scope: attn+mlp, budget: 0.6, quant: int8}
+    # registered 2026-11-20 14:25 after dev (protocol §9): calibration on the 1000-class sample set
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], calib: [{source: imagenet_sample, n: 256, seed: 1}]}
     - {kind: ort, ort: {precision: fp32}}
     - {kind: ort, ort: {precision: int8}}
     - {kind: ort, ort: {precision: fp32, base: {method: data, scope: attn+mlp, budget: 0.6}}}
@@ -53,3 +55,7 @@ suites:
   dev2:
     - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator_weights: sensitivity}
     - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator: dp}
+    # selected damping 0.1 lies on the grid boundary -> extend (protocol §9)
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, damp: [0.3, 1.0, 3.0]}
+    # selected calibration size 512 lies on the grid boundary -> extend (protocol §9)
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, calib: [{source: transfer, n: 1024, seed: 1}, {source: transfer, n: 2048, seed: 1}]}

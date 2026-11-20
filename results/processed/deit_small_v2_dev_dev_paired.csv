@@ -1,0 +1,8 @@
+family,a,b,delta_b_minus_a,ci_lo,ci_hi,a_only_correct,b_only_correct,mcnemar_p,agreement,mcnemar_p_holm
+A1 plain vs data,plain_attn+mlp_b0.6,data_attn+mlp_b0.6,0.3075,0.28572,0.32928,34,649,1.812489503213986e-148,0.059,9.062447516069931e-148
+A1 plain vs data,plain_attn+mlp_b0.7,data_attn+mlp_b0.7,0.172,0.1498,0.1942,114,458,8.370087922961533e-50,0.3735,3.3480351691846133e-49
+A1 plain vs data,plain_attn+mlp_b0.8,data_attn+mlp_b0.8,0.1025,0.08329,0.12171,100,305,3.344592541789965e-25,0.568,6.68918508357993e-25
+A1 plain vs data,plain_attn_b0.7,data_attn_b0.7,0.0345,0.01936,0.04964,86,155,1.0402337868131034e-05,0.7505,1.0402337868131034e-05
+A1 plain vs data,plain_mlp_b0.7,data_mlp_b0.7,0.1345,0.11454,0.15446,91,360,6.66561422685845e-39,0.569,1.999684268057535e-38
+iso-params scope,data_attn+mlp_b0.8,data_mlp_b0.7,0.042,0.0284,0.0556,56,140,1.7356518340910988e-09,0.7925,3.4713036681821976e-09
+iso-params scope,plain_attn+mlp_b0.8,plain_mlp_b0.7,0.01,-0.0068,0.0268,137,157,0.26778718446143923,0.612,0.26778718446143923

@@ -1,0 +1,401 @@
+{
+  "spec": {
+    "method": "plain",
+    "scope": "mlp",
+    "budget": 0.7,
+    "name": "plain_mlp_b0.7"
+  },
+  "params": 17802088,
+  "param_ratio": 1.2387,
+  "size_mb": 67.972,
+  "size_ratio": 1.2383,
+  "build_s": 4.4,
+  "eval_s": 96.0,
+  "score": {
+    "n": 2000,
+    "top1": 0.4785,
+    "top1_ci": [
+      0.45667,
+      0.50041
+    ],
+    "top5": 0.729,
+    "delta_vs_base": -0.204,
+    "delta_ci": [
+      -0.22467,
+      -0.18333
+    ],
+    "mcnemar_p": 0.0,
+    "agreement": 0.5605,
+    "kl_to_base": 1.10996
+  },
+  "per_class_shift": {
+    "classes": 1000,
+    "worse_by_2plus": 69,
+    "worse_by_1": 320,
+    "unchanged": 564,
+    "better": 47,
+    "min_delta": -2
+  },
+  "targeted_dense_params": 14155776,
+  "targeted_compressed_params": 9907200,
+  "targeted_ratio": 1.4288,
+  "summary": "[plain/greedy] 24/24 layers factorised; targeted weights 14,155,776 -> 9,907,200 (1.43x); weight err mean=0.383; held-out output err mean=0.289 max=0.460",
+  "layers": [
+    {
+      "name": "blocks.0.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.3014,
+      "weight_rel_error": 0.3014,
+      "output_rel_error": 0.19618
+    },
+    {
+      "name": "blocks.0.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 152,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.36845,
+      "weight_rel_error": 0.36845,
+      "output_rel_error": 0.37129
+    },
+    {
+      "name": "blocks.1.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.36337,
+      "weight_rel_error": 0.36337,
+      "output_rel_error": 0.17806
+    },
+    {
+      "name": "blocks.1.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.3881,
+      "weight_rel_error": 0.3881,
+      "output_rel_error": 0.37292
+    },
+    {
+      "name": "blocks.2.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 208,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.3744,
+      "weight_rel_error": 0.3744,
+      "output_rel_error": 0.21184
+    },
+    {
+      "name": "blocks.2.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38431,
+      "weight_rel_error": 0.38431,
+      "output_rel_error": 0.38279
+    },
+    {
+      "name": "blocks.3.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39011,
+      "weight_rel_error": 0.39011,
+      "output_rel_error": 0.21647
+    },
+    {
+      "name": "blocks.3.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 192,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.40341,
+      "weight_rel_error": 0.40341,
+      "output_rel_error": 0.3817
+    },
+    {
+      "name": "blocks.4.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 208,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38369,
+      "weight_rel_error": 0.38369,
+      "output_rel_error": 0.20439
+    },
+    {
+      "name": "blocks.4.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.41115,
+      "weight_rel_error": 0.41115,
+      "output_rel_error": 0.38218
+    },
+    {
+      "name": "blocks.5.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39864,
+      "weight_rel_error": 0.39864,
+      "output_rel_error": 0.20752
+    },
+    {
+      "name": "blocks.5.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 216,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39612,
+      "weight_rel_error": 0.39612,
+      "output_rel_error": 0.37983
+    },
+    {
+      "name": "blocks.6.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.40468,
+      "weight_rel_error": 0.40468,
+      "output_rel_error": 0.19121
+    },
+    {
+      "name": "blocks.6.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38738,
+      "weight_rel_error": 0.38738,
+      "output_rel_error": 0.41189
+    },
+    {
+      "name": "blocks.7.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 216,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39776,
+      "weight_rel_error": 0.39776,
+      "output_rel_error": 0.16851
+    },
+    {
+      "name": "blocks.7.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38996,
+      "weight_rel_error": 0.38996,
+      "output_rel_error": 0.43807
+    },
+    {
+      "name": "blocks.8.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39029,
+      "weight_rel_error": 0.39029,
+      "output_rel_error": 0.16677
+    },
+    {
+      "name": "blocks.8.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38594,
+      "weight_rel_error": 0.38594,
+      "output_rel_error": 0.45985
+    },
+    {
+      "name": "blocks.9.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 248,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38429,
+      "weight_rel_error": 0.38429,
+      "output_rel_error": 0.18366
+    },
+    {
+      "name": "blocks.9.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 264,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.35867,
+      "weight_rel_error": 0.35867,
+      "output_rel_error": 0.34239
+    },
+    {
+      "name": "blocks.10.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 264,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.36247,
+      "weight_rel_error": 0.36247,
+      "output_rel_error": 0.20519
+    },
+    {
+      "name": "blocks.10.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39377,
+      "weight_rel_error": 0.39377,
+      "output_rel_error": 0.41273
+    },
+    {
+      "name": "blocks.11.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 264,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.37889,
+      "weight_rel_error": 0.37889,
+      "output_rel_error": 0.231
+    },
+    {
+      "name": "blocks.11.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.39857,
+      "weight_rel_error": 0.39857,
+      "output_rel_error": 0.23142
+    }
+  ],
+  "env": {
+    "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.2.6",
+    "threads": 8,
+    "cpu_capability": "AVX2",
+    "git": {
+      "commit": "b10c8c1080aa702c0a0b4165681ca801b6761686",
+      "dirty": true
+    },
+    "date": "2026-11-20 13:48:49",
+    "timm": "1.0.31",
+    "onnxruntime": "1.23.2",
+    "onnx": "1.23.2"
+  },
+  "model": {
+    "name": "deit_small_patch16_224.fb_in1k",
+    "sha256": "1e747b4a8d0df2cfbd3c450e8c97685d867448ab0c2ddbfb34b6885f5cb23e5b",
+    "params": 22050664,
+    "num_classes": 1000,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "crop_pct": 0.9,
+    "interpolation": "bicubic"
+  },
+  "config_file": "configs/deit_small.yaml",
+  "config_sha1": "403e0a92d6347045a0b918994beabc3980358dda",
+  "split": "v2_dev",
+  "split_manifest_sha256": "b4d1e37dacbe52ab0ade8492155e6f74403420ac282494fea33786755473c812"
+}
