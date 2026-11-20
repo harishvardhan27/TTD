@@ -1,0 +1,7 @@
+name,kind,method,scope,policy,budget,allocator,quant,order,damp,calib,min_saving,failed,params,param_ratio,size_mb,size_ratio,targeted_ratio,top1,top1_lo,top1_hi,top5,delta,delta_lo,delta_hi,mcnemar_p,agreement,kl,n,classes_worse_2plus,mean_out_err,sum_sq_out_err,mean_w_err
+data_attn+mlp_b0.6_damp10,lowrank,data,attn+mlp,budget,0.6,,,,10.0,,,False,13553512,1.6269,51.775,1.6257,1.6671,0.3895,0.36836,0.41106,0.6685,-0.293,-0.31523,-0.27077,0.0,0.464,1.50953,2000,115,0.2667,3.7771,0.4372
+data_attn+mlp_b0.6_damp100,lowrank,data,attn+mlp,budget,0.6,,,,100.0,,,False,13556584,1.6266,51.786,1.6253,1.6667,0.1675,0.15177,0.1845,0.332,-0.515,-0.5381,-0.4919,0.0,0.186,3.25507,2000,290,0.3066,5.0755,0.4356
+data_attn+mlp_b0.6_damp30,lowrank,data,attn+mlp,budget,0.6,,,,30.0,,,False,13553512,1.6269,51.775,1.6257,1.6671,0.3345,0.31416,0.35548,0.592,-0.348,-0.37103,-0.32497,0.0,0.3845,1.93142,2000,149,0.2888,4.4872,0.436
+data_attn+mlp_b0.6_dp_nodense,lowrank,data,attn+mlp,budget,0.6,dp_nodense,,,,,,False,13504360,1.6329,51.587,1.6316,1.6736,0.343,0.32251,0.36409,0.625,-0.3395,-0.36225,-0.31675,0.0,0.409,1.81507,2000,160,0.2089,2.2591,0.5016
+data_attn+mlp_b0.6_dp_sens,lowrank,data,attn+mlp,budget,0.6,dp,,,,,,False,13495144,1.634,51.547,1.6329,1.6748,0.443,0.42136,0.46486,0.734,-0.2395,-0.26085,-0.21815,0.0,0.5245,1.12774,2000,87,0.2519,2.7725,0.5472
+data_attn+mlp_b0.8_dp_sens,lowrank,data,attn+mlp,budget,0.8,dp,,,,,,False,17752936,1.2421,67.784,1.2417,1.2538,0.6375,0.61619,0.65829,0.8595,-0.045,-0.05778,-0.03222,0.0,0.823,0.21041,2000,10,0.1628,0.7862,0.4316

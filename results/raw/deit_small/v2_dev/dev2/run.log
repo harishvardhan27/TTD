@@ -1,0 +1,28 @@
+[14:33:33] === suite dev2 on v2_dev, config configs/deit_small.yaml, threads=8
+[14:34:03] model deit_small_patch16_224.fb_in1k sha256=1e747b4a8d0df2cf… params=22,050,664; eval v2_dev: 2000 images
+[14:34:03] 9 variants: ['data_attn+mlp_b0.8_sens', 'data_attn+mlp_b0.6_sens', 'data_attn+mlp_b0.8_dp', 'data_attn+mlp_b0.6_dp', 'data_attn+mlp_b0.6_damp0.3', 'data_attn+mlp_b0.6_damp1', 'data_attn+mlp_b0.6_damp3', 'data_attn+mlp_b0.6_cal-transfer-1024-s1', 'data_attn+mlp_b0.6_cal-transfer-2048-s1']
+[14:36:56]   sensitivity weights for 48 layers on 64 images: 163s
+[15:21:06] data_attn+mlp_b0.8_sens                       params= 17.79M (1.24x) size=   67.9MB | top1=58.65% [56.5,60.8] (n=2000)  delta=-9.60pp [-11.3,-7.9] p=1.48e-29 agree=72.8% KL=0.5617 [build 176s, eval 2644s]
+[15:21:06]     [data/greedy+weighted] 48/48 layers factorised; targeted weights 21,233,664 -> 16,975,872 (1.25x); weight err mean=0.391; held-out output err mean=0.158 max=0.331
+[15:24:07]   sensitivity weights for 48 layers on 64 images: 173s
+[15:25:36] data_attn+mlp_b0.6_sens                       params= 13.56M (1.63x) size=   51.8MB | top1=39.95% [37.8,42.1] (n=2000)  delta=-28.30pp [-30.6,-26.0] p=2.71e-119 agree=46.4% KL=1.4423 [build 188s, eval 82s]
+[15:25:36]     [data/greedy+weighted] 48/48 layers factorised; targeted weights 21,233,664 -> 12,739,584 (1.67x); weight err mean=0.507; held-out output err mean=0.229 max=0.493
+[15:27:11] data_attn+mlp_b0.8_dp                         params= 17.73M (1.24x) size=   67.7MB | top1=61.55% [59.4,63.7] (n=2000)  delta=-6.70pp [-8.2,-5.2] p=1.18e-17 agree=76.2% KL=0.4000 [build 6s, eval 89s]
+[15:27:11]     [data/dp] 19/48 layers factorised; targeted weights 21,233,664 -> 16,917,504 (1.26x); weight err mean=0.470; held-out output err mean=0.134 max=0.200
+[15:28:37] data_attn+mlp_b0.6_dp                         params= 13.50M (1.63x) size=   51.6MB | top1=41.80% [39.7,44.0] (n=2000)  delta=-26.45pp [-28.6,-24.3] p=1.26e-114 agree=49.4% KL=1.4742 [build 7s, eval 79s]
+[15:28:37]     [data/dp] 30/48 layers factorised; targeted weights 21,233,664 -> 12,681,216 (1.67x); weight err mean=0.587; held-out output err mean=0.220 max=0.325
+[15:30:04] data_attn+mlp_b0.6_damp0.3                    params= 13.56M (1.63x) size=   51.8MB | top1=37.55% [35.5,39.7] (n=2000)  delta=-30.70pp [-32.9,-28.5] p=2.05e-143 agree=45.4% KL=1.6129 [build 7s, eval 81s]
+[15:30:04]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,739,584 (1.67x); weight err mean=0.469; held-out output err mean=0.209 max=0.323
+[15:31:31] data_attn+mlp_b0.6_damp1                      params= 13.56M (1.63x) size=   51.8MB | top1=39.55% [37.4,41.7] (n=2000)  delta=-28.70pp [-30.9,-26.5] p=1.05e-127 agree=47.2% KL=1.5016 [build 7s, eval 80s]
+[15:31:31]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,739,584 (1.67x); weight err mean=0.453; held-out output err mean=0.219 max=0.327
+[15:32:59] data_attn+mlp_b0.6_damp3                      params= 13.55M (1.63x) size=   51.8MB | top1=41.00% [38.9,43.2] (n=2000)  delta=-27.25pp [-29.5,-25.0] p=2.82e-116 agree=48.4% KL=1.4024 [build 6s, eval 81s]
+[15:32:59]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.442; held-out output err mean=0.239 max=0.353
+[15:34:56]   calibration covs (transfer, n=1024, seed=1, heldout=False): 109s
+[15:35:11]   calibration covs (transfer, n=128, seed=1, heldout=True): 14s
+[15:36:41] data_attn+mlp_b0.6_cal-transfer-1024-s1       params= 13.55M (1.63x) size=   51.8MB | top1=36.70% [34.6,38.8] (n=2000)  delta=-31.55pp [-33.8,-29.3] p=3.78e-146 agree=44.0% KL=1.6519 [build 139s, eval 83s]
+[15:36:41]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.496; held-out output err mean=0.202 max=0.286
+[15:40:31]   calibration covs (transfer, n=2048, seed=1, heldout=False): 214s
+[15:40:46]   calibration covs (transfer, n=128, seed=1, heldout=True): 14s
+[15:42:22] data_attn+mlp_b0.6_cal-transfer-2048-s1       params= 13.55M (1.63x) size=   51.8MB | top1=37.65% [35.6,39.8] (n=2000)  delta=-30.60pp [-32.8,-28.4] p=1.6e-138 agree=44.6% KL=1.6119 [build 252s, eval 89s]
+[15:42:22]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.495; held-out output err mean=0.202 max=0.287
+[15:42:22] === done

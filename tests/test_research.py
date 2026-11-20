@@ -296,3 +296,17 @@ def test_sensitivity_weights_rank_layers_by_output_impact():
     w_before = m.used.weight.clone()
     layer_sensitivities(m, facs, [torch.randn(8, 32)], granularity=4, min_saving=0.0)
     assert torch.equal(m.used.weight, w_before)
+
+
+def test_damping_equals_linear_shrinkage():
+    """factorize(W, C, damp=lam) == factorize(W, (1-rho) C + rho*mu*I, damp=0), rho = lam/(1+lam)."""
+    W = torch.randn(24, 16)
+    X = aniso_inputs(16, seed=3)
+    C = X.T @ X / len(X)
+    mu = C.diagonal().mean()
+    for lam in (0.1, 1.0, 3.0):
+        rho = lam / (1 + lam)
+        U1, V1 = factorize(W, C, damp=lam).factors(5)
+        U2, V2 = factorize(W, (1 - rho) * C + rho * mu * torch.eye(16), damp=0.0).factors(5)
+        assert torch.allclose(U1 @ V1, U2 @ V2, atol=1e-5)
+        assert abs(factorize(W, C, damp=lam).rel_error(5) - factorize(W, (1 - rho) * C + rho * mu * torch.eye(16), damp=0.0).rel_error(5)) < 1e-6  # shrunk C formed in float32

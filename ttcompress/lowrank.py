@@ -489,6 +489,8 @@ def compress_lowrank(
             alloc = allocate_ranks(facs, shapes, budget, granularity, min_saving, weights=weights)
         elif allocator == "dp":
             alloc = allocate_ranks_dp(facs, shapes, budget, granularity, min_saving, weights=weights)
+        elif allocator == "dp_nodense":  # ablation: exact allocation without the keep-dense option
+            alloc = allocate_ranks_dp(facs, shapes, budget, granularity, min_saving, allow_dense=False, weights=weights)
         else:
             raise ValueError(allocator)
         for n, r in alloc.items():

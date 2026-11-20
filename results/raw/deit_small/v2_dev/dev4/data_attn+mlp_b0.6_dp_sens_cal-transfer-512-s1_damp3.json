@@ -1,0 +1,1016 @@
+{
+  "spec": {
+    "method": "data",
+    "scope": "attn+mlp",
+    "budget": 0.6,
+    "damp": 3.0,
+    "allocator": "dp",
+    "allocator_weights": "sensitivity",
+    "calib": {
+      "source": "transfer",
+      "n": 512,
+      "seed": 1
+    },
+    "name": "data_attn+mlp_b0.6_dp_sens_cal-transfer-512-s1_damp3"
+  },
+  "params": 13492072,
+  "param_ratio": 1.6343,
+  "size_mb": 51.533,
+  "size_ratio": 1.6333,
+  "build_s": 177.4,
+  "eval_s": 80.0,
+  "score": {
+    "n": 2000,
+    "top1": 0.4465,
+    "top1_ci": [
+      0.42484,
+      0.46837
+    ],
+    "top5": 0.7265,
+    "delta_vs_base": -0.236,
+    "delta_ci": [
+      -0.25744,
+      -0.21456
+    ],
+    "mcnemar_p": 0.0,
+    "agreement": 0.524,
+    "kl_to_base": 1.15294
+  },
+  "per_class_shift": {
+    "classes": 1000,
+    "worse_by_2plus": 90,
+    "worse_by_1": 336,
+    "unchanged": 532,
+    "better": 42,
+    "min_delta": -2
+  },
+  "targeted_dense_params": 21233664,
+  "targeted_compressed_params": 12675072,
+  "targeted_ratio": 1.6752,
+  "summary": "[data/dp+weighted] 29/48 layers factorised; targeted weights 21,233,664 -> 12,675,072 (1.68x); weight err mean=0.535; held-out output err mean=0.320 max=0.628",
+  "layers": [
+    {
+      "name": "blocks.0.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 120,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.25961,
+      "weight_rel_error": 0.35255,
+      "output_rel_error": 0.09862
+    },
+    {
+      "name": "blocks.0.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.0.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.14702,
+      "weight_rel_error": 0.17961,
+      "output_rel_error": 0.04442
+    },
+    {
+      "name": "blocks.0.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.27298,
+      "weight_rel_error": 0.31134,
+      "output_rel_error": 0.19007
+    },
+    {
+      "name": "blocks.1.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 48,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.44455,
+      "weight_rel_error": 0.64088,
+      "output_rel_error": 0.21897
+    },
+    {
+      "name": "blocks.1.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.1.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 144,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.37547,
+      "weight_rel_error": 0.46654,
+      "output_rel_error": 0.1754
+    },
+    {
+      "name": "blocks.1.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.35496,
+      "weight_rel_error": 0.39905,
+      "output_rel_error": 0.25747
+    },
+    {
+      "name": "blocks.2.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 176,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.28014,
+      "weight_rel_error": 0.36474,
+      "output_rel_error": 0.12004
+    },
+    {
+      "name": "blocks.2.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.2.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.35779,
+      "weight_rel_error": 0.43174,
+      "output_rel_error": 0.19353
+    },
+    {
+      "name": "blocks.2.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 96,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.61164,
+      "weight_rel_error": 0.64285,
+      "output_rel_error": 0.53702
+    },
+    {
+      "name": "blocks.3.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 120,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.44834,
+      "weight_rel_error": 0.53012,
+      "output_rel_error": 0.26807
+    },
+    {
+      "name": "blocks.3.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.3.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 136,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.43873,
+      "weight_rel_error": 0.54091,
+      "output_rel_error": 0.2447
+    },
+    {
+      "name": "blocks.3.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 48,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.72967,
+      "weight_rel_error": 0.77305,
+      "output_rel_error": 0.62782
+    },
+    {
+      "name": "blocks.4.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 88,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.56083,
+      "weight_rel_error": 0.62988,
+      "output_rel_error": 0.3976
+    },
+    {
+      "name": "blocks.4.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.4.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.34901,
+      "weight_rel_error": 0.43871,
+      "output_rel_error": 0.18111
+    },
+    {
+      "name": "blocks.4.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 136,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.51725,
+      "weight_rel_error": 0.55559,
+      "output_rel_error": 0.42172
+    },
+    {
+      "name": "blocks.5.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 96,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.55285,
+      "weight_rel_error": 0.61768,
+      "output_rel_error": 0.39738
+    },
+    {
+      "name": "blocks.5.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.5.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 112,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.47681,
+      "weight_rel_error": 0.60223,
+      "output_rel_error": 0.26399
+    },
+    {
+      "name": "blocks.5.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 104,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.61681,
+      "weight_rel_error": 0.65136,
+      "output_rel_error": 0.52126
+    },
+    {
+      "name": "blocks.6.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 152,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.42314,
+      "weight_rel_error": 0.47774,
+      "output_rel_error": 0.29117
+    },
+    {
+      "name": "blocks.6.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.6.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 152,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.38424,
+      "weight_rel_error": 0.51215,
+      "output_rel_error": 0.20089
+    },
+    {
+      "name": "blocks.6.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 160,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.53321,
+      "weight_rel_error": 0.54938,
+      "output_rel_error": 0.47892
+    },
+    {
+      "name": "blocks.7.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 176,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.40746,
+      "weight_rel_error": 0.45142,
+      "output_rel_error": 0.29283
+    },
+    {
+      "name": "blocks.7.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.7.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.7.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.4895,
+      "weight_rel_error": 0.50065,
+      "output_rel_error": 0.43775
+    },
+    {
+      "name": "blocks.8.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.8.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.8.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.8.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.48064,
+      "weight_rel_error": 0.49901,
+      "output_rel_error": 0.38008
+    },
+    {
+      "name": "blocks.9.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 176,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.46063,
+      "weight_rel_error": 0.4996,
+      "output_rel_error": 0.34216
+    },
+    {
+      "name": "blocks.9.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.9.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.9.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 48,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.80585,
+      "weight_rel_error": 0.86836,
+      "output_rel_error": 0.57121
+    },
+    {
+      "name": "blocks.10.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 152,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.50884,
+      "weight_rel_error": 0.56425,
+      "output_rel_error": 0.35517
+    },
+    {
+      "name": "blocks.10.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.10.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.10.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 64,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.72767,
+      "weight_rel_error": 0.78011,
+      "output_rel_error": 0.52145
+    },
+    {
+      "name": "blocks.11.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.11.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.11.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": null,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.0,
+      "weight_rel_error": 0.0,
+      "output_rel_error": 0.0
+    },
+    {
+      "name": "blocks.11.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 104,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.51955,
+      "weight_rel_error": 0.67571,
+      "output_rel_error": 0.25373
+    }
+  ],
+  "sensitivity": {
+    "blocks.0.attn.qkv": {
+      "kl": 0.002487,
+      "err2": 0.058519,
+      "probe_rank": 128,
+      "weight": 0.928588
+    },
+    "blocks.0.attn.proj": {
+      "kl": 0.013949,
+      "err2": 0.241804,
+      "probe_rank": 80,
+      "weight": 1.260382
+    },
+    "blocks.0.mlp.fc1": {
+      "kl": 0.020805,
+      "err2": 0.123701,
+      "probe_rank": 136,
+      "weight": 3.674599
+    },
+    "blocks.0.mlp.fc2": {
+      "kl": 0.008807,
+      "err2": 0.14154,
+      "probe_rank": 136,
+      "weight": 1.35952
+    },
+    "blocks.1.attn.qkv": {
+      "kl": 0.00107,
+      "err2": 0.064631,
+      "probe_rank": 128,
+      "weight": 0.361789
+    },
+    "blocks.1.attn.proj": {
+      "kl": 0.004994,
+      "err2": 0.282588,
+      "probe_rank": 80,
+      "weight": 0.386142
+    },
+    "blocks.1.mlp.fc1": {
+      "kl": 0.006149,
+      "err2": 0.155587,
+      "probe_rank": 136,
+      "weight": 0.863515
+    },
+    "blocks.1.mlp.fc2": {
+      "kl": 0.009659,
+      "err2": 0.215891,
+      "probe_rank": 136,
+      "weight": 0.977512
+    },
+    "blocks.2.attn.qkv": {
+      "kl": 0.006895,
+      "err2": 0.14096,
+      "probe_rank": 128,
+      "weight": 1.068693
+    },
+    "blocks.2.attn.proj": {
+      "kl": 0.012798,
+      "err2": 0.347067,
+      "probe_rank": 80,
+      "weight": 0.805634
+    },
+    "blocks.2.mlp.fc1": {
+      "kl": 0.009061,
+      "err2": 0.210121,
+      "probe_rank": 136,
+      "weight": 0.942201
+    },
+    "blocks.2.mlp.fc2": {
+      "kl": 0.005564,
+      "err2": 0.257652,
+      "probe_rank": 136,
+      "weight": 0.471798
+    },
+    "blocks.3.attn.qkv": {
+      "kl": 0.004543,
+      "err2": 0.183457,
+      "probe_rank": 128,
+      "weight": 0.541039
+    },
+    "blocks.3.attn.proj": {
+      "kl": 0.010157,
+      "err2": 0.321282,
+      "probe_rank": 80,
+      "weight": 0.690744
+    },
+    "blocks.3.mlp.fc1": {
+      "kl": 0.007341,
+      "err2": 0.192487,
+      "probe_rank": 136,
+      "weight": 0.833285
+    },
+    "blocks.3.mlp.fc2": {
+      "kl": 0.003839,
+      "err2": 0.247715,
+      "probe_rank": 136,
+      "weight": 0.338596
+    },
+    "blocks.4.attn.qkv": {
+      "kl": 0.003453,
+      "err2": 0.207416,
+      "probe_rank": 128,
+      "weight": 0.363737
+    },
+    "blocks.4.attn.proj": {
+      "kl": 0.005748,
+      "err2": 0.323151,
+      "probe_rank": 80,
+      "weight": 0.388634
+    },
+    "blocks.4.mlp.fc1": {
+      "kl": 0.010454,
+      "err2": 0.192427,
+      "probe_rank": 136,
+      "weight": 1.18699
+    },
+    "blocks.4.mlp.fc2": {
+      "kl": 0.008688,
+      "err2": 0.267551,
+      "probe_rank": 136,
+      "weight": 0.709479
+    },
+    "blocks.5.attn.qkv": {
+      "kl": 0.004243,
+      "err2": 0.220843,
+      "probe_rank": 128,
+      "weight": 0.419799
+    },
+    "blocks.5.attn.proj": {
+      "kl": 0.00718,
+      "err2": 0.360991,
+      "probe_rank": 80,
+      "weight": 0.434585
+    },
+    "blocks.5.mlp.fc1": {
+      "kl": 0.006783,
+      "err2": 0.183908,
+      "probe_rank": 136,
+      "weight": 0.805796
+    },
+    "blocks.5.mlp.fc2": {
+      "kl": 0.007168,
+      "err2": 0.294907,
+      "probe_rank": 136,
+      "weight": 0.531031
+    },
+    "blocks.6.attn.qkv": {
+      "kl": 0.006973,
+      "err2": 0.228634,
+      "probe_rank": 128,
+      "weight": 0.666321
+    },
+    "blocks.6.attn.proj": {
+      "kl": 0.011644,
+      "err2": 0.401014,
+      "probe_rank": 80,
+      "weight": 0.634414
+    },
+    "blocks.6.mlp.fc1": {
+      "kl": 0.009036,
+      "err2": 0.170376,
+      "probe_rank": 136,
+      "weight": 1.158793
+    },
+    "blocks.6.mlp.fc2": {
+      "kl": 0.010372,
+      "err2": 0.34475,
+      "probe_rank": 136,
+      "weight": 0.657305
+    },
+    "blocks.7.attn.qkv": {
+      "kl": 0.008114,
+      "err2": 0.264952,
+      "probe_rank": 128,
+      "weight": 0.669114
+    },
+    "blocks.7.attn.proj": {
+      "kl": 0.013302,
+      "err2": 0.422923,
+      "probe_rank": 80,
+      "weight": 0.687211
+    },
+    "blocks.7.mlp.fc1": {
+      "kl": 0.015257,
+      "err2": 0.1586,
+      "probe_rank": 136,
+      "weight": 2.101731
+    },
+    "blocks.7.mlp.fc2": {
+      "kl": 0.01203,
+      "err2": 0.35655,
+      "probe_rank": 136,
+      "weight": 0.737193
+    },
+    "blocks.8.attn.qkv": {
+      "kl": 0.010246,
+      "err2": 0.298889,
+      "probe_rank": 128,
+      "weight": 0.748954
+    },
+    "blocks.8.attn.proj": {
+      "kl": 0.010913,
+      "err2": 0.429194,
+      "probe_rank": 80,
+      "weight": 0.555554
+    },
+    "blocks.8.mlp.fc1": {
+      "kl": 0.015998,
+      "err2": 0.169631,
+      "probe_rank": 136,
+      "weight": 2.060504
+    },
+    "blocks.8.mlp.fc2": {
+      "kl": 0.011723,
+      "err2": 0.347308,
+      "probe_rank": 136,
+      "weight": 0.737492
+    },
+    "blocks.9.attn.qkv": {
+      "kl": 0.009442,
+      "err2": 0.323979,
+      "probe_rank": 128,
+      "weight": 0.636765
+    },
+    "blocks.9.attn.proj": {
+      "kl": 0.011711,
+      "err2": 0.460364,
+      "probe_rank": 80,
+      "weight": 0.555789
+    },
+    "blocks.9.mlp.fc1": {
+      "kl": 0.013843,
+      "err2": 0.205005,
+      "probe_rank": 136,
+      "weight": 1.475367
+    },
+    "blocks.9.mlp.fc2": {
+      "kl": 0.005679,
+      "err2": 0.360393,
+      "probe_rank": 136,
+      "weight": 0.344303
+    },
+    "blocks.10.attn.qkv": {
+      "kl": 0.007822,
+      "err2": 0.318213,
+      "probe_rank": 128,
+      "weight": 0.537088
+    },
+    "blocks.10.attn.proj": {
+      "kl": 0.009265,
+      "err2": 0.499691,
+      "probe_rank": 80,
+      "weight": 0.405119
+    },
+    "blocks.10.mlp.fc1": {
+      "kl": 0.026088,
+      "err2": 0.238271,
+      "probe_rank": 136,
+      "weight": 2.392142
+    },
+    "blocks.10.mlp.fc2": {
+      "kl": 0.006369,
+      "err2": 0.317132,
+      "probe_rank": 136,
+      "weight": 0.438756
+    },
+    "blocks.11.attn.qkv": {
+      "kl": 0.009856,
+      "err2": 0.321123,
+      "probe_rank": 128,
+      "weight": 0.670594
+    },
+    "blocks.11.attn.proj": {
+      "kl": 0.007074,
+      "err2": 0.326862,
+      "probe_rank": 80,
+      "weight": 0.472842
+    },
+    "blocks.11.mlp.fc1": {
+      "kl": 0.091141,
+      "err2": 0.267239,
+      "probe_rank": 136,
+      "weight": 7.451404
+    },
+    "blocks.11.mlp.fc2": {
+      "kl": 0.008478,
+      "err2": 0.215109,
+      "probe_rank": 136,
+      "weight": 0.861155
+    }
+  },
+  "env": {
+    "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.2.6",
+    "threads": 8,
+    "cpu_capability": "AVX2",
+    "git": {
+      "commit": "ad806bc2fcbe0d566e006352dcbb86342f1d5e55",
+      "dirty": true
+    },
+    "date": "2026-11-20 15:58:14",
+    "power": {
+      "on_ac": false,
+      "battery_pct": 81,
+      "scheme": "Balanced"
+    },
+    "timm": "1.0.31",
+    "onnxruntime": "1.23.2",
+    "onnx": "1.23.2"
+  },
+  "model": {
+    "name": "deit_small_patch16_224.fb_in1k",
+    "sha256": "1e747b4a8d0df2cfbd3c450e8c97685d867448ab0c2ddbfb34b6885f5cb23e5b",
+    "params": 22050664,
+    "num_classes": 1000,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "crop_pct": 0.9,
+    "interpolation": "bicubic"
+  },
+  "config_file": "configs/deit_small.yaml",
+  "config_sha1": "65ceed689e54db5132866fdf313e3f54d55b5002",
+  "split": "v2_dev",
+  "split_manifest_sha256": "b4d1e37dacbe52ab0ade8492155e6f74403420ac282494fea33786755473c812"
+}

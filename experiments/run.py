@@ -179,11 +179,12 @@ def build_lowrank(m, spec, ctx):
     pol = spec.get("policy", "budget")
     kw = dict(covs=covs, eval_covs=eval_covs, damp=damp, granularity=gran, min_saving=min_saving)
     sens_info = None
-    if spec.get("allocator_weights") == "sensitivity":
+    if spec.get("allocator_weights", ctx.get("allocator_weights")) == "sensitivity":
         kw["weights"], sens_info = sensitivity_weights(m, pred, covs, damp, gran, min_saving, calib, ctx,
                                                        int(spec.get("sens_images", 64)))
     if pol == "budget":
-        rep = compress_lowrank(m, pred, budget_fraction=float(spec["budget"]), allocator=spec.get("allocator", "greedy"), **kw)
+        rep = compress_lowrank(m, pred, budget_fraction=float(spec["budget"]),
+                               allocator=spec.get("allocator", ctx.get("allocator", "greedy")), **kw)
     elif pol == "uniform_budget":
         names = find_linears(m, pred)
         shapes = [tuple(getattr(*_resolve_parent(m, n)).weight.shape) for n in names]
@@ -208,19 +209,28 @@ def sensitivity_weights(m, pred, covs, damp, gran, min_saving, calib, ctx, n_img
     after the calibration fit set and its covariance hold-out in the same
     seeded permutation, so they are disjoint from both)."""
     from ttcompress.sensitivity import layer_sensitivities
+    names = find_linears(m, pred)
+    key = hashlib.sha1(json.dumps([ctx["model_name"], names, covs is not None, damp, gran, min_saving,
+                                   calib["source"], int(calib["n"]), int(calib.get("seed", 1)),
+                                   int(calib.get("heldout_n", 128)), n_img]).encode()).hexdigest()[:12]
+    cpath = D.DATA_ROOT / "cache" / f"sens_{ctx['model_name'].split('.')[0]}_{key}.pt"
+    if cpath.exists():
+        sens = torch.load(cpath)
+        return {n: v["weight"] for n, v in sens.items()}, sens
     items = D.get_items(calib["source"], role="train")
     g = torch.Generator().manual_seed(int(calib.get("seed", 1)))
     perm = torch.randperm(len(items), generator=g).tolist()
     start = int(calib["n"]) + int(calib.get("heldout_n", 128))
     sel = [items[i] for i in sorted(perm[start:start + n_img])]
     x = _load_items(sel, ctx["cfg"], f"sens_{calib['source']}")
-    names = find_linears(m, pred)
     facs = {n: factorize(getattr(*_resolve_parent(m, n)).weight.detach(), covs[n] if covs is not None else None, damp=damp)
             for n in names}
     t0 = time.time()
     sens = layer_sensitivities(m, facs, D.batches(x, ctx["cfg"], ctx["batch"]), granularity=gran, min_saving=min_saving)
     ctx["log"](f"  sensitivity weights for {len(names)} layers on {len(sel)} images: {time.time()-t0:.0f}s")
-    return {n: v["weight"] for n, v in sens.items()}, {n: {k: round(v2, 6) if isinstance(v2, float) else v2 for k, v2 in v.items()} for n, v in sens.items()}
+    sens = {n: {k: round(v2, 6) if isinstance(v2, float) else v2 for k, v2 in v.items()} for n, v in sens.items()}
+    torch.save(sens, cpath)
+    return {n: v["weight"] for n, v in sens.items()}, sens
 
 
 def build_tt(m, spec, ctx):
@@ -306,13 +316,21 @@ def make_ctx(cfgf: dict, model, cfg: dict, log) -> dict:
     """Shared build context (also used by distill_run.py)."""
     return {"model": model, "cfg": cfg, "model_name": cfgf["model"], "batch": int(cfgf.get("batch", 32)), "log": log,
             "calib": cfgf["calibration"], "damp": float(cfgf.get("damp", 1e-2)),
-            "granularity": int(cfgf.get("granularity", 8)), "min_saving": float(cfgf.get("min_saving", 0.1))}
+            "granularity": int(cfgf.get("granularity", 8)), "min_saving": float(cfgf.get("min_saving", 0.1)),
+            "allocator": cfgf.get("allocator", "greedy"), "allocator_weights": cfgf.get("allocator_weights")}
 
 
-def find_spec(cfgf: dict, name: str) -> dict:
-    for suite in cfgf["suites"].values():
-        for s in expand(suite):
+def find_spec(cfgf: dict, name: str, suite_order=("core",)) -> dict:
+    """Variant spec by name, with its suite's defaults applied. Suites in
+    `suite_order` are searched first (the frozen core pipeline wins)."""
+    names = list(suite_order) + [k for k in cfgf["suites"] if k not in suite_order]
+    for sname in names:
+        if sname not in cfgf["suites"]:
+            continue
+        for s in expand(cfgf["suites"][sname]):
             if s["name"] == name:
+                for k, v in (cfgf.get("suite_defaults", {}).get(sname) or {}).items():
+                    s.setdefault(k, copy.deepcopy(v))
                 return s
     raise KeyError(f"variant {name} not found in any suite")
 
@@ -369,10 +387,19 @@ def main():
     base_size = model_size_mb(model)
 
     specs = expand(cfgf["suites"][args.suite])
+    # suite-level defaults (e.g. the frozen pipeline for `core`) are merged AFTER naming,
+    # so names stay short; the full effective spec is stored in every result file.
+    for s_ in specs:
+        for k, v in (cfgf.get("suite_defaults", {}).get(args.suite) or {}).items():
+            s_.setdefault(k, copy.deepcopy(v))
+            if s_.get("kind") == "ort" and s_["ort"].get("base"):
+                s_["ort"]["base"].setdefault(k, copy.deepcopy(v))  # deployed model == evaluated pipeline
     if args.only:
         specs = [s for s in specs if s["name"] in args.only]
     log(f"{len(specs)} variants: {[s['name'] for s in specs]}")
-    provenance = {"env": env_info(), "model": card, "config_file": args.config, "config_sha1":
+    provenance = {"env": env_info(), "model": card, "config_defaults": {k: ctx[k] for k in (
+                      "calib", "damp", "granularity", "min_saving", "allocator", "allocator_weights")},
+                  "config_file": args.config, "config_sha1":
                   hashlib.sha1(Path(args.config).read_bytes()).hexdigest(), "split": args.split,
                   "split_manifest_sha256": D.manifest_digest(args.split)}
 

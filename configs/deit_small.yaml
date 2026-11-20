@@ -10,6 +10,13 @@ damp: 0.01          # provisional; final value chosen on v2_dev (suite: dev)
 granularity: 8
 min_saving: 0.1
 calibration: {source: transfer, n: 256, heldout_n: 128, seed: 1}
+# allocator / allocator_weights defaults for dev suites: greedy, none
+
+# Frozen pipeline for the final grid (selected on v2_dev by the rules in
+# docs/EXPERIMENTAL_PROTOCOL.md §5 and §9). Merged into every `core` variant
+# that does not set the key itself.
+suite_defaults:
+  core: {damp: 3.0, calib: {source: transfer, n: 512, heldout_n: 128, seed: 1}, allocator: dp, allocator_weights: sensitivity}
 
 suites:
   # ---------------- Phase 2 / 6: questions + hyperparameters on V2-dev only
@@ -29,27 +36,51 @@ suites:
     # hardware-motivated rank floor (M8)
     - grid: {method: data, scope: attn+mlp, budget: 0.6, min_saving: [0.0, 0.25]}
 
-  # ---------------- Phase 3: final grid on V2-test (hyperparameters frozen)
+  # ---------------- Phase 3: final grid on V2-test (pipeline frozen 2026-11-20 16:15,
+  # protocol §9). Unless a variant overrides them, `suite_defaults.core` applies:
+  # whitened SVD with damping 3, calibration transfer n=512, exact DP allocation with
+  # keep-dense option and sensitivity weights.
   core:
-    - {kind: baseline}                                                       # B0
-    - {kind: int8}                                                           # B1
-    - grid: {method: [plain, data], scope: attn+mlp, budget: [0.9, 0.8, 0.7, 0.6, 0.5]}   # B2/B3, A1, A10
-    - grid: {method: data, scope: attn+mlp, policy: uniform_budget, budget: [0.8, 0.6]}  # B4 vs B5, A2
-    - grid: {method: plain, scope: attn+mlp, policy: uniform_budget, budget: [0.8, 0.6]}
-    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator: dp}           # greedy vs exact DP
-    - grid: {method: data, scope: [qkv, attn_out, attn, mlp, all], budget: 0.7}          # layer coverage
+    - {kind: baseline}                                                                    # B0
+    - {kind: int8}                                                                        # B1
+    - grid: {method: [plain, data], scope: attn+mlp, budget: [0.9, 0.8, 0.7, 0.6, 0.5]}  # B2/B3/B5, A1, A10
+    # allocation ablations at matched budgets (A2): uniform ranks, greedy, greedy+sens, dp (no sens), dp without dense option
+    - grid: {method: data, scope: attn+mlp, policy: uniform_budget, budget: [0.8, 0.6]}  # B4
+    - {name: abl_greedy_b0.8, method: data, scope: attn+mlp, budget: 0.8, allocator: greedy, allocator_weights: null}
+    - {name: abl_greedy_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: greedy, allocator_weights: null}
+    - {name: abl_greedy+sens_b0.8, method: data, scope: attn+mlp, budget: 0.8, allocator: greedy}
+    - {name: abl_greedy+sens_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: greedy}
+    - {name: abl_dp_b0.8, method: data, scope: attn+mlp, budget: 0.8, allocator_weights: null}
+    - {name: abl_dp_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator_weights: null}
+    - {name: abl_dp_nodense+sens_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: dp_nodense}
+    # damping interaction check under the frozen allocator (equivalence test, +-1 pp)
+    - {name: frozen_b0.6_damp0.01_n256, method: data, scope: attn+mlp, budget: 0.6, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    # layer coverage (A3, A4)
+    - grid: {method: data, scope: [qkv, attn_out, attn, mlp, all], budget: 0.7}
     - grid: {method: plain, scope: [attn, mlp], budget: 0.7}
-    - grid: {method: data, scope: attn+mlp, policy: target, target: [0.2, 0.3]}           # per-layer target error
-    - grid: {kind: tt, scope: attn+mlp, budget: [0.8, 0.6]}                               # B6
-    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8}              # B7, A5, A6
-    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8, order: qf}   # operation order
-    - grid: {method: plain, scope: attn+mlp, budget: 0.6, quant: int8}
-    # registered 2026-11-20 14:25 after dev (protocol §9): calibration on the 1000-class sample set
-    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], calib: [{source: imagenet_sample, n: 256, seed: 1}]}
+    # per-layer error targets (no silent fallback)
+    - grid: {method: data, scope: attn+mlp, policy: target, target: [0.2, 0.3]}
+    # Tensor-Train baseline at matched per-layer budgets (B6)
+    - grid: {kind: tt, scope: attn+mlp, budget: [0.8, 0.6]}
+    # hybrid INT8 (B7, A5, A6) and operation order
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8}
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], quant: int8, order: qf}
+    - {method: plain, scope: attn+mlp, budget: 0.6, quant: int8}
+    # ONNX Runtime deployment
     - {kind: ort, ort: {precision: fp32}}
     - {kind: ort, ort: {precision: int8}}
     - {kind: ort, ort: {precision: fp32, base: {method: data, scope: attn+mlp, budget: 0.6}}}
     - {kind: ort, ort: {precision: int8, base: {method: data, scope: attn+mlp, budget: 0.6}}}
+    # ---- confirmatory replicas of the REGISTERED dev hypotheses (exact dev settings:
+    #      greedy, no weights, damping 0.01, calibration transfer n=256 seed 1)
+    - {name: reg_data_mlp_b0.7, method: data, scope: mlp, budget: 0.7, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_data_attn_b0.7, method: data, scope: attn, budget: 0.7, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_plain_mlp_b0.7, method: plain, scope: mlp, budget: 0.7, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_plain_attn_b0.7, method: plain, scope: attn, budget: 0.7, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_data_attn+mlp_b0.8, method: data, scope: attn+mlp, budget: 0.8, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_data_attn+mlp_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: transfer, n: 256, seed: 1}}
+    - {name: reg_sample_attn+mlp_b0.8, method: data, scope: attn+mlp, budget: 0.8, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: imagenet_sample, n: 256, seed: 1}}
+    - {name: reg_sample_attn+mlp_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: greedy, allocator_weights: null, damp: 0.01, calib: {source: imagenet_sample, n: 256, seed: 1}}
 
   # ---------------- post-hoc follow-up to H-iso (exploratory, dev only; see protocol §9)
   dev2:
@@ -59,3 +90,13 @@ suites:
     - grid: {method: data, scope: attn+mlp, budget: 0.6, damp: [0.3, 1.0, 3.0]}
     # selected calibration size 512 lies on the grid boundary -> extend (protocol §9)
     - grid: {method: data, scope: attn+mlp, budget: 0.6, calib: [{source: transfer, n: 1024, seed: 1}, {source: transfer, n: 2048, seed: 1}]}
+
+  # ---------------- dev3 (exploratory, dev only; protocol §9, 15:40)
+  dev3:
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, damp: [10.0, 30.0, 100.0]}
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, allocator: dp_nodense}
+    - grid: {method: data, scope: attn+mlp, budget: [0.8, 0.6], allocator: dp, allocator_weights: sensitivity}
+
+  # ---------------- dev4: joint check of the selected settings (protocol §9, 15:50)
+  dev4:
+    - grid: {method: data, scope: attn+mlp, budget: 0.6, damp: 3.0, allocator: dp, allocator_weights: [null, sensitivity], calib: [{source: transfer, n: 512, seed: 1}, {source: transfer, n: 2048, seed: 1}]}

@@ -1,0 +1,723 @@
+{
+  "spec": {
+    "method": "data",
+    "scope": "attn+mlp",
+    "budget": 0.6,
+    "calib": {
+      "source": "transfer",
+      "n": 1024,
+      "seed": 1
+    },
+    "name": "data_attn+mlp_b0.6_cal-transfer-1024-s1"
+  },
+  "params": 13553512,
+  "param_ratio": 1.6269,
+  "size_mb": 51.775,
+  "size_ratio": 1.6257,
+  "build_s": 138.7,
+  "eval_s": 83.2,
+  "score": {
+    "n": 2000,
+    "top1": 0.367,
+    "top1_ci": [
+      0.34615,
+      0.38836
+    ],
+    "top5": 0.6475,
+    "delta_vs_base": -0.3155,
+    "delta_ci": [
+      -0.33785,
+      -0.29315
+    ],
+    "mcnemar_p": 0.0,
+    "agreement": 0.4395,
+    "kl_to_base": 1.6519
+  },
+  "per_class_shift": {
+    "classes": 1000,
+    "worse_by_2plus": 134,
+    "worse_by_1": 399,
+    "unchanged": 435,
+    "better": 32,
+    "min_delta": -2
+  },
+  "targeted_dense_params": 21233664,
+  "targeted_compressed_params": 12736512,
+  "targeted_ratio": 1.6671,
+  "summary": "[data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.496; held-out output err mean=0.202 max=0.286",
+  "layers": [
+    {
+      "name": "blocks.0.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 104,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.11432,
+      "weight_rel_error": 0.4351,
+      "output_rel_error": 0.11166
+    },
+    {
+      "name": "blocks.0.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 144,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.06354,
+      "weight_rel_error": 0.48503,
+      "output_rel_error": 0.05584
+    },
+    {
+      "name": "blocks.0.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 152,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.08264,
+      "weight_rel_error": 0.40945,
+      "output_rel_error": 0.07737
+    },
+    {
+      "name": "blocks.0.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.16491,
+      "weight_rel_error": 0.44792,
+      "output_rel_error": 0.16254
+    },
+    {
+      "name": "blocks.1.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 80,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.11604,
+      "weight_rel_error": 0.54003,
+      "output_rel_error": 0.11375
+    },
+    {
+      "name": "blocks.1.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 144,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.10244,
+      "weight_rel_error": 0.4604,
+      "output_rel_error": 0.09807
+    },
+    {
+      "name": "blocks.1.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 136,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.16085,
+      "weight_rel_error": 0.52322,
+      "output_rel_error": 0.15852
+    },
+    {
+      "name": "blocks.1.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 192,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.20423,
+      "weight_rel_error": 0.44374,
+      "output_rel_error": 0.203
+    },
+    {
+      "name": "blocks.2.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 128,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.16312,
+      "weight_rel_error": 0.50966,
+      "output_rel_error": 0.16116
+    },
+    {
+      "name": "blocks.2.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.14261,
+      "weight_rel_error": 0.39106,
+      "output_rel_error": 0.14088
+    },
+    {
+      "name": "blocks.2.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.19266,
+      "weight_rel_error": 0.50393,
+      "output_rel_error": 0.19104
+    },
+    {
+      "name": "blocks.2.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.20256,
+      "weight_rel_error": 0.3928,
+      "output_rel_error": 0.20304
+    },
+    {
+      "name": "blocks.3.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 160,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.17979,
+      "weight_rel_error": 0.45727,
+      "output_rel_error": 0.17781
+    },
+    {
+      "name": "blocks.3.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.1567,
+      "weight_rel_error": 0.35948,
+      "output_rel_error": 0.15785
+    },
+    {
+      "name": "blocks.3.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 136,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.21745,
+      "weight_rel_error": 0.58359,
+      "output_rel_error": 0.21649
+    },
+    {
+      "name": "blocks.3.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 224,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.22195,
+      "weight_rel_error": 0.40944,
+      "output_rel_error": 0.22168
+    },
+    {
+      "name": "blocks.4.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 184,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18956,
+      "weight_rel_error": 0.4238,
+      "output_rel_error": 0.18852
+    },
+    {
+      "name": "blocks.4.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.16738,
+      "weight_rel_error": 0.37898,
+      "output_rel_error": 0.17101
+    },
+    {
+      "name": "blocks.4.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 128,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.22522,
+      "weight_rel_error": 0.60745,
+      "output_rel_error": 0.22476
+    },
+    {
+      "name": "blocks.4.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.22248,
+      "weight_rel_error": 0.41141,
+      "output_rel_error": 0.22314
+    },
+    {
+      "name": "blocks.5.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 200,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18611,
+      "weight_rel_error": 0.40164,
+      "output_rel_error": 0.18592
+    },
+    {
+      "name": "blocks.5.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18372,
+      "weight_rel_error": 0.41669,
+      "output_rel_error": 0.1873
+    },
+    {
+      "name": "blocks.5.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 120,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.23269,
+      "weight_rel_error": 0.61606,
+      "output_rel_error": 0.23214
+    },
+    {
+      "name": "blocks.5.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 256,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.21524,
+      "weight_rel_error": 0.37445,
+      "output_rel_error": 0.21598
+    },
+    {
+      "name": "blocks.6.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 208,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18609,
+      "weight_rel_error": 0.38147,
+      "output_rel_error": 0.1867
+    },
+    {
+      "name": "blocks.6.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.2354,
+      "weight_rel_error": 0.44908,
+      "output_rel_error": 0.24275
+    },
+    {
+      "name": "blocks.6.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 112,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.23003,
+      "weight_rel_error": 0.63581,
+      "output_rel_error": 0.23063
+    },
+    {
+      "name": "blocks.6.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 272,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.23037,
+      "weight_rel_error": 0.35838,
+      "output_rel_error": 0.23343
+    },
+    {
+      "name": "blocks.7.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18918,
+      "weight_rel_error": 0.35911,
+      "output_rel_error": 0.19032
+    },
+    {
+      "name": "blocks.7.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.25699,
+      "weight_rel_error": 0.46568,
+      "output_rel_error": 0.27245
+    },
+    {
+      "name": "blocks.7.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 80,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.24498,
+      "weight_rel_error": 0.73978,
+      "output_rel_error": 0.2448
+    },
+    {
+      "name": "blocks.7.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 272,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.22365,
+      "weight_rel_error": 0.39208,
+      "output_rel_error": 0.22406
+    },
+    {
+      "name": "blocks.8.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 256,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18348,
+      "weight_rel_error": 0.33147,
+      "output_rel_error": 0.18551
+    },
+    {
+      "name": "blocks.8.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.26215,
+      "weight_rel_error": 0.47751,
+      "output_rel_error": 0.28008
+    },
+    {
+      "name": "blocks.8.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 72,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.25839,
+      "weight_rel_error": 0.78471,
+      "output_rel_error": 0.25905
+    },
+    {
+      "name": "blocks.8.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 256,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.21288,
+      "weight_rel_error": 0.43001,
+      "output_rel_error": 0.21316
+    },
+    {
+      "name": "blocks.9.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 256,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.19492,
+      "weight_rel_error": 0.35575,
+      "output_rel_error": 0.19712
+    },
+    {
+      "name": "blocks.9.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.26112,
+      "weight_rel_error": 0.52799,
+      "output_rel_error": 0.28632
+    },
+    {
+      "name": "blocks.9.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 88,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.27048,
+      "weight_rel_error": 0.7746,
+      "output_rel_error": 0.27133
+    },
+    {
+      "name": "blocks.9.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 232,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.22304,
+      "weight_rel_error": 0.49969,
+      "output_rel_error": 0.22864
+    },
+    {
+      "name": "blocks.10.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 248,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18905,
+      "weight_rel_error": 0.37683,
+      "output_rel_error": 0.19114
+    },
+    {
+      "name": "blocks.10.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 168,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.25538,
+      "weight_rel_error": 0.60183,
+      "output_rel_error": 0.28352
+    },
+    {
+      "name": "blocks.10.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 88,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.27672,
+      "weight_rel_error": 0.79033,
+      "output_rel_error": 0.27607
+    },
+    {
+      "name": "blocks.10.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 192,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.24251,
+      "weight_rel_error": 0.56301,
+      "output_rel_error": 0.23675
+    },
+    {
+      "name": "blocks.11.attn.qkv",
+      "shape": [
+        1152,
+        384
+      ],
+      "rank": 248,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.18728,
+      "weight_rel_error": 0.37292,
+      "output_rel_error": 0.18901
+    },
+    {
+      "name": "blocks.11.attn.proj",
+      "shape": [
+        384,
+        384
+      ],
+      "rank": 136,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.14299,
+      "weight_rel_error": 0.68824,
+      "output_rel_error": 0.15964
+    },
+    {
+      "name": "blocks.11.mlp.fc1",
+      "shape": [
+        1536,
+        384
+      ],
+      "rank": 128,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.2807,
+      "weight_rel_error": 0.70993,
+      "output_rel_error": 0.28182
+    },
+    {
+      "name": "blocks.11.mlp.fc2",
+      "shape": [
+        384,
+        1536
+      ],
+      "rank": 80,
+      "met_target": true,
+      "note": "",
+      "predicted_rel_error": 0.25838,
+      "weight_rel_error": 0.77439,
+      "output_rel_error": 0.25541
+    }
+  ],
+  "env": {
+    "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.10.0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.2.6",
+    "threads": 8,
+    "cpu_capability": "AVX2",
+    "git": {
+      "commit": "dde022d6e7e3dc35630e989ca4052cbecb82b905",
+      "dirty": false
+    },
+    "date": "2026-11-20 14:34:06",
+    "power": {
+      "on_ac": false,
+      "battery_pct": 8,
+      "scheme": "Balanced"
+    },
+    "timm": "1.0.31",
+    "onnxruntime": "1.23.2",
+    "onnx": "1.23.2"
+  },
+  "model": {
+    "name": "deit_small_patch16_224.fb_in1k",
+    "sha256": "1e747b4a8d0df2cfbd3c450e8c97685d867448ab0c2ddbfb34b6885f5cb23e5b",
+    "params": 22050664,
+    "num_classes": 1000,
+    "input_size": [
+      3,
+      224,
+      224
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "crop_pct": 0.9,
+    "interpolation": "bicubic"
+  },
+  "config_file": "configs/deit_small.yaml",
+  "config_sha1": "53f5e548e6ec9345d746ef38c8b0e4591df48d8f",
+  "split": "v2_dev",
+  "split_manifest_sha256": "b4d1e37dacbe52ab0ade8492155e6f74403420ac282494fea33786755473c812"
+}

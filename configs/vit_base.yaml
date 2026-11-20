@@ -5,10 +5,14 @@ short: vit_base
 threads: 8
 batch: 32
 seed: 0
-damp: 0.01          # set to the value selected on DeiT-S v2_dev (see EXPERIMENT_TRACKER)
+damp: 0.01          # config default (unused by `core`, which uses suite_defaults)
 granularity: 8
 min_saving: 0.1
 calibration: {source: transfer, n: 256, heldout_n: 128, seed: 1}
+
+# Same frozen pipeline as DeiT-S (selected on DeiT-S v2_dev only; no ViT-B tuning).
+suite_defaults:
+  core: {damp: 3.0, calib: {source: transfer, n: 512, heldout_n: 128, seed: 1}, allocator: dp, allocator_weights: sensitivity}
 
 suites:
   core:
@@ -20,6 +24,7 @@ suites:
     - grid: {method: [plain, data], scope: attn, budget: 0.5}
     - {method: data, scope: mlp, budget: 0.7}
     - {method: data, scope: attn+mlp, policy: uniform_budget, budget: 0.6}
+    - {name: abl_greedy_b0.6, method: data, scope: attn+mlp, budget: 0.6, allocator: greedy, allocator_weights: null}
     - {method: data, scope: attn+mlp, budget: 0.8, quant: int8}
     - {kind: ort, ort: {precision: int8}}
     - {kind: ort, ort: {precision: int8, base: {method: data, scope: attn+mlp, budget: 0.8}}}

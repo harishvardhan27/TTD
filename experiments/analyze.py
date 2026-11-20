@@ -122,12 +122,12 @@ def comparisons(rows):
                 if sa.get(k) == va and key(sa, {k}) == key(sb, {k}) and sa.get("kind", "lowrank") == sb.get("kind", "lowrank"):
                     out.append((fam, na_, nb_))
     # iso-parameter family: same method & quantization, different scope/budget, whole-model params within 0.5%
-    lr = [r for r in ok.values() if r["spec"].get("kind", "lowrank") == "lowrank" and "calib" not in r["spec"]
-          and "damp" not in r["spec"] and "min_saving" not in r["spec"]]
+    lr = [r for r in ok.values() if r["spec"].get("kind", "lowrank") == "lowrank" and r["spec"].get("policy", "budget") == "budget"]
+    same = ("method", "quant", "order", "damp", "calib", "allocator", "allocator_weights", "min_saving")
     for i, ra in enumerate(lr):
         for rb in lr[i + 1:]:
             sa, sb = ra["spec"], rb["spec"]
-            if (sa.get("method") == sb.get("method") and sa.get("quant", "none") == sb.get("quant", "none")
+            if (all(sa.get(k) == sb.get(k) for k in same)
                     and sa.get("scope") != sb.get("scope") and abs(ra["params"] - rb["params"]) <= 0.005 * ra["params"]):
                 out.append(("iso-params scope", ra["name"], rb["name"]))
     return out

@@ -1,0 +1,18 @@
+[15:42:30] === suite dev3 on v2_dev, config configs/deit_small.yaml, threads=8
+[15:42:38] model deit_small_patch16_224.fb_in1k sha256=1e747b4a8d0df2cf… params=22,050,664; eval v2_dev: 2000 images
+[15:42:39] 6 variants: ['data_attn+mlp_b0.6_damp10', 'data_attn+mlp_b0.6_damp30', 'data_attn+mlp_b0.6_damp100', 'data_attn+mlp_b0.6_dp_nodense', 'data_attn+mlp_b0.8_dp_sens', 'data_attn+mlp_b0.6_dp_sens']
+[15:44:15] data_attn+mlp_b0.6_damp10                     params= 13.55M (1.63x) size=   51.8MB | top1=38.95% [36.8,41.1] (n=2000)  delta=-29.30pp [-31.5,-27.1] p=2.33e-130 agree=46.4% KL=1.5095 [build 8s, eval 85s]
+[15:44:15]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.437; held-out output err mean=0.267 max=0.433
+[15:45:47] data_attn+mlp_b0.6_damp30                     params= 13.55M (1.63x) size=   51.8MB | top1=33.45% [31.4,35.5] (n=2000)  delta=-34.80pp [-37.1,-32.5] p=9.18e-161 agree=38.4% KL=1.9314 [build 7s, eval 85s]
+[15:45:47]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,736,512 (1.67x); weight err mean=0.436; held-out output err mean=0.289 max=0.496
+[15:47:19] data_attn+mlp_b0.6_damp100                    params= 13.56M (1.63x) size=   51.8MB | top1=16.75% [15.2,18.5] (n=2000)  delta=-51.50pp [-53.8,-49.2] p=5.76e-272 agree=18.6% KL=3.2551 [build 7s, eval 84s]
+[15:47:19]     [data/greedy] 48/48 layers factorised; targeted weights 21,233,664 -> 12,739,584 (1.67x); weight err mean=0.436; held-out output err mean=0.307 max=0.532
+[15:48:52] data_attn+mlp_b0.6_dp_nodense                 params= 13.50M (1.63x) size=   51.6MB | top1=34.30% [32.3,36.4] (n=2000)  delta=-33.95pp [-36.2,-31.7] p=1.14e-158 agree=40.9% KL=1.8151 [build 8s, eval 85s]
+[15:48:52]     [data/dp_nodense] 48/48 layers factorised; targeted weights 21,233,664 -> 12,687,360 (1.67x); weight err mean=0.502; held-out output err mean=0.209 max=0.331
+[15:51:43]   sensitivity weights for 48 layers on 64 images: 165s
+[15:53:25] data_attn+mlp_b0.8_dp_sens                    params= 17.75M (1.24x) size=   67.8MB | top1=63.75% [61.6,65.8] (n=2000)  delta=-4.50pp [-5.8,-3.2] p=4.96e-12 agree=82.3% KL=0.2104 [build 177s, eval 95s]
+[15:53:25]     [data/dp+weighted] 22/48 layers factorised; targeted weights 21,233,664 -> 16,935,936 (1.25x); weight err mean=0.432; held-out output err mean=0.163 max=0.392
+[15:56:15]   sensitivity weights for 48 layers on 64 images: 165s
+[15:57:44] data_attn+mlp_b0.6_dp_sens                    params= 13.50M (1.63x) size=   51.5MB | top1=44.30% [42.1,46.5] (n=2000)  delta=-23.95pp [-26.1,-21.8] p=1.46e-99 agree=52.5% KL=1.1277 [build 177s, eval 82s]
+[15:57:44]     [data/dp+weighted] 35/48 layers factorised; targeted weights 21,233,664 -> 12,678,144 (1.67x); weight err mean=0.547; held-out output err mean=0.252 max=0.533
+[15:57:44] === done

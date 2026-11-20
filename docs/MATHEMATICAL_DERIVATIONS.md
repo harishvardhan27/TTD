@@ -95,6 +95,21 @@ SVD (`λ → ∞`, since the second term dominates). This gives damping a
 meaning beyond "numerical fix": it regularises toward the weight-space
 solution in directions the calibration set did not explore.
 
+**Equivalence with covariance shrinkage.** Write
+
+    C + λμI = (1 + λ) · [ (1 − ρ) C + ρ μI ],    ρ = λ / (1 + λ).
+
+Multiplying the covariance by a positive constant `κ` multiplies `W L` by
+`√κ`, which leaves its singular vectors, the truncated factors (2.3) and all
+*relative* errors unchanged. Hence damping by `λ` is **exactly** whitening
+with the linear shrinkage estimator `(1−ρ)C + ρμI` (the form of the
+Ledoit–Wolf estimator, with a fixed rather than data-estimated intensity):
+`λ = 0.01 ↔ ρ ≈ 0.01`, `λ = 1 ↔ ρ = 0.5`, `λ = 3 ↔ ρ = 0.75`. Shrinkage
+trades bias for variance in the covariance estimate, so the optimal `λ`
+should *decrease* with more, and more diverse, calibration data. This is a
+testable prediction (dev suites `dev2`/`dev3`, calibration-size and -source
+ablations); it is an interpretation, not a theorem about accuracy.
+
 **Consequence for reporting.** With `λ > 0`, (2.4) evaluated on the SVD of
 `W L_λ` is the relative value of (2.6), *not* the output error. The code
 therefore reports three distinct quantities per layer:

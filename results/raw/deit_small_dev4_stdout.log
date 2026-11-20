@@ -1,0 +1,14 @@
+[15:58:03] === suite dev4 on v2_dev, config configs/deit_small.yaml, threads=8
+[15:58:11] model deit_small_patch16_224.fb_in1k sha256=1e747b4a8d0df2cf… params=22,050,664; eval v2_dev: 2000 images
+[15:58:11] 4 variants: ['data_attn+mlp_b0.6_dp_cal-transfer-512-s1_damp3', 'data_attn+mlp_b0.6_dp_cal-transfer-2048-s1_damp3', 'data_attn+mlp_b0.6_dp_sens_cal-transfer-512-s1_damp3', 'data_attn+mlp_b0.6_dp_sens_cal-transfer-2048-s1_damp3']
+[15:59:45] data_attn+mlp_b0.6_dp_cal-transfer-512-s1_damp3 params= 13.50M (1.63x) size=   51.6MB | top1=39.20% [37.1,41.4] (n=2000)  delta=-29.05pp [-31.3,-26.8] p=9.82e-131 agree=46.5% KL=1.5183 [build 7s, eval 83s]
+[15:59:45]     [data/dp] 29/48 layers factorised; targeted weights 21,233,664 -> 12,684,288 (1.67x); weight err mean=0.519; held-out output err mean=0.259 max=0.384
+[16:01:13] data_attn+mlp_b0.6_dp_cal-transfer-2048-s1_damp3 params= 13.50M (1.63x) size=   51.6MB | top1=38.90% [36.8,41.1] (n=2000)  delta=-29.35pp [-31.6,-27.1] p=2.36e-132 agree=46.3% KL=1.5157 [build 7s, eval 81s]
+[16:01:13]     [data/dp] 29/48 layers factorised; targeted weights 21,233,664 -> 12,684,288 (1.67x); weight err mean=0.519; held-out output err mean=0.261 max=0.384
+[16:04:04]   sensitivity weights for 48 layers on 64 images: 165s
+[16:05:30] data_attn+mlp_b0.6_dp_sens_cal-transfer-512-s1_damp3 params= 13.49M (1.63x) size=   51.5MB | top1=44.65% [42.5,46.8] (n=2000)  delta=-23.60pp [-25.7,-21.5] p=6.01e-96 agree=52.4% KL=1.1529 [build 177s, eval 80s]
+[16:05:30]     [data/dp+weighted] 29/48 layers factorised; targeted weights 21,233,664 -> 12,675,072 (1.68x); weight err mean=0.535; held-out output err mean=0.320 max=0.628
+[16:08:22]   sensitivity weights for 48 layers on 64 images: 165s
+[16:09:51] data_attn+mlp_b0.6_dp_sens_cal-transfer-2048-s1_damp3 params= 13.50M (1.63x) size=   51.6MB | top1=42.85% [40.7,45.0] (n=2000)  delta=-25.40pp [-27.5,-23.3] p=4.05e-110 agree=50.4% KL=1.3415 [build 178s, eval 83s]
+[16:09:51]     [data/dp+weighted] 29/48 layers factorised; targeted weights 21,233,664 -> 12,684,288 (1.67x); weight err mean=0.532; held-out output err mean=0.321 max=0.704
+[16:09:51] === done
