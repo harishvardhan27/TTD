@@ -167,3 +167,9 @@ CUDA kernel: GPU + CUDA toolkit (not required for anything else)
 Novikov et al., "Tensorizing Neural Networks", NeurIPS 2015
 Oseledets, "Tensor-Train Decomposition", SIAM J. Sci. Comput. 2011
 Steinlechner, "Riemannian Optimization for Fixed-Rank Matrix Approximation", SIAM 2016
+
+---
+
+## 📄 License
+
+Released under the [MIT License](LICENSE).
